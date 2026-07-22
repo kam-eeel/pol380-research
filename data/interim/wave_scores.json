@@ -1,7 +1,7 @@
 {
     "eb97": {
         "QE2_1": {
-            "Belgium": {
+            "BE": {
                 "total": 1009,
                 "total_agree": 819,
                 "total_disagree": 178,
@@ -11,7 +11,7 @@
                 "tend_to_disagree": 131,
                 "totally_disagree": 47
             },
-            "Bulgaria": {
+            "BG": {
                 "total": 1038,
                 "total_agree": 477,
                 "total_disagree": 440,
@@ -21,7 +21,7 @@
                 "tend_to_disagree": 218,
                 "totally_disagree": 222
             },
-            "Czechia": {
+            "CZ": {
                 "total": 1015,
                 "total_agree": 727,
                 "total_disagree": 249,
@@ -31,7 +31,7 @@
                 "tend_to_disagree": 146,
                 "totally_disagree": 103
             },
-            "Denmark": {
+            "DK": {
                 "total": 1037,
                 "total_agree": 956,
                 "total_disagree": 67,
@@ -41,7 +41,7 @@
                 "tend_to_disagree": 52,
                 "totally_disagree": 15
             },
-            "Germany": {
+            "DE": {
                 "total": 1507,
                 "total_agree": 1229,
                 "total_disagree": 224,
@@ -51,7 +51,7 @@
                 "tend_to_disagree": 149,
                 "totally_disagree": 75
             },
-            "Estonia": {
+            "EE": {
                 "total": 1026,
                 "total_agree": 758,
                 "total_disagree": 194,
@@ -61,7 +61,7 @@
                 "tend_to_disagree": 109,
                 "totally_disagree": 85
             },
-            "Ireland": {
+            "IE": {
                 "total": 1017,
                 "total_agree": 918,
                 "total_disagree": 64,
@@ -71,7 +71,7 @@
                 "tend_to_disagree": 48,
                 "totally_disagree": 16
             },
-            "Greece": {
+            "EL": {
                 "total": 1010,
                 "total_agree": 603,
                 "total_disagree": 356,
@@ -81,7 +81,7 @@
                 "tend_to_disagree": 206,
                 "totally_disagree": 150
             },
-            "Spain": {
+            "ES": {
                 "total": 1009,
                 "total_agree": 789,
                 "total_disagree": 131,
@@ -91,7 +91,7 @@
                 "tend_to_disagree": 96,
                 "totally_disagree": 35
             },
-            "France": {
+            "FR": {
                 "total": 1010,
                 "total_agree": 700,
                 "total_disagree": 202,
@@ -101,7 +101,7 @@
                 "tend_to_disagree": 123,
                 "totally_disagree": 79
             },
-            "Croatia": {
+            "HR": {
                 "total": 1000,
                 "total_agree": 776,
                 "total_disagree": 182,
@@ -111,7 +111,7 @@
                 "tend_to_disagree": 125,
                 "totally_disagree": 57
             },
-            "Italy": {
+            "IT": {
                 "total": 1023,
                 "total_agree": 781,
                 "total_disagree": 195,
@@ -121,7 +121,7 @@
                 "tend_to_disagree": 129,
                 "totally_disagree": 66
             },
-            "Cyprus": {
+            "CY": {
                 "total": 503,
                 "total_agree": 243,
                 "total_disagree": 222,
@@ -131,7 +131,7 @@
                 "tend_to_disagree": 109,
                 "totally_disagree": 113
             },
-            "Latvia": {
+            "LV": {
                 "total": 1028,
                 "total_agree": 710,
                 "total_disagree": 251,
@@ -141,7 +141,7 @@
                 "tend_to_disagree": 136,
                 "totally_disagree": 115
             },
-            "Lithuania": {
+            "LT": {
                 "total": 1001,
                 "total_agree": 796,
                 "total_disagree": 189,
@@ -151,7 +151,7 @@
                 "tend_to_disagree": 116,
                 "totally_disagree": 72
             },
-            "Luxembourg": {
+            "LU": {
                 "total": 506,
                 "total_agree": 355,
                 "total_disagree": 102,
@@ -161,7 +161,7 @@
                 "tend_to_disagree": 69,
                 "totally_disagree": 33
             },
-            "Hungary": {
+            "HU": {
                 "total": 1026,
                 "total_agree": 669,
                 "total_disagree": 331,
@@ -171,7 +171,7 @@
                 "tend_to_disagree": 229,
                 "totally_disagree": 102
             },
-            "Malta": {
+            "MT": {
                 "total": 503,
                 "total_agree": 408,
                 "total_disagree": 78,
@@ -181,7 +181,7 @@
                 "tend_to_disagree": 51,
                 "totally_disagree": 28
             },
-            "Netherlands": {
+            "NL": {
                 "total": 1013,
                 "total_agree": 889,
                 "total_disagree": 114,
@@ -191,7 +191,7 @@
                 "tend_to_disagree": 74,
                 "totally_disagree": 41
             },
-            "Austria": {
+            "AT": {
                 "total": 1006,
                 "total_agree": 642,
                 "total_disagree": 322,
@@ -201,7 +201,7 @@
                 "tend_to_disagree": 175,
                 "totally_disagree": 147
             },
-            "Poland": {
+            "PL": {
                 "total": 1016,
                 "total_agree": 941,
                 "total_disagree": 61,
@@ -211,7 +211,7 @@
                 "tend_to_disagree": 46,
                 "totally_disagree": 15
             },
-            "Portugal": {
+            "PT": {
                 "total": 1009,
                 "total_agree": 950,
                 "total_disagree": 26,
@@ -221,7 +221,7 @@
                 "tend_to_disagree": 19,
                 "totally_disagree": 7
             },
-            "Romania": {
+            "RO": {
                 "total": 1042,
                 "total_agree": 716,
                 "total_disagree": 248,
@@ -231,7 +231,7 @@
                 "tend_to_disagree": 208,
                 "totally_disagree": 40
             },
-            "Slovenia": {
+            "SI": {
                 "total": 1001,
                 "total_agree": 624,
                 "total_disagree": 341,
@@ -241,7 +241,7 @@
                 "tend_to_disagree": 185,
                 "totally_disagree": 156
             },
-            "Slovakia": {
+            "SK": {
                 "total": 1033,
                 "total_agree": 606,
                 "total_disagree": 401,
@@ -251,7 +251,7 @@
                 "tend_to_disagree": 191,
                 "totally_disagree": 210
             },
-            "Finland": {
+            "FI": {
                 "total": 1045,
                 "total_agree": 921,
                 "total_disagree": 82,
@@ -261,7 +261,7 @@
                 "tend_to_disagree": 58,
                 "totally_disagree": 24
             },
-            "Sweden": {
+            "SE": {
                 "total": 1035,
                 "total_agree": 967,
                 "total_disagree": 63,
@@ -273,7 +273,7 @@
             }
         },
         "QE2_3": {
-            "Belgium": {
+            "BE": {
                 "total": 1009,
                 "total_agree": 732,
                 "total_disagree": 259,
@@ -283,7 +283,7 @@
                 "tend_to_disagree": 173,
                 "totally_disagree": 87
             },
-            "Bulgaria": {
+            "BG": {
                 "total": 1038,
                 "total_agree": 363,
                 "total_disagree": 598,
@@ -293,7 +293,7 @@
                 "tend_to_disagree": 219,
                 "totally_disagree": 380
             },
-            "Czechia": {
+            "CZ": {
                 "total": 1015,
                 "total_agree": 571,
                 "total_disagree": 419,
@@ -303,7 +303,7 @@
                 "tend_to_disagree": 202,
                 "totally_disagree": 217
             },
-            "Denmark": {
+            "DK": {
                 "total": 1037,
                 "total_agree": 943,
                 "total_disagree": 82,
@@ -313,7 +313,7 @@
                 "tend_to_disagree": 55,
                 "totally_disagree": 27
             },
-            "Germany": {
+            "DE": {
                 "total": 1507,
                 "total_agree": 1065,
                 "total_disagree": 369,
@@ -323,7 +323,7 @@
                 "tend_to_disagree": 205,
                 "totally_disagree": 163
             },
-            "Estonia": {
+            "EE": {
                 "total": 1026,
                 "total_agree": 767,
                 "total_disagree": 191,
@@ -333,7 +333,7 @@
                 "tend_to_disagree": 94,
                 "totally_disagree": 97
             },
-            "Ireland": {
+            "IE": {
                 "total": 1017,
                 "total_agree": 878,
                 "total_disagree": 89,
@@ -343,7 +343,7 @@
                 "tend_to_disagree": 62,
                 "totally_disagree": 26
             },
-            "Greece": {
+            "EL": {
                 "total": 1010,
                 "total_agree": 413,
                 "total_disagree": 560,
@@ -353,7 +353,7 @@
                 "tend_to_disagree": 244,
                 "totally_disagree": 316
             },
-            "Spain": {
+            "ES": {
                 "total": 1009,
                 "total_agree": 671,
                 "total_disagree": 236,
@@ -363,7 +363,7 @@
                 "tend_to_disagree": 125,
                 "totally_disagree": 111
             },
-            "France": {
+            "FR": {
                 "total": 1010,
                 "total_agree": 623,
                 "total_disagree": 273,
@@ -373,7 +373,7 @@
                 "tend_to_disagree": 170,
                 "totally_disagree": 103
             },
-            "Croatia": {
+            "HR": {
                 "total": 1000,
                 "total_agree": 740,
                 "total_disagree": 225,
@@ -383,7 +383,7 @@
                 "tend_to_disagree": 169,
                 "totally_disagree": 56
             },
-            "Italy": {
+            "IT": {
                 "total": 1023,
                 "total_agree": 582,
                 "total_disagree": 378,
@@ -393,7 +393,7 @@
                 "tend_to_disagree": 225,
                 "totally_disagree": 153
             },
-            "Cyprus": {
+            "CY": {
                 "total": 503,
                 "total_agree": 222,
                 "total_disagree": 248,
@@ -403,7 +403,7 @@
                 "tend_to_disagree": 92,
                 "totally_disagree": 156
             },
-            "Latvia": {
+            "LV": {
                 "total": 1028,
                 "total_agree": 739,
                 "total_disagree": 224,
@@ -413,7 +413,7 @@
                 "tend_to_disagree": 97,
                 "totally_disagree": 128
             },
-            "Lithuania": {
+            "LT": {
                 "total": 1001,
                 "total_agree": 827,
                 "total_disagree": 161,
@@ -423,7 +423,7 @@
                 "tend_to_disagree": 109,
                 "totally_disagree": 52
             },
-            "Luxembourg": {
+            "LU": {
                 "total": 506,
                 "total_agree": 315,
                 "total_disagree": 152,
@@ -433,7 +433,7 @@
                 "tend_to_disagree": 82,
                 "totally_disagree": 70
             },
-            "Hungary": {
+            "HU": {
                 "total": 1026,
                 "total_agree": 590,
                 "total_disagree": 411,
@@ -443,7 +443,7 @@
                 "tend_to_disagree": 231,
                 "totally_disagree": 180
             },
-            "Malta": {
+            "MT": {
                 "total": 503,
                 "total_agree": 369,
                 "total_disagree": 117,
@@ -453,7 +453,7 @@
                 "tend_to_disagree": 80,
                 "totally_disagree": 37
             },
-            "Netherlands": {
+            "NL": {
                 "total": 1013,
                 "total_agree": 855,
                 "total_disagree": 143,
@@ -463,7 +463,7 @@
                 "tend_to_disagree": 102,
                 "totally_disagree": 42
             },
-            "Austria": {
+            "AT": {
                 "total": 1006,
                 "total_agree": 506,
                 "total_disagree": 460,
@@ -473,7 +473,7 @@
                 "tend_to_disagree": 169,
                 "totally_disagree": 291
             },
-            "Poland": {
+            "PL": {
                 "total": 1016,
                 "total_agree": 927,
                 "total_disagree": 73,
@@ -483,7 +483,7 @@
                 "tend_to_disagree": 51,
                 "totally_disagree": 22
             },
-            "Portugal": {
+            "PT": {
                 "total": 1009,
                 "total_agree": 876,
                 "total_disagree": 90,
@@ -493,7 +493,7 @@
                 "tend_to_disagree": 55,
                 "totally_disagree": 35
             },
-            "Romania": {
+            "RO": {
                 "total": 1042,
                 "total_agree": 632,
                 "total_disagree": 332,
@@ -503,7 +503,7 @@
                 "tend_to_disagree": 261,
                 "totally_disagree": 71
             },
-            "Slovenia": {
+            "SI": {
                 "total": 1001,
                 "total_agree": 539,
                 "total_disagree": 428,
@@ -513,7 +513,7 @@
                 "tend_to_disagree": 234,
                 "totally_disagree": 195
             },
-            "Slovakia": {
+            "SK": {
                 "total": 1033,
                 "total_agree": 512,
                 "total_disagree": 499,
@@ -523,7 +523,7 @@
                 "tend_to_disagree": 199,
                 "totally_disagree": 300
             },
-            "Finland": {
+            "FI": {
                 "total": 1045,
                 "total_agree": 929,
                 "total_disagree": 67,
@@ -533,7 +533,7 @@
                 "tend_to_disagree": 45,
                 "totally_disagree": 22
             },
-            "Sweden": {
+            "SE": {
                 "total": 1035,
                 "total_agree": 947,
                 "total_disagree": 81,
@@ -547,7 +547,7 @@
     },
     "eb98": {
         "QE2_1": {
-            "Belgium": {
+            "BE": {
                 "total": 1035,
                 "total_agree": 793,
                 "total_disagree": 208,
@@ -557,7 +557,7 @@
                 "tend_to_disagree": 144,
                 "totally_disagree": 64
             },
-            "Bulgaria": {
+            "BG": {
                 "total": 1033,
                 "total_agree": 491,
                 "total_disagree": 423,
@@ -567,7 +567,7 @@
                 "tend_to_disagree": 220,
                 "totally_disagree": 203
             },
-            "Czechia": {
+            "CZ": {
                 "total": 1025,
                 "total_agree": 713,
                 "total_disagree": 267,
@@ -577,7 +577,7 @@
                 "tend_to_disagree": 158,
                 "totally_disagree": 109
             },
-            "Denmark": {
+            "DK": {
                 "total": 1015,
                 "total_agree": 916,
                 "total_disagree": 71,
@@ -587,7 +587,7 @@
                 "tend_to_disagree": 60,
                 "totally_disagree": 11
             },
-            "Germany": {
+            "DE": {
                 "total": 1532,
                 "total_agree": 1135,
                 "total_disagree": 330,
@@ -597,7 +597,7 @@
                 "tend_to_disagree": 215,
                 "totally_disagree": 115
             },
-            "Estonia": {
+            "EE": {
                 "total": 982,
                 "total_agree": 700,
                 "total_disagree": 195,
@@ -607,7 +607,7 @@
                 "tend_to_disagree": 88,
                 "totally_disagree": 107
             },
-            "Ireland": {
+            "IE": {
                 "total": 1008,
                 "total_agree": 865,
                 "total_disagree": 98,
@@ -617,7 +617,7 @@
                 "tend_to_disagree": 72,
                 "totally_disagree": 26
             },
-            "Greece": {
+            "EL": {
                 "total": 1014,
                 "total_agree": 564,
                 "total_disagree": 379,
@@ -627,7 +627,7 @@
                 "tend_to_disagree": 230,
                 "totally_disagree": 149
             },
-            "Spain": {
+            "ES": {
                 "total": 1011,
                 "total_agree": 742,
                 "total_disagree": 207,
@@ -637,7 +637,7 @@
                 "tend_to_disagree": 116,
                 "totally_disagree": 91
             },
-            "France": {
+            "FR": {
                 "total": 1015,
                 "total_agree": 664,
                 "total_disagree": 240,
@@ -647,7 +647,7 @@
                 "tend_to_disagree": 120,
                 "totally_disagree": 120
             },
-            "Croatia": {
+            "HR": {
                 "total": 1000,
                 "total_agree": 819,
                 "total_disagree": 158,
@@ -657,7 +657,7 @@
                 "tend_to_disagree": 113,
                 "totally_disagree": 45
             },
-            "Italy": {
+            "IT": {
                 "total": 1026,
                 "total_agree": 763,
                 "total_disagree": 217,
@@ -667,7 +667,7 @@
                 "tend_to_disagree": 139,
                 "totally_disagree": 78
             },
-            "Cyprus": {
+            "CY": {
                 "total": 505,
                 "total_agree": 265,
                 "total_disagree": 216,
@@ -677,7 +677,7 @@
                 "tend_to_disagree": 116,
                 "totally_disagree": 100
             },
-            "Latvia": {
+            "LV": {
                 "total": 1039,
                 "total_agree": 770,
                 "total_disagree": 165,
@@ -687,7 +687,7 @@
                 "tend_to_disagree": 115,
                 "totally_disagree": 49
             },
-            "Lithuania": {
+            "LT": {
                 "total": 1003,
                 "total_agree": 846,
                 "total_disagree": 126,
@@ -697,7 +697,7 @@
                 "tend_to_disagree": 88,
                 "totally_disagree": 38
             },
-            "Luxembourg": {
+            "LU": {
                 "total": 510,
                 "total_agree": 383,
                 "total_disagree": 105,
@@ -707,7 +707,7 @@
                 "tend_to_disagree": 58,
                 "totally_disagree": 47
             },
-            "Hungary": {
+            "HU": {
                 "total": 1040,
                 "total_agree": 586,
                 "total_disagree": 406,
@@ -717,7 +717,7 @@
                 "tend_to_disagree": 251,
                 "totally_disagree": 155
             },
-            "Malta": {
+            "MT": {
                 "total": 504,
                 "total_agree": 395,
                 "total_disagree": 85,
@@ -727,7 +727,7 @@
                 "tend_to_disagree": 62,
                 "totally_disagree": 23
             },
-            "Netherlands": {
+            "NL": {
                 "total": 1031,
                 "total_agree": 914,
                 "total_disagree": 108,
@@ -737,7 +737,7 @@
                 "tend_to_disagree": 78,
                 "totally_disagree": 30
             },
-            "Austria": {
+            "AT": {
                 "total": 1012,
                 "total_agree": 702,
                 "total_disagree": 263,
@@ -747,7 +747,7 @@
                 "tend_to_disagree": 166,
                 "totally_disagree": 98
             },
-            "Poland": {
+            "PL": {
                 "total": 1014,
                 "total_agree": 909,
                 "total_disagree": 91,
@@ -757,7 +757,7 @@
                 "tend_to_disagree": 75,
                 "totally_disagree": 17
             },
-            "Portugal": {
+            "PT": {
                 "total": 1008,
                 "total_agree": 898,
                 "total_disagree": 44,
@@ -767,7 +767,7 @@
                 "tend_to_disagree": 37,
                 "totally_disagree": 8
             },
-            "Romania": {
+            "RO": {
                 "total": 1041,
                 "total_agree": 690,
                 "total_disagree": 264,
@@ -777,7 +777,7 @@
                 "tend_to_disagree": 207,
                 "totally_disagree": 57
             },
-            "Slovenia": {
+            "SI": {
                 "total": 1001,
                 "total_agree": 611,
                 "total_disagree": 324,
@@ -787,7 +787,7 @@
                 "tend_to_disagree": 174,
                 "totally_disagree": 149
             },
-            "Slovakia": {
+            "SK": {
                 "total": 1004,
                 "total_agree": 492,
                 "total_disagree": 440,
@@ -797,7 +797,7 @@
                 "tend_to_disagree": 172,
                 "totally_disagree": 268
             },
-            "Finland": {
+            "FI": {
                 "total": 1017,
                 "total_agree": 861,
                 "total_disagree": 92,
@@ -807,7 +807,7 @@
                 "tend_to_disagree": 70,
                 "totally_disagree": 22
             },
-            "Sweden": {
+            "SE": {
                 "total": 1043,
                 "total_agree": 984,
                 "total_disagree": 46,
@@ -819,7 +819,7 @@
             }
         },
         "QE2_3": {
-            "Belgium": {
+            "BE": {
                 "total": 1035,
                 "total_agree": 707,
                 "total_disagree": 294,
@@ -829,7 +829,7 @@
                 "tend_to_disagree": 193,
                 "totally_disagree": 101
             },
-            "Bulgaria": {
+            "BG": {
                 "total": 1033,
                 "total_agree": 343,
                 "total_disagree": 585,
@@ -839,7 +839,7 @@
                 "tend_to_disagree": 245,
                 "totally_disagree": 340
             },
-            "Czechia": {
+            "CZ": {
                 "total": 1025,
                 "total_agree": 513,
                 "total_disagree": 483,
@@ -849,7 +849,7 @@
                 "tend_to_disagree": 248,
                 "totally_disagree": 235
             },
-            "Denmark": {
+            "DK": {
                 "total": 1015,
                 "total_agree": 908,
                 "total_disagree": 81,
@@ -859,7 +859,7 @@
                 "tend_to_disagree": 66,
                 "totally_disagree": 15
             },
-            "Germany": {
+            "DE": {
                 "total": 1532,
                 "total_agree": 968,
                 "total_disagree": 479,
@@ -869,7 +869,7 @@
                 "tend_to_disagree": 271,
                 "totally_disagree": 208
             },
-            "Estonia": {
+            "EE": {
                 "total": 982,
                 "total_agree": 708,
                 "total_disagree": 176,
@@ -879,7 +879,7 @@
                 "tend_to_disagree": 76,
                 "totally_disagree": 101
             },
-            "Ireland": {
+            "IE": {
                 "total": 1008,
                 "total_agree": 823,
                 "total_disagree": 123,
@@ -889,7 +889,7 @@
                 "tend_to_disagree": 87,
                 "totally_disagree": 36
             },
-            "Greece": {
+            "EL": {
                 "total": 1014,
                 "total_agree": 373,
                 "total_disagree": 594,
@@ -899,7 +899,7 @@
                 "tend_to_disagree": 230,
                 "totally_disagree": 364
             },
-            "Spain": {
+            "ES": {
                 "total": 1011,
                 "total_agree": 657,
                 "total_disagree": 292,
@@ -909,7 +909,7 @@
                 "tend_to_disagree": 147,
                 "totally_disagree": 145
             },
-            "France": {
+            "FR": {
                 "total": 1015,
                 "total_agree": 612,
                 "total_disagree": 296,
@@ -919,7 +919,7 @@
                 "tend_to_disagree": 162,
                 "totally_disagree": 134
             },
-            "Croatia": {
+            "HR": {
                 "total": 1000,
                 "total_agree": 730,
                 "total_disagree": 240,
@@ -929,7 +929,7 @@
                 "tend_to_disagree": 173,
                 "totally_disagree": 66
             },
-            "Italy": {
+            "IT": {
                 "total": 1026,
                 "total_agree": 577,
                 "total_disagree": 402,
@@ -939,7 +939,7 @@
                 "tend_to_disagree": 254,
                 "totally_disagree": 149
             },
-            "Cyprus": {
+            "CY": {
                 "total": 505,
                 "total_agree": 248,
                 "total_disagree": 236,
@@ -949,7 +949,7 @@
                 "tend_to_disagree": 117,
                 "totally_disagree": 119
             },
-            "Latvia": {
+            "LV": {
                 "total": 1039,
                 "total_agree": 801,
                 "total_disagree": 148,
@@ -959,7 +959,7 @@
                 "tend_to_disagree": 79,
                 "totally_disagree": 69
             },
-            "Lithuania": {
+            "LT": {
                 "total": 1003,
                 "total_agree": 886,
                 "total_disagree": 89,
@@ -969,7 +969,7 @@
                 "tend_to_disagree": 66,
                 "totally_disagree": 23
             },
-            "Luxembourg": {
+            "LU": {
                 "total": 510,
                 "total_agree": 327,
                 "total_disagree": 158,
@@ -979,7 +979,7 @@
                 "tend_to_disagree": 75,
                 "totally_disagree": 83
             },
-            "Hungary": {
+            "HU": {
                 "total": 1040,
                 "total_agree": 523,
                 "total_disagree": 472,
@@ -989,7 +989,7 @@
                 "tend_to_disagree": 271,
                 "totally_disagree": 202
             },
-            "Malta": {
+            "MT": {
                 "total": 504,
                 "total_agree": 381,
                 "total_disagree": 107,
@@ -999,7 +999,7 @@
                 "tend_to_disagree": 74,
                 "totally_disagree": 33
             },
-            "Netherlands": {
+            "NL": {
                 "total": 1031,
                 "total_agree": 924,
                 "total_disagree": 94,
@@ -1009,7 +1009,7 @@
                 "tend_to_disagree": 55,
                 "totally_disagree": 39
             },
-            "Austria": {
+            "AT": {
                 "total": 1012,
                 "total_agree": 505,
                 "total_disagree": 463,
@@ -1019,7 +1019,7 @@
                 "tend_to_disagree": 206,
                 "totally_disagree": 257
             },
-            "Poland": {
+            "PL": {
                 "total": 1014,
                 "total_agree": 900,
                 "total_disagree": 99,
@@ -1029,7 +1029,7 @@
                 "tend_to_disagree": 74,
                 "totally_disagree": 24
             },
-            "Portugal": {
+            "PT": {
                 "total": 1008,
                 "total_agree": 824,
                 "total_disagree": 100,
@@ -1039,7 +1039,7 @@
                 "tend_to_disagree": 63,
                 "totally_disagree": 37
             },
-            "Romania": {
+            "RO": {
                 "total": 1041,
                 "total_agree": 576,
                 "total_disagree": 376,
@@ -1049,7 +1049,7 @@
                 "tend_to_disagree": 254,
                 "totally_disagree": 122
             },
-            "Slovenia": {
+            "SI": {
                 "total": 1001,
                 "total_agree": 528,
                 "total_disagree": 409,
@@ -1059,7 +1059,7 @@
                 "tend_to_disagree": 189,
                 "totally_disagree": 220
             },
-            "Slovakia": {
+            "SK": {
                 "total": 1004,
                 "total_agree": 374,
                 "total_disagree": 569,
@@ -1069,7 +1069,7 @@
                 "tend_to_disagree": 193,
                 "totally_disagree": 375
             },
-            "Finland": {
+            "FI": {
                 "total": 1017,
                 "total_agree": 894,
                 "total_disagree": 74,
@@ -1079,7 +1079,7 @@
                 "tend_to_disagree": 52,
                 "totally_disagree": 22
             },
-            "Sweden": {
+            "SE": {
                 "total": 1043,
                 "total_agree": 958,
                 "total_disagree": 65,
@@ -1093,7 +1093,7 @@
     },
     "eb99": {
         "QE2_1": {
-            "Belgium": {
+            "BE": {
                 "total": 1014,
                 "total_agree": 777,
                 "total_disagree": 207,
@@ -1103,7 +1103,7 @@
                 "tend_to_disagree": 150,
                 "totally_disagree": 57
             },
-            "Bulgaria": {
+            "BG": {
                 "total": 1028,
                 "total_agree": 474,
                 "total_disagree": 409,
@@ -1113,7 +1113,7 @@
                 "tend_to_disagree": 212,
                 "totally_disagree": 197
             },
-            "Czechia": {
+            "CZ": {
                 "total": 1035,
                 "total_agree": 764,
                 "total_disagree": 219,
@@ -1123,7 +1123,7 @@
                 "tend_to_disagree": 129,
                 "totally_disagree": 89
             },
-            "Denmark": {
+            "DK": {
                 "total": 1016,
                 "total_agree": 902,
                 "total_disagree": 84,
@@ -1133,7 +1133,7 @@
                 "tend_to_disagree": 70,
                 "totally_disagree": 14
             },
-            "Germany": {
+            "DE": {
                 "total": 1553,
                 "total_agree": 1144,
                 "total_disagree": 349,
@@ -1143,7 +1143,7 @@
                 "tend_to_disagree": 224,
                 "totally_disagree": 125
             },
-            "Estonia": {
+            "EE": {
                 "total": 1002,
                 "total_agree": 627,
                 "total_disagree": 254,
@@ -1153,7 +1153,7 @@
                 "tend_to_disagree": 138,
                 "totally_disagree": 116
             },
-            "Ireland": {
+            "IE": {
                 "total": 1008,
                 "total_agree": 898,
                 "total_disagree": 71,
@@ -1163,7 +1163,7 @@
                 "tend_to_disagree": 59,
                 "totally_disagree": 12
             },
-            "Greece": {
+            "EL": {
                 "total": 1013,
                 "total_agree": 588,
                 "total_disagree": 359,
@@ -1173,7 +1173,7 @@
                 "tend_to_disagree": 232,
                 "totally_disagree": 127
             },
-            "Spain": {
+            "ES": {
                 "total": 1015,
                 "total_agree": 726,
                 "total_disagree": 197,
@@ -1183,7 +1183,7 @@
                 "tend_to_disagree": 104,
                 "totally_disagree": 93
             },
-            "France": {
+            "FR": {
                 "total": 1014,
                 "total_agree": 647,
                 "total_disagree": 258,
@@ -1193,7 +1193,7 @@
                 "tend_to_disagree": 149,
                 "totally_disagree": 109
             },
-            "Croatia": {
+            "HR": {
                 "total": 1003,
                 "total_agree": 805,
                 "total_disagree": 179,
@@ -1203,7 +1203,7 @@
                 "tend_to_disagree": 126,
                 "totally_disagree": 53
             },
-            "Italy": {
+            "IT": {
                 "total": 1033,
                 "total_agree": 725,
                 "total_disagree": 251,
@@ -1213,7 +1213,7 @@
                 "tend_to_disagree": 175,
                 "totally_disagree": 75
             },
-            "Cyprus": {
+            "CY": {
                 "total": 504,
                 "total_agree": 178,
                 "total_disagree": 283,
@@ -1223,7 +1223,7 @@
                 "tend_to_disagree": 141,
                 "totally_disagree": 142
             },
-            "Latvia": {
+            "LV": {
                 "total": 1025,
                 "total_agree": 724,
                 "total_disagree": 209,
@@ -1233,7 +1233,7 @@
                 "tend_to_disagree": 131,
                 "totally_disagree": 78
             },
-            "Lithuania": {
+            "LT": {
                 "total": 1008,
                 "total_agree": 847,
                 "total_disagree": 118,
@@ -1243,7 +1243,7 @@
                 "tend_to_disagree": 88,
                 "totally_disagree": 30
             },
-            "Luxembourg": {
+            "LU": {
                 "total": 507,
                 "total_agree": 378,
                 "total_disagree": 107,
@@ -1253,7 +1253,7 @@
                 "tend_to_disagree": 69,
                 "totally_disagree": 39
             },
-            "Hungary": {
+            "HU": {
                 "total": 1021,
                 "total_agree": 602,
                 "total_disagree": 382,
@@ -1263,7 +1263,7 @@
                 "tend_to_disagree": 239,
                 "totally_disagree": 143
             },
-            "Malta": {
+            "MT": {
                 "total": 512,
                 "total_agree": 391,
                 "total_disagree": 74,
@@ -1273,7 +1273,7 @@
                 "tend_to_disagree": 51,
                 "totally_disagree": 24
             },
-            "Netherlands": {
+            "NL": {
                 "total": 1002,
                 "total_agree": 861,
                 "total_disagree": 122,
@@ -1283,7 +1283,7 @@
                 "tend_to_disagree": 86,
                 "totally_disagree": 35
             },
-            "Austria": {
+            "AT": {
                 "total": 1006,
                 "total_agree": 553,
                 "total_disagree": 397,
@@ -1293,7 +1293,7 @@
                 "tend_to_disagree": 199,
                 "totally_disagree": 197
             },
-            "Poland": {
+            "PL": {
                 "total": 1007,
                 "total_agree": 897,
                 "total_disagree": 93,
@@ -1303,7 +1303,7 @@
                 "tend_to_disagree": 65,
                 "totally_disagree": 28
             },
-            "Portugal": {
+            "PT": {
                 "total": 1004,
                 "total_agree": 945,
                 "total_disagree": 18,
@@ -1313,7 +1313,7 @@
                 "tend_to_disagree": 17,
                 "totally_disagree": 1
             },
-            "Romania": {
+            "RO": {
                 "total": 1056,
                 "total_agree": 684,
                 "total_disagree": 315,
@@ -1323,7 +1323,7 @@
                 "tend_to_disagree": 232,
                 "totally_disagree": 83
             },
-            "Slovenia": {
+            "SI": {
                 "total": 1010,
                 "total_agree": 592,
                 "total_disagree": 365,
@@ -1333,7 +1333,7 @@
                 "tend_to_disagree": 195,
                 "totally_disagree": 170
             },
-            "Slovakia": {
+            "SK": {
                 "total": 1001,
                 "total_agree": 506,
                 "total_disagree": 409,
@@ -1343,7 +1343,7 @@
                 "tend_to_disagree": 188,
                 "totally_disagree": 221
             },
-            "Finland": {
+            "FI": {
                 "total": 1003,
                 "total_agree": 870,
                 "total_disagree": 86,
@@ -1353,7 +1353,7 @@
                 "tend_to_disagree": 61,
                 "totally_disagree": 25
             },
-            "Sweden": {
+            "SE": {
                 "total": 1025,
                 "total_agree": 965,
                 "total_disagree": 46,
@@ -1365,7 +1365,7 @@
             }
         },
         "QE2_3": {
-            "Belgium": {
+            "BE": {
                 "total": 1014,
                 "total_agree": 694,
                 "total_disagree": 285,
@@ -1375,7 +1375,7 @@
                 "tend_to_disagree": 208,
                 "totally_disagree": 76
             },
-            "Bulgaria": {
+            "BG": {
                 "total": 1028,
                 "total_agree": 312,
                 "total_disagree": 593,
@@ -1385,7 +1385,7 @@
                 "tend_to_disagree": 236,
                 "totally_disagree": 357
             },
-            "Czechia": {
+            "CZ": {
                 "total": 1035,
                 "total_agree": 551,
                 "total_disagree": 438,
@@ -1395,7 +1395,7 @@
                 "tend_to_disagree": 218,
                 "totally_disagree": 219
             },
-            "Denmark": {
+            "DK": {
                 "total": 1016,
                 "total_agree": 902,
                 "total_disagree": 86,
@@ -1405,7 +1405,7 @@
                 "tend_to_disagree": 64,
                 "totally_disagree": 22
             },
-            "Germany": {
+            "DE": {
                 "total": 1553,
                 "total_agree": 962,
                 "total_disagree": 535,
@@ -1415,7 +1415,7 @@
                 "tend_to_disagree": 286,
                 "totally_disagree": 249
             },
-            "Estonia": {
+            "EE": {
                 "total": 1002,
                 "total_agree": 638,
                 "total_disagree": 282,
@@ -1425,7 +1425,7 @@
                 "tend_to_disagree": 137,
                 "totally_disagree": 144
             },
-            "Ireland": {
+            "IE": {
                 "total": 1008,
                 "total_agree": 795,
                 "total_disagree": 147,
@@ -1435,7 +1435,7 @@
                 "tend_to_disagree": 118,
                 "totally_disagree": 29
             },
-            "Greece": {
+            "EL": {
                 "total": 1013,
                 "total_agree": 436,
                 "total_disagree": 534,
@@ -1445,7 +1445,7 @@
                 "tend_to_disagree": 246,
                 "totally_disagree": 288
             },
-            "Spain": {
+            "ES": {
                 "total": 1015,
                 "total_agree": 608,
                 "total_disagree": 320,
@@ -1455,7 +1455,7 @@
                 "tend_to_disagree": 175,
                 "totally_disagree": 145
             },
-            "France": {
+            "FR": {
                 "total": 1014,
                 "total_agree": 585,
                 "total_disagree": 335,
@@ -1465,7 +1465,7 @@
                 "tend_to_disagree": 180,
                 "totally_disagree": 155
             },
-            "Croatia": {
+            "HR": {
                 "total": 1003,
                 "total_agree": 723,
                 "total_disagree": 257,
@@ -1475,7 +1475,7 @@
                 "tend_to_disagree": 176,
                 "totally_disagree": 81
             },
-            "Italy": {
+            "IT": {
                 "total": 1033,
                 "total_agree": 615,
                 "total_disagree": 365,
@@ -1485,7 +1485,7 @@
                 "tend_to_disagree": 230,
                 "totally_disagree": 135
             },
-            "Cyprus": {
+            "CY": {
                 "total": 504,
                 "total_agree": 177,
                 "total_disagree": 296,
@@ -1495,7 +1495,7 @@
                 "tend_to_disagree": 137,
                 "totally_disagree": 158
             },
-            "Latvia": {
+            "LV": {
                 "total": 1025,
                 "total_agree": 764,
                 "total_disagree": 175,
@@ -1505,7 +1505,7 @@
                 "tend_to_disagree": 105,
                 "totally_disagree": 71
             },
-            "Lithuania": {
+            "LT": {
                 "total": 1008,
                 "total_agree": 850,
                 "total_disagree": 131,
@@ -1515,7 +1515,7 @@
                 "tend_to_disagree": 88,
                 "totally_disagree": 43
             },
-            "Luxembourg": {
+            "LU": {
                 "total": 507,
                 "total_agree": 355,
                 "total_disagree": 132,
@@ -1525,7 +1525,7 @@
                 "tend_to_disagree": 80,
                 "totally_disagree": 52
             },
-            "Hungary": {
+            "HU": {
                 "total": 1021,
                 "total_agree": 453,
                 "total_disagree": 543,
@@ -1535,7 +1535,7 @@
                 "tend_to_disagree": 301,
                 "totally_disagree": 242
             },
-            "Malta": {
+            "MT": {
                 "total": 512,
                 "total_agree": 329,
                 "total_disagree": 169,
@@ -1545,7 +1545,7 @@
                 "tend_to_disagree": 94,
                 "totally_disagree": 75
             },
-            "Netherlands": {
+            "NL": {
                 "total": 1002,
                 "total_agree": 854,
                 "total_disagree": 130,
@@ -1555,7 +1555,7 @@
                 "tend_to_disagree": 78,
                 "totally_disagree": 53
             },
-            "Austria": {
+            "AT": {
                 "total": 1006,
                 "total_agree": 403,
                 "total_disagree": 564,
@@ -1565,7 +1565,7 @@
                 "tend_to_disagree": 211,
                 "totally_disagree": 353
             },
-            "Poland": {
+            "PL": {
                 "total": 1007,
                 "total_agree": 862,
                 "total_disagree": 121,
@@ -1575,7 +1575,7 @@
                 "tend_to_disagree": 76,
                 "totally_disagree": 45
             },
-            "Portugal": {
+            "PT": {
                 "total": 1004,
                 "total_agree": 905,
                 "total_disagree": 54,
@@ -1585,7 +1585,7 @@
                 "tend_to_disagree": 37,
                 "totally_disagree": 17
             },
-            "Romania": {
+            "RO": {
                 "total": 1056,
                 "total_agree": 585,
                 "total_disagree": 421,
@@ -1595,7 +1595,7 @@
                 "tend_to_disagree": 262,
                 "totally_disagree": 159
             },
-            "Slovenia": {
+            "SI": {
                 "total": 1010,
                 "total_agree": 501,
                 "total_disagree": 461,
@@ -1605,7 +1605,7 @@
                 "tend_to_disagree": 211,
                 "totally_disagree": 250
             },
-            "Slovakia": {
+            "SK": {
                 "total": 1001,
                 "total_agree": 375,
                 "total_disagree": 564,
@@ -1615,7 +1615,7 @@
                 "tend_to_disagree": 207,
                 "totally_disagree": 357
             },
-            "Finland": {
+            "FI": {
                 "total": 1003,
                 "total_agree": 895,
                 "total_disagree": 72,
@@ -1625,7 +1625,7 @@
                 "tend_to_disagree": 46,
                 "totally_disagree": 26
             },
-            "Sweden": {
+            "SE": {
                 "total": 1025,
                 "total_agree": 948,
                 "total_disagree": 60,
@@ -1639,7 +1639,7 @@
     },
     "eb100": {
         "QD2_1": {
-            "Belgium": {
+            "BE": {
                 "total": 1016,
                 "total_agree": 789,
                 "total_disagree": 199,
@@ -1649,7 +1649,7 @@
                 "tend_to_disagree": 131,
                 "totally_disagree": 68
             },
-            "Bulgaria": {
+            "BG": {
                 "total": 1011,
                 "total_agree": 451,
                 "total_disagree": 402,
@@ -1659,7 +1659,7 @@
                 "tend_to_disagree": 198,
                 "totally_disagree": 204
             },
-            "Czechia": {
+            "CZ": {
                 "total": 1011,
                 "total_agree": 675,
                 "total_disagree": 272,
@@ -1669,7 +1669,7 @@
                 "tend_to_disagree": 171,
                 "totally_disagree": 101
             },
-            "Denmark": {
+            "DK": {
                 "total": 1012,
                 "total_agree": 886,
                 "total_disagree": 92,
@@ -1679,7 +1679,7 @@
                 "tend_to_disagree": 72,
                 "totally_disagree": 20
             },
-            "Germany": {
+            "DE": {
                 "total": 1527,
                 "total_agree": 1096,
                 "total_disagree": 342,
@@ -1689,7 +1689,7 @@
                 "tend_to_disagree": 249,
                 "totally_disagree": 93
             },
-            "Estonia": {
+            "EE": {
                 "total": 1003,
                 "total_agree": 667,
                 "total_disagree": 238,
@@ -1699,7 +1699,7 @@
                 "tend_to_disagree": 117,
                 "totally_disagree": 121
             },
-            "Ireland": {
+            "IE": {
                 "total": 1016,
                 "total_agree": 865,
                 "total_disagree": 95,
@@ -1709,7 +1709,7 @@
                 "tend_to_disagree": 68,
                 "totally_disagree": 27
             },
-            "Greece": {
+            "EL": {
                 "total": 1012,
                 "total_agree": 562,
                 "total_disagree": 381,
@@ -1719,7 +1719,7 @@
                 "tend_to_disagree": 232,
                 "totally_disagree": 149
             },
-            "Spain": {
+            "ES": {
                 "total": 1006,
                 "total_agree": 695,
                 "total_disagree": 222,
@@ -1729,7 +1729,7 @@
                 "tend_to_disagree": 149,
                 "totally_disagree": 73
             },
-            "France": {
+            "FR": {
                 "total": 1025,
                 "total_agree": 686,
                 "total_disagree": 225,
@@ -1739,7 +1739,7 @@
                 "tend_to_disagree": 137,
                 "totally_disagree": 88
             },
-            "Croatia": {
+            "HR": {
                 "total": 1032,
                 "total_agree": 828,
                 "total_disagree": 168,
@@ -1749,7 +1749,7 @@
                 "tend_to_disagree": 114,
                 "totally_disagree": 53
             },
-            "Italy": {
+            "IT": {
                 "total": 1024,
                 "total_agree": 716,
                 "total_disagree": 251,
@@ -1759,7 +1759,7 @@
                 "tend_to_disagree": 169,
                 "totally_disagree": 82
             },
-            "Cyprus": {
+            "CY": {
                 "total": 506,
                 "total_agree": 159,
                 "total_disagree": 296,
@@ -1769,7 +1769,7 @@
                 "tend_to_disagree": 161,
                 "totally_disagree": 135
             },
-            "Latvia": {
+            "LV": {
                 "total": 1010,
                 "total_agree": 677,
                 "total_disagree": 221,
@@ -1779,7 +1779,7 @@
                 "tend_to_disagree": 125,
                 "totally_disagree": 96
             },
-            "Lithuania": {
+            "LT": {
                 "total": 1013,
                 "total_agree": 807,
                 "total_disagree": 149,
@@ -1789,7 +1789,7 @@
                 "tend_to_disagree": 110,
                 "totally_disagree": 39
             },
-            "Luxembourg": {
+            "LU": {
                 "total": 504,
                 "total_agree": 365,
                 "total_disagree": 120,
@@ -1799,7 +1799,7 @@
                 "tend_to_disagree": 78,
                 "totally_disagree": 42
             },
-            "Hungary": {
+            "HU": {
                 "total": 1022,
                 "total_agree": 565,
                 "total_disagree": 421,
@@ -1809,7 +1809,7 @@
                 "tend_to_disagree": 272,
                 "totally_disagree": 148
             },
-            "Malta": {
+            "MT": {
                 "total": 504,
                 "total_agree": 347,
                 "total_disagree": 101,
@@ -1819,7 +1819,7 @@
                 "tend_to_disagree": 62,
                 "totally_disagree": 39
             },
-            "Netherlands": {
+            "NL": {
                 "total": 1011,
                 "total_agree": 894,
                 "total_disagree": 101,
@@ -1829,7 +1829,7 @@
                 "tend_to_disagree": 70,
                 "totally_disagree": 31
             },
-            "Austria": {
+            "AT": {
                 "total": 1005,
                 "total_agree": 633,
                 "total_disagree": 325,
@@ -1839,7 +1839,7 @@
                 "tend_to_disagree": 148,
                 "totally_disagree": 177
             },
-            "Poland": {
+            "PL": {
                 "total": 1025,
                 "total_agree": 915,
                 "total_disagree": 92,
@@ -1849,7 +1849,7 @@
                 "tend_to_disagree": 73,
                 "totally_disagree": 19
             },
-            "Portugal": {
+            "PT": {
                 "total": 1031,
                 "total_agree": 964,
                 "total_disagree": 29,
@@ -1859,7 +1859,7 @@
                 "tend_to_disagree": 24,
                 "totally_disagree": 5
             },
-            "Romania": {
+            "RO": {
                 "total": 1062,
                 "total_agree": 667,
                 "total_disagree": 313,
@@ -1869,7 +1869,7 @@
                 "tend_to_disagree": 228,
                 "totally_disagree": 85
             },
-            "Slovenia": {
+            "SI": {
                 "total": 1017,
                 "total_agree": 583,
                 "total_disagree": 397,
@@ -1879,7 +1879,7 @@
                 "tend_to_disagree": 226,
                 "totally_disagree": 171
             },
-            "Slovakia": {
+            "SK": {
                 "total": 1006,
                 "total_agree": 508,
                 "total_disagree": 410,
@@ -1889,7 +1889,7 @@
                 "tend_to_disagree": 210,
                 "totally_disagree": 200
             },
-            "Finland": {
+            "FI": {
                 "total": 1009,
                 "total_agree": 897,
                 "total_disagree": 57,
@@ -1899,7 +1899,7 @@
                 "tend_to_disagree": 45,
                 "totally_disagree": 12
             },
-            "Sweden": {
+            "SE": {
                 "total": 1051,
                 "total_agree": 1003,
                 "total_disagree": 34,
@@ -1911,7 +1911,7 @@
             }
         },
         "QD2_3": {
-            "Belgium": {
+            "BE": {
                 "total": 1016,
                 "total_agree": 611,
                 "total_disagree": 373,
@@ -1921,7 +1921,7 @@
                 "tend_to_disagree": 260,
                 "totally_disagree": 113
             },
-            "Bulgaria": {
+            "BG": {
                 "total": 1011,
                 "total_agree": 308,
                 "total_disagree": 601,
@@ -1931,7 +1931,7 @@
                 "tend_to_disagree": 252,
                 "totally_disagree": 349
             },
-            "Czechia": {
+            "CZ": {
                 "total": 1011,
                 "total_agree": 425,
                 "total_disagree": 541,
@@ -1941,7 +1941,7 @@
                 "tend_to_disagree": 228,
                 "totally_disagree": 313
             },
-            "Denmark": {
+            "DK": {
                 "total": 1012,
                 "total_agree": 840,
                 "total_disagree": 136,
@@ -1951,7 +1951,7 @@
                 "tend_to_disagree": 105,
                 "totally_disagree": 30
             },
-            "Germany": {
+            "DE": {
                 "total": 1527,
                 "total_agree": 922,
                 "total_disagree": 513,
@@ -1961,7 +1961,7 @@
                 "tend_to_disagree": 292,
                 "totally_disagree": 221
             },
-            "Estonia": {
+            "EE": {
                 "total": 1003,
                 "total_agree": 619,
                 "total_disagree": 297,
@@ -1971,7 +1971,7 @@
                 "tend_to_disagree": 155,
                 "totally_disagree": 142
             },
-            "Ireland": {
+            "IE": {
                 "total": 1016,
                 "total_agree": 737,
                 "total_disagree": 221,
@@ -1981,7 +1981,7 @@
                 "tend_to_disagree": 129,
                 "totally_disagree": 91
             },
-            "Greece": {
+            "EL": {
                 "total": 1012,
                 "total_agree": 376,
                 "total_disagree": 597,
@@ -1991,7 +1991,7 @@
                 "tend_to_disagree": 246,
                 "totally_disagree": 352
             },
-            "Spain": {
+            "ES": {
                 "total": 1006,
                 "total_agree": 534,
                 "total_disagree": 371,
@@ -2001,7 +2001,7 @@
                 "tend_to_disagree": 175,
                 "totally_disagree": 196
             },
-            "France": {
+            "FR": {
                 "total": 1025,
                 "total_agree": 562,
                 "total_disagree": 362,
@@ -2011,7 +2011,7 @@
                 "tend_to_disagree": 225,
                 "totally_disagree": 137
             },
-            "Croatia": {
+            "HR": {
                 "total": 1032,
                 "total_agree": 758,
                 "total_disagree": 238,
@@ -2021,7 +2021,7 @@
                 "tend_to_disagree": 174,
                 "totally_disagree": 64
             },
-            "Italy": {
+            "IT": {
                 "total": 1024,
                 "total_agree": 515,
                 "total_disagree": 452,
@@ -2031,7 +2031,7 @@
                 "tend_to_disagree": 301,
                 "totally_disagree": 151
             },
-            "Cyprus": {
+            "CY": {
                 "total": 506,
                 "total_agree": 158,
                 "total_disagree": 309,
@@ -2041,7 +2041,7 @@
                 "tend_to_disagree": 143,
                 "totally_disagree": 167
             },
-            "Latvia": {
+            "LV": {
                 "total": 1010,
                 "total_agree": 708,
                 "total_disagree": 216,
@@ -2051,7 +2051,7 @@
                 "tend_to_disagree": 96,
                 "totally_disagree": 120
             },
-            "Lithuania": {
+            "LT": {
                 "total": 1013,
                 "total_agree": 840,
                 "total_disagree": 132,
@@ -2061,7 +2061,7 @@
                 "tend_to_disagree": 85,
                 "totally_disagree": 47
             },
-            "Luxembourg": {
+            "LU": {
                 "total": 504,
                 "total_agree": 300,
                 "total_disagree": 169,
@@ -2071,7 +2071,7 @@
                 "tend_to_disagree": 90,
                 "totally_disagree": 79
             },
-            "Hungary": {
+            "HU": {
                 "total": 1022,
                 "total_agree": 443,
                 "total_disagree": 546,
@@ -2081,7 +2081,7 @@
                 "tend_to_disagree": 311,
                 "totally_disagree": 234
             },
-            "Malta": {
+            "MT": {
                 "total": 504,
                 "total_agree": 304,
                 "total_disagree": 184,
@@ -2091,7 +2091,7 @@
                 "tend_to_disagree": 97,
                 "totally_disagree": 87
             },
-            "Netherlands": {
+            "NL": {
                 "total": 1011,
                 "total_agree": 854,
                 "total_disagree": 144,
@@ -2101,7 +2101,7 @@
                 "tend_to_disagree": 100,
                 "totally_disagree": 44
             },
-            "Austria": {
+            "AT": {
                 "total": 1005,
                 "total_agree": 436,
                 "total_disagree": 529,
@@ -2111,7 +2111,7 @@
                 "tend_to_disagree": 189,
                 "totally_disagree": 339
             },
-            "Poland": {
+            "PL": {
                 "total": 1025,
                 "total_agree": 870,
                 "total_disagree": 127,
@@ -2121,7 +2121,7 @@
                 "tend_to_disagree": 94,
                 "totally_disagree": 33
             },
-            "Portugal": {
+            "PT": {
                 "total": 1031,
                 "total_agree": 850,
                 "total_disagree": 125,
@@ -2131,7 +2131,7 @@
                 "tend_to_disagree": 94,
                 "totally_disagree": 31
             },
-            "Romania": {
+            "RO": {
                 "total": 1062,
                 "total_agree": 523,
                 "total_disagree": 479,
@@ -2141,7 +2141,7 @@
                 "tend_to_disagree": 337,
                 "totally_disagree": 142
             },
-            "Slovenia": {
+            "SI": {
                 "total": 1017,
                 "total_agree": 471,
                 "total_disagree": 516,
@@ -2151,7 +2151,7 @@
                 "tend_to_disagree": 230,
                 "totally_disagree": 286
             },
-            "Slovakia": {
+            "SK": {
                 "total": 1006,
                 "total_agree": 338,
                 "total_disagree": 612,
@@ -2161,7 +2161,7 @@
                 "tend_to_disagree": 276,
                 "totally_disagree": 336
             },
-            "Finland": {
+            "FI": {
                 "total": 1009,
                 "total_agree": 904,
                 "total_disagree": 56,
@@ -2171,7 +2171,7 @@
                 "tend_to_disagree": 35,
                 "totally_disagree": 22
             },
-            "Sweden": {
+            "SE": {
                 "total": 1051,
                 "total_agree": 959,
                 "total_disagree": 66,
@@ -2185,7 +2185,7 @@
     },
     "eb101": {
         "QD2_1": {
-            "Belgium": {
+            "BE": {
                 "total": 1006,
                 "total_agree": 750,
                 "total_disagree": 228,
@@ -2195,7 +2195,7 @@
                 "tend_to_disagree": 166,
                 "totally_disagree": 62
             },
-            "Bulgaria": {
+            "BG": {
                 "total": 1046,
                 "total_agree": 478,
                 "total_disagree": 462,
@@ -2205,7 +2205,7 @@
                 "tend_to_disagree": 278,
                 "totally_disagree": 183
             },
-            "Czechia": {
+            "CZ": {
                 "total": 1026,
                 "total_agree": 674,
                 "total_disagree": 317,
@@ -2215,7 +2215,7 @@
                 "tend_to_disagree": 205,
                 "totally_disagree": 112
             },
-            "Denmark": {
+            "DK": {
                 "total": 1001,
                 "total_agree": 903,
                 "total_disagree": 82,
@@ -2225,7 +2225,7 @@
                 "tend_to_disagree": 69,
                 "totally_disagree": 13
             },
-            "Germany": {
+            "DE": {
                 "total": 1559,
                 "total_agree": 1123,
                 "total_disagree": 363,
@@ -2235,7 +2235,7 @@
                 "tend_to_disagree": 245,
                 "totally_disagree": 118
             },
-            "Estonia": {
+            "EE": {
                 "total": 1001,
                 "total_agree": 662,
                 "total_disagree": 270,
@@ -2245,7 +2245,7 @@
                 "tend_to_disagree": 166,
                 "totally_disagree": 104
             },
-            "Ireland": {
+            "IE": {
                 "total": 1003,
                 "total_agree": 843,
                 "total_disagree": 79,
@@ -2255,7 +2255,7 @@
                 "tend_to_disagree": 53,
                 "totally_disagree": 26
             },
-            "Greece": {
+            "EL": {
                 "total": 1011,
                 "total_agree": 570,
                 "total_disagree": 364,
@@ -2265,7 +2265,7 @@
                 "tend_to_disagree": 280,
                 "totally_disagree": 84
             },
-            "Spain": {
+            "ES": {
                 "total": 1002,
                 "total_agree": 730,
                 "total_disagree": 207,
@@ -2275,7 +2275,7 @@
                 "tend_to_disagree": 150,
                 "totally_disagree": 57
             },
-            "France": {
+            "FR": {
                 "total": 1004,
                 "total_agree": 623,
                 "total_disagree": 282,
@@ -2285,7 +2285,7 @@
                 "tend_to_disagree": 155,
                 "totally_disagree": 126
             },
-            "Croatia": {
+            "HR": {
                 "total": 1003,
                 "total_agree": 760,
                 "total_disagree": 222,
@@ -2295,7 +2295,7 @@
                 "tend_to_disagree": 146,
                 "totally_disagree": 75
             },
-            "Italy": {
+            "IT": {
                 "total": 1070,
                 "total_agree": 738,
                 "total_disagree": 303,
@@ -2305,7 +2305,7 @@
                 "tend_to_disagree": 224,
                 "totally_disagree": 79
             },
-            "Cyprus": {
+            "CY": {
                 "total": 507,
                 "total_agree": 203,
                 "total_disagree": 274,
@@ -2315,7 +2315,7 @@
                 "tend_to_disagree": 154,
                 "totally_disagree": 120
             },
-            "Latvia": {
+            "LV": {
                 "total": 1009,
                 "total_agree": 650,
                 "total_disagree": 232,
@@ -2325,7 +2325,7 @@
                 "tend_to_disagree": 145,
                 "totally_disagree": 87
             },
-            "Lithuania": {
+            "LT": {
                 "total": 1005,
                 "total_agree": 796,
                 "total_disagree": 157,
@@ -2335,7 +2335,7 @@
                 "tend_to_disagree": 117,
                 "totally_disagree": 40
             },
-            "Luxembourg": {
+            "LU": {
                 "total": 506,
                 "total_agree": 360,
                 "total_disagree": 118,
@@ -2345,7 +2345,7 @@
                 "tend_to_disagree": 80,
                 "totally_disagree": 38
             },
-            "Hungary": {
+            "HU": {
                 "total": 1019,
                 "total_agree": 579,
                 "total_disagree": 407,
@@ -2355,7 +2355,7 @@
                 "tend_to_disagree": 254,
                 "totally_disagree": 153
             },
-            "Malta": {
+            "MT": {
                 "total": 500,
                 "total_agree": 345,
                 "total_disagree": 141,
@@ -2365,7 +2365,7 @@
                 "tend_to_disagree": 104,
                 "totally_disagree": 37
             },
-            "Netherlands": {
+            "NL": {
                 "total": 1067,
                 "total_agree": 918,
                 "total_disagree": 141,
@@ -2375,7 +2375,7 @@
                 "tend_to_disagree": 105,
                 "totally_disagree": 36
             },
-            "Austria": {
+            "AT": {
                 "total": 1011,
                 "total_agree": 672,
                 "total_disagree": 296,
@@ -2385,7 +2385,7 @@
                 "tend_to_disagree": 183,
                 "totally_disagree": 113
             },
-            "Poland": {
+            "PL": {
                 "total": 1006,
                 "total_agree": 891,
                 "total_disagree": 92,
@@ -2395,7 +2395,7 @@
                 "tend_to_disagree": 65,
                 "totally_disagree": 28
             },
-            "Portugal": {
+            "PT": {
                 "total": 1000,
                 "total_agree": 914,
                 "total_disagree": 38,
@@ -2405,7 +2405,7 @@
                 "tend_to_disagree": 35,
                 "totally_disagree": 3
             },
-            "Romania": {
+            "RO": {
                 "total": 1038,
                 "total_agree": 722,
                 "total_disagree": 264,
@@ -2415,7 +2415,7 @@
                 "tend_to_disagree": 185,
                 "totally_disagree": 79
             },
-            "Slovenia": {
+            "SI": {
                 "total": 1004,
                 "total_agree": 544,
                 "total_disagree": 423,
@@ -2425,7 +2425,7 @@
                 "tend_to_disagree": 284,
                 "totally_disagree": 139
             },
-            "Slovakia": {
+            "SK": {
                 "total": 1006,
                 "total_agree": 593,
                 "total_disagree": 335,
@@ -2435,7 +2435,7 @@
                 "tend_to_disagree": 204,
                 "totally_disagree": 131
             },
-            "Finland": {
+            "FI": {
                 "total": 1000,
                 "total_agree": 879,
                 "total_disagree": 94,
@@ -2445,7 +2445,7 @@
                 "tend_to_disagree": 75,
                 "totally_disagree": 19
             },
-            "Sweden": {
+            "SE": {
                 "total": 1013,
                 "total_agree": 959,
                 "total_disagree": 51,
@@ -2457,7 +2457,7 @@
             }
         },
         "QD2_2": {
-            "Belgium": {
+            "BE": {
                 "total": 1006,
                 "total_agree": 640,
                 "total_disagree": 350,
@@ -2467,7 +2467,7 @@
                 "tend_to_disagree": 243,
                 "totally_disagree": 107
             },
-            "Bulgaria": {
+            "BG": {
                 "total": 1046,
                 "total_agree": 334,
                 "total_disagree": 647,
@@ -2477,7 +2477,7 @@
                 "tend_to_disagree": 319,
                 "totally_disagree": 327
             },
-            "Czechia": {
+            "CZ": {
                 "total": 1026,
                 "total_agree": 502,
                 "total_disagree": 494,
@@ -2487,7 +2487,7 @@
                 "tend_to_disagree": 246,
                 "totally_disagree": 247
             },
-            "Denmark": {
+            "DK": {
                 "total": 1001,
                 "total_agree": 904,
                 "total_disagree": 86,
@@ -2497,7 +2497,7 @@
                 "tend_to_disagree": 75,
                 "totally_disagree": 11
             },
-            "Germany": {
+            "DE": {
                 "total": 1559,
                 "total_agree": 958,
                 "total_disagree": 547,
@@ -2507,7 +2507,7 @@
                 "tend_to_disagree": 314,
                 "totally_disagree": 233
             },
-            "Estonia": {
+            "EE": {
                 "total": 1001,
                 "total_agree": 629,
                 "total_disagree": 316,
@@ -2517,7 +2517,7 @@
                 "tend_to_disagree": 165,
                 "totally_disagree": 151
             },
-            "Ireland": {
+            "IE": {
                 "total": 1003,
                 "total_agree": 686,
                 "total_disagree": 222,
@@ -2527,7 +2527,7 @@
                 "tend_to_disagree": 156,
                 "totally_disagree": 66
             },
-            "Greece": {
+            "EL": {
                 "total": 1011,
                 "total_agree": 389,
                 "total_disagree": 571,
@@ -2537,7 +2537,7 @@
                 "tend_to_disagree": 293,
                 "totally_disagree": 278
             },
-            "Spain": {
+            "ES": {
                 "total": 1002,
                 "total_agree": 553,
                 "total_disagree": 380,
@@ -2547,7 +2547,7 @@
                 "tend_to_disagree": 234,
                 "totally_disagree": 145
             },
-            "France": {
+            "FR": {
                 "total": 1004,
                 "total_agree": 527,
                 "total_disagree": 389,
@@ -2557,7 +2557,7 @@
                 "tend_to_disagree": 205,
                 "totally_disagree": 183
             },
-            "Croatia": {
+            "HR": {
                 "total": 1003,
                 "total_agree": 698,
                 "total_disagree": 286,
@@ -2567,7 +2567,7 @@
                 "tend_to_disagree": 186,
                 "totally_disagree": 100
             },
-            "Italy": {
+            "IT": {
                 "total": 1070,
                 "total_agree": 517,
                 "total_disagree": 535,
@@ -2577,7 +2577,7 @@
                 "tend_to_disagree": 349,
                 "totally_disagree": 186
             },
-            "Cyprus": {
+            "CY": {
                 "total": 507,
                 "total_agree": 159,
                 "total_disagree": 331,
@@ -2587,7 +2587,7 @@
                 "tend_to_disagree": 151,
                 "totally_disagree": 179
             },
-            "Latvia": {
+            "LV": {
                 "total": 1009,
                 "total_agree": 695,
                 "total_disagree": 215,
@@ -2597,7 +2597,7 @@
                 "tend_to_disagree": 131,
                 "totally_disagree": 84
             },
-            "Lithuania": {
+            "LT": {
                 "total": 1005,
                 "total_agree": 802,
                 "total_disagree": 165,
@@ -2607,7 +2607,7 @@
                 "tend_to_disagree": 111,
                 "totally_disagree": 55
             },
-            "Luxembourg": {
+            "LU": {
                 "total": 506,
                 "total_agree": 293,
                 "total_disagree": 194,
@@ -2617,7 +2617,7 @@
                 "tend_to_disagree": 116,
                 "totally_disagree": 78
             },
-            "Hungary": {
+            "HU": {
                 "total": 1019,
                 "total_agree": 458,
                 "total_disagree": 528,
@@ -2627,7 +2627,7 @@
                 "tend_to_disagree": 270,
                 "totally_disagree": 258
             },
-            "Malta": {
+            "MT": {
                 "total": 500,
                 "total_agree": 243,
                 "total_disagree": 245,
@@ -2637,7 +2637,7 @@
                 "tend_to_disagree": 162,
                 "totally_disagree": 83
             },
-            "Netherlands": {
+            "NL": {
                 "total": 1067,
                 "total_agree": 884,
                 "total_disagree": 176,
@@ -2647,7 +2647,7 @@
                 "tend_to_disagree": 117,
                 "totally_disagree": 58
             },
-            "Austria": {
+            "AT": {
                 "total": 1011,
                 "total_agree": 492,
                 "total_disagree": 485,
@@ -2657,7 +2657,7 @@
                 "tend_to_disagree": 214,
                 "totally_disagree": 271
             },
-            "Poland": {
+            "PL": {
                 "total": 1006,
                 "total_agree": 798,
                 "total_disagree": 181,
@@ -2667,7 +2667,7 @@
                 "tend_to_disagree": 130,
                 "totally_disagree": 51
             },
-            "Portugal": {
+            "PT": {
                 "total": 1000,
                 "total_agree": 831,
                 "total_disagree": 117,
@@ -2677,7 +2677,7 @@
                 "tend_to_disagree": 84,
                 "totally_disagree": 33
             },
-            "Romania": {
+            "RO": {
                 "total": 1038,
                 "total_agree": 581,
                 "total_disagree": 428,
@@ -2687,7 +2687,7 @@
                 "tend_to_disagree": 284,
                 "totally_disagree": 145
             },
-            "Slovenia": {
+            "SI": {
                 "total": 1004,
                 "total_agree": 383,
                 "total_disagree": 593,
@@ -2697,7 +2697,7 @@
                 "tend_to_disagree": 367,
                 "totally_disagree": 227
             },
-            "Slovakia": {
+            "SK": {
                 "total": 1006,
                 "total_agree": 402,
                 "total_disagree": 538,
@@ -2707,7 +2707,7 @@
                 "tend_to_disagree": 276,
                 "totally_disagree": 262
             },
-            "Finland": {
+            "FI": {
                 "total": 1000,
                 "total_agree": 862,
                 "total_disagree": 114,
@@ -2717,7 +2717,7 @@
                 "tend_to_disagree": 89,
                 "totally_disagree": 25
             },
-            "Sweden": {
+            "SE": {
                 "total": 1013,
                 "total_agree": 944,
                 "total_disagree": 52,
@@ -2731,7 +2731,7 @@
     },
     "eb102": {
         "QD2_1": {
-            "Belgium": {
+            "BE": {
                 "total": 1136,
                 "total_agree": 803,
                 "total_disagree": 287,
@@ -2741,7 +2741,7 @@
                 "tend_to_disagree": 220,
                 "totally_disagree": 67
             },
-            "Bulgaria": {
+            "BG": {
                 "total": 1019,
                 "total_agree": 451,
                 "total_disagree": 462,
@@ -2751,7 +2751,7 @@
                 "tend_to_disagree": 266,
                 "totally_disagree": 196
             },
-            "Czechia": {
+            "CZ": {
                 "total": 1048,
                 "total_agree": 664,
                 "total_disagree": 329,
@@ -2761,7 +2761,7 @@
                 "tend_to_disagree": 215,
                 "totally_disagree": 114
             },
-            "Denmark": {
+            "DK": {
                 "total": 1011,
                 "total_agree": 916,
                 "total_disagree": 73,
@@ -2771,7 +2771,7 @@
                 "tend_to_disagree": 52,
                 "totally_disagree": 22
             },
-            "Germany": {
+            "DE": {
                 "total": 1542,
                 "total_agree": 1104,
                 "total_disagree": 379,
@@ -2781,7 +2781,7 @@
                 "tend_to_disagree": 260,
                 "totally_disagree": 119
             },
-            "Estonia": {
+            "EE": {
                 "total": 1001,
                 "total_agree": 706,
                 "total_disagree": 196,
@@ -2791,7 +2791,7 @@
                 "tend_to_disagree": 108,
                 "totally_disagree": 88
             },
-            "Ireland": {
+            "IE": {
                 "total": 1006,
                 "total_agree": 837,
                 "total_disagree": 120,
@@ -2801,7 +2801,7 @@
                 "tend_to_disagree": 65,
                 "totally_disagree": 54
             },
-            "Greece": {
+            "EL": {
                 "total": 1007,
                 "total_agree": 469,
                 "total_disagree": 467,
@@ -2811,7 +2811,7 @@
                 "tend_to_disagree": 316,
                 "totally_disagree": 151
             },
-            "Spain": {
+            "ES": {
                 "total": 1006,
                 "total_agree": 652,
                 "total_disagree": 273,
@@ -2821,7 +2821,7 @@
                 "tend_to_disagree": 179,
                 "totally_disagree": 94
             },
-            "France": {
+            "FR": {
                 "total": 1007,
                 "total_agree": 640,
                 "total_disagree": 274,
@@ -2831,7 +2831,7 @@
                 "tend_to_disagree": 161,
                 "totally_disagree": 113
             },
-            "Croatia": {
+            "HR": {
                 "total": 1002,
                 "total_agree": 713,
                 "total_disagree": 245,
@@ -2841,7 +2841,7 @@
                 "tend_to_disagree": 166,
                 "totally_disagree": 79
             },
-            "Italy": {
+            "IT": {
                 "total": 1022,
                 "total_agree": 710,
                 "total_disagree": 283,
@@ -2851,7 +2851,7 @@
                 "tend_to_disagree": 201,
                 "totally_disagree": 82
             },
-            "Cyprus": {
+            "CY": {
                 "total": 501,
                 "total_agree": 176,
                 "total_disagree": 299,
@@ -2861,7 +2861,7 @@
                 "tend_to_disagree": 152,
                 "totally_disagree": 147
             },
-            "Latvia": {
+            "LV": {
                 "total": 1005,
                 "total_agree": 679,
                 "total_disagree": 231,
@@ -2871,7 +2871,7 @@
                 "tend_to_disagree": 166,
                 "totally_disagree": 65
             },
-            "Lithuania": {
+            "LT": {
                 "total": 1018,
                 "total_agree": 798,
                 "total_disagree": 160,
@@ -2881,7 +2881,7 @@
                 "tend_to_disagree": 122,
                 "totally_disagree": 38
             },
-            "Luxembourg": {
+            "LU": {
                 "total": 512,
                 "total_agree": 317,
                 "total_disagree": 145,
@@ -2891,7 +2891,7 @@
                 "tend_to_disagree": 80,
                 "totally_disagree": 65
             },
-            "Hungary": {
+            "HU": {
                 "total": 1023,
                 "total_agree": 534,
                 "total_disagree": 465,
@@ -2901,7 +2901,7 @@
                 "tend_to_disagree": 266,
                 "totally_disagree": 199
             },
-            "Malta": {
+            "MT": {
                 "total": 500,
                 "total_agree": 325,
                 "total_disagree": 141,
@@ -2911,7 +2911,7 @@
                 "tend_to_disagree": 79,
                 "totally_disagree": 62
             },
-            "Netherlands": {
+            "NL": {
                 "total": 1028,
                 "total_agree": 891,
                 "total_disagree": 121,
@@ -2921,7 +2921,7 @@
                 "tend_to_disagree": 82,
                 "totally_disagree": 39
             },
-            "Austria": {
+            "AT": {
                 "total": 1009,
                 "total_agree": 698,
                 "total_disagree": 275,
@@ -2931,7 +2931,7 @@
                 "tend_to_disagree": 161,
                 "totally_disagree": 113
             },
-            "Poland": {
+            "PL": {
                 "total": 1007,
                 "total_agree": 867,
                 "total_disagree": 122,
@@ -2941,7 +2941,7 @@
                 "tend_to_disagree": 92,
                 "totally_disagree": 30
             },
-            "Portugal": {
+            "PT": {
                 "total": 1040,
                 "total_agree": 947,
                 "total_disagree": 37,
@@ -2951,7 +2951,7 @@
                 "tend_to_disagree": 32,
                 "totally_disagree": 5
             },
-            "Romania": {
+            "RO": {
                 "total": 1044,
                 "total_agree": 688,
                 "total_disagree": 297,
@@ -2961,7 +2961,7 @@
                 "tend_to_disagree": 202,
                 "totally_disagree": 94
             },
-            "Slovenia": {
+            "SI": {
                 "total": 1004,
                 "total_agree": 500,
                 "total_disagree": 460,
@@ -2971,7 +2971,7 @@
                 "tend_to_disagree": 266,
                 "totally_disagree": 195
             },
-            "Slovakia": {
+            "SK": {
                 "total": 1005,
                 "total_agree": 613,
                 "total_disagree": 340,
@@ -2981,7 +2981,7 @@
                 "tend_to_disagree": 245,
                 "totally_disagree": 95
             },
-            "Finland": {
+            "FI": {
                 "total": 1000,
                 "total_agree": 887,
                 "total_disagree": 81,
@@ -2991,7 +2991,7 @@
                 "tend_to_disagree": 65,
                 "totally_disagree": 16
             },
-            "Sweden": {
+            "SE": {
                 "total": 1022,
                 "total_agree": 974,
                 "total_disagree": 39,
@@ -3003,7 +3003,7 @@
             }
         },
         "QD2_2": {
-            "Belgium": {
+            "BE": {
                 "total": 1136,
                 "total_agree": 651,
                 "total_disagree": 441,
@@ -3013,7 +3013,7 @@
                 "tend_to_disagree": 291,
                 "totally_disagree": 150
             },
-            "Bulgaria": {
+            "BG": {
                 "total": 1019,
                 "total_agree": 266,
                 "total_disagree": 692,
@@ -3023,7 +3023,7 @@
                 "tend_to_disagree": 338,
                 "totally_disagree": 354
             },
-            "Czechia": {
+            "CZ": {
                 "total": 1048,
                 "total_agree": 423,
                 "total_disagree": 595,
@@ -3033,7 +3033,7 @@
                 "tend_to_disagree": 307,
                 "totally_disagree": 288
             },
-            "Denmark": {
+            "DK": {
                 "total": 1011,
                 "total_agree": 885,
                 "total_disagree": 96,
@@ -3043,7 +3043,7 @@
                 "tend_to_disagree": 63,
                 "totally_disagree": 33
             },
-            "Germany": {
+            "DE": {
                 "total": 1542,
                 "total_agree": 928,
                 "total_disagree": 564,
@@ -3053,7 +3053,7 @@
                 "tend_to_disagree": 340,
                 "totally_disagree": 224
             },
-            "Estonia": {
+            "EE": {
                 "total": 1001,
                 "total_agree": 636,
                 "total_disagree": 296,
@@ -3063,7 +3063,7 @@
                 "tend_to_disagree": 179,
                 "totally_disagree": 118
             },
-            "Ireland": {
+            "IE": {
                 "total": 1006,
                 "total_agree": 651,
                 "total_disagree": 269,
@@ -3073,7 +3073,7 @@
                 "tend_to_disagree": 171,
                 "totally_disagree": 98
             },
-            "Greece": {
+            "EL": {
                 "total": 1007,
                 "total_agree": 278,
                 "total_disagree": 674,
@@ -3083,7 +3083,7 @@
                 "tend_to_disagree": 297,
                 "totally_disagree": 377
             },
-            "Spain": {
+            "ES": {
                 "total": 1006,
                 "total_agree": 501,
                 "total_disagree": 427,
@@ -3093,7 +3093,7 @@
                 "tend_to_disagree": 256,
                 "totally_disagree": 171
             },
-            "France": {
+            "FR": {
                 "total": 1007,
                 "total_agree": 542,
                 "total_disagree": 362,
@@ -3103,7 +3103,7 @@
                 "tend_to_disagree": 197,
                 "totally_disagree": 165
             },
-            "Croatia": {
+            "HR": {
                 "total": 1002,
                 "total_agree": 624,
                 "total_disagree": 322,
@@ -3113,7 +3113,7 @@
                 "tend_to_disagree": 207,
                 "totally_disagree": 115
             },
-            "Italy": {
+            "IT": {
                 "total": 1022,
                 "total_agree": 514,
                 "total_disagree": 478,
@@ -3123,7 +3123,7 @@
                 "tend_to_disagree": 309,
                 "totally_disagree": 169
             },
-            "Cyprus": {
+            "CY": {
                 "total": 501,
                 "total_agree": 112,
                 "total_disagree": 372,
@@ -3133,7 +3133,7 @@
                 "tend_to_disagree": 156,
                 "totally_disagree": 217
             },
-            "Latvia": {
+            "LV": {
                 "total": 1005,
                 "total_agree": 700,
                 "total_disagree": 240,
@@ -3143,7 +3143,7 @@
                 "tend_to_disagree": 155,
                 "totally_disagree": 85
             },
-            "Lithuania": {
+            "LT": {
                 "total": 1018,
                 "total_agree": 778,
                 "total_disagree": 198,
@@ -3153,7 +3153,7 @@
                 "tend_to_disagree": 140,
                 "totally_disagree": 58
             },
-            "Luxembourg": {
+            "LU": {
                 "total": 512,
                 "total_agree": 243,
                 "total_disagree": 234,
@@ -3163,7 +3163,7 @@
                 "tend_to_disagree": 111,
                 "totally_disagree": 123
             },
-            "Hungary": {
+            "HU": {
                 "total": 1023,
                 "total_agree": 389,
                 "total_disagree": 602,
@@ -3173,7 +3173,7 @@
                 "tend_to_disagree": 277,
                 "totally_disagree": 325
             },
-            "Malta": {
+            "MT": {
                 "total": 500,
                 "total_agree": 233,
                 "total_disagree": 246,
@@ -3183,7 +3183,7 @@
                 "tend_to_disagree": 128,
                 "totally_disagree": 119
             },
-            "Netherlands": {
+            "NL": {
                 "total": 1028,
                 "total_agree": 850,
                 "total_disagree": 167,
@@ -3193,7 +3193,7 @@
                 "tend_to_disagree": 102,
                 "totally_disagree": 65
             },
-            "Austria": {
+            "AT": {
                 "total": 1009,
                 "total_agree": 527,
                 "total_disagree": 445,
@@ -3203,7 +3203,7 @@
                 "tend_to_disagree": 184,
                 "totally_disagree": 261
             },
-            "Poland": {
+            "PL": {
                 "total": 1007,
                 "total_agree": 805,
                 "total_disagree": 172,
@@ -3213,7 +3213,7 @@
                 "tend_to_disagree": 119,
                 "totally_disagree": 53
             },
-            "Portugal": {
+            "PT": {
                 "total": 1040,
                 "total_agree": 853,
                 "total_disagree": 122,
@@ -3223,7 +3223,7 @@
                 "tend_to_disagree": 95,
                 "totally_disagree": 27
             },
-            "Romania": {
+            "RO": {
                 "total": 1044,
                 "total_agree": 506,
                 "total_disagree": 493,
@@ -3233,7 +3233,7 @@
                 "tend_to_disagree": 304,
                 "totally_disagree": 189
             },
-            "Slovenia": {
+            "SI": {
                 "total": 1004,
                 "total_agree": 369,
                 "total_disagree": 616,
@@ -3243,7 +3243,7 @@
                 "tend_to_disagree": 322,
                 "totally_disagree": 294
             },
-            "Slovakia": {
+            "SK": {
                 "total": 1005,
                 "total_agree": 380,
                 "total_disagree": 586,
@@ -3253,7 +3253,7 @@
                 "tend_to_disagree": 298,
                 "totally_disagree": 288
             },
-            "Finland": {
+            "FI": {
                 "total": 1000,
                 "total_agree": 879,
                 "total_disagree": 80,
@@ -3263,7 +3263,7 @@
                 "tend_to_disagree": 52,
                 "totally_disagree": 28
             },
-            "Sweden": {
+            "SE": {
                 "total": 1022,
                 "total_agree": 940,
                 "total_disagree": 67,
@@ -3277,7 +3277,7 @@
     },
     "eb103": {
         "QD2_1": {
-            "Belgium": {
+            "BE": {
                 "total": 1009,
                 "total_agree": 752,
                 "total_disagree": 231,
@@ -3287,7 +3287,7 @@
                 "tend_to_disagree": 158,
                 "totally_disagree": 73
             },
-            "Bulgaria": {
+            "BG": {
                 "total": 1036,
                 "total_agree": 465,
                 "total_disagree": 449,
@@ -3297,7 +3297,7 @@
                 "tend_to_disagree": 254,
                 "totally_disagree": 195
             },
-            "Czechia": {
+            "CZ": {
                 "total": 1030,
                 "total_agree": 651,
                 "total_disagree": 332,
@@ -3307,7 +3307,7 @@
                 "tend_to_disagree": 242,
                 "totally_disagree": 90
             },
-            "Denmark": {
+            "DK": {
                 "total": 991,
                 "total_agree": 882,
                 "total_disagree": 64,
@@ -3317,7 +3317,7 @@
                 "tend_to_disagree": 46,
                 "totally_disagree": 18
             },
-            "Germany": {
+            "DE": {
                 "total": 1506,
                 "total_agree": 1137,
                 "total_disagree": 324,
@@ -3327,7 +3327,7 @@
                 "tend_to_disagree": 215,
                 "totally_disagree": 109
             },
-            "Estonia": {
+            "EE": {
                 "total": 1002,
                 "total_agree": 731,
                 "total_disagree": 202,
@@ -3337,7 +3337,7 @@
                 "tend_to_disagree": 127,
                 "totally_disagree": 75
             },
-            "Ireland": {
+            "IE": {
                 "total": 1002,
                 "total_agree": 874,
                 "total_disagree": 71,
@@ -3347,7 +3347,7 @@
                 "tend_to_disagree": 41,
                 "totally_disagree": 30
             },
-            "Greece": {
+            "EL": {
                 "total": 1015,
                 "total_agree": 504,
                 "total_disagree": 421,
@@ -3357,7 +3357,7 @@
                 "tend_to_disagree": 249,
                 "totally_disagree": 172
             },
-            "Spain": {
+            "ES": {
                 "total": 1007,
                 "total_agree": 631,
                 "total_disagree": 261,
@@ -3367,7 +3367,7 @@
                 "tend_to_disagree": 191,
                 "totally_disagree": 70
             },
-            "France": {
+            "FR": {
                 "total": 1001,
                 "total_agree": 706,
                 "total_disagree": 221,
@@ -3377,7 +3377,7 @@
                 "tend_to_disagree": 138,
                 "totally_disagree": 83
             },
-            "Croatia": {
+            "HR": {
                 "total": 1020,
                 "total_agree": 748,
                 "total_disagree": 226,
@@ -3387,7 +3387,7 @@
                 "tend_to_disagree": 173,
                 "totally_disagree": 53
             },
-            "Italy": {
+            "IT": {
                 "total": 1033,
                 "total_agree": 687,
                 "total_disagree": 298,
@@ -3397,7 +3397,7 @@
                 "tend_to_disagree": 228,
                 "totally_disagree": 70
             },
-            "Cyprus": {
+            "CY": {
                 "total": 504,
                 "total_agree": 195,
                 "total_disagree": 269,
@@ -3407,7 +3407,7 @@
                 "tend_to_disagree": 131,
                 "totally_disagree": 138
             },
-            "Latvia": {
+            "LV": {
                 "total": 1013,
                 "total_agree": 707,
                 "total_disagree": 219,
@@ -3417,7 +3417,7 @@
                 "tend_to_disagree": 143,
                 "totally_disagree": 76
             },
-            "Lithuania": {
+            "LT": {
                 "total": 1007,
                 "total_agree": 833,
                 "total_disagree": 112,
@@ -3427,7 +3427,7 @@
                 "tend_to_disagree": 77,
                 "totally_disagree": 35
             },
-            "Luxembourg": {
+            "LU": {
                 "total": 508,
                 "total_agree": 335,
                 "total_disagree": 132,
@@ -3437,7 +3437,7 @@
                 "tend_to_disagree": 82,
                 "totally_disagree": 50
             },
-            "Hungary": {
+            "HU": {
                 "total": 1024,
                 "total_agree": 519,
                 "total_disagree": 459,
@@ -3447,7 +3447,7 @@
                 "tend_to_disagree": 298,
                 "totally_disagree": 161
             },
-            "Malta": {
+            "MT": {
                 "total": 500,
                 "total_agree": 319,
                 "total_disagree": 141,
@@ -3457,7 +3457,7 @@
                 "tend_to_disagree": 85,
                 "totally_disagree": 56
             },
-            "Netherlands": {
+            "NL": {
                 "total": 1020,
                 "total_agree": 858,
                 "total_disagree": 149,
@@ -3467,7 +3467,7 @@
                 "tend_to_disagree": 114,
                 "totally_disagree": 35
             },
-            "Austria": {
+            "AT": {
                 "total": 1009,
                 "total_agree": 719,
                 "total_disagree": 257,
@@ -3477,7 +3477,7 @@
                 "tend_to_disagree": 152,
                 "totally_disagree": 105
             },
-            "Poland": {
+            "PL": {
                 "total": 1019,
                 "total_agree": 842,
                 "total_disagree": 154,
@@ -3487,7 +3487,7 @@
                 "tend_to_disagree": 120,
                 "totally_disagree": 34
             },
-            "Portugal": {
+            "PT": {
                 "total": 1037,
                 "total_agree": 922,
                 "total_disagree": 54,
@@ -3497,7 +3497,7 @@
                 "tend_to_disagree": 43,
                 "totally_disagree": 11
             },
-            "Romania": {
+            "RO": {
                 "total": 1039,
                 "total_agree": 732,
                 "total_disagree": 255,
@@ -3507,7 +3507,7 @@
                 "tend_to_disagree": 177,
                 "totally_disagree": 78
             },
-            "Slovenia": {
+            "SI": {
                 "total": 1011,
                 "total_agree": 547,
                 "total_disagree": 420,
@@ -3517,7 +3517,7 @@
                 "tend_to_disagree": 250,
                 "totally_disagree": 170
             },
-            "Slovakia": {
+            "SK": {
                 "total": 1005,
                 "total_agree": 617,
                 "total_disagree": 346,
@@ -3527,7 +3527,7 @@
                 "tend_to_disagree": 217,
                 "totally_disagree": 129
             },
-            "Finland": {
+            "FI": {
                 "total": 1007,
                 "total_agree": 901,
                 "total_disagree": 93,
@@ -3537,7 +3537,7 @@
                 "tend_to_disagree": 69,
                 "totally_disagree": 24
             },
-            "Sweden": {
+            "SE": {
                 "total": 1019,
                 "total_agree": 961,
                 "total_disagree": 49,
@@ -3549,7 +3549,7 @@
             }
         },
         "QD2_2": {
-            "Belgium": {
+            "BE": {
                 "total": 1009,
                 "total_agree": 625,
                 "total_disagree": 357,
@@ -3559,7 +3559,7 @@
                 "tend_to_disagree": 225,
                 "totally_disagree": 132
             },
-            "Bulgaria": {
+            "BG": {
                 "total": 1036,
                 "total_agree": 333,
                 "total_disagree": 640,
@@ -3569,7 +3569,7 @@
                 "tend_to_disagree": 276,
                 "totally_disagree": 364
             },
-            "Czechia": {
+            "CZ": {
                 "total": 1030,
                 "total_agree": 385,
                 "total_disagree": 607,
@@ -3579,7 +3579,7 @@
                 "tend_to_disagree": 340,
                 "totally_disagree": 267
             },
-            "Denmark": {
+            "DK": {
                 "total": 991,
                 "total_agree": 856,
                 "total_disagree": 98,
@@ -3589,7 +3589,7 @@
                 "tend_to_disagree": 68,
                 "totally_disagree": 30
             },
-            "Germany": {
+            "DE": {
                 "total": 1506,
                 "total_agree": 951,
                 "total_disagree": 517,
@@ -3599,7 +3599,7 @@
                 "tend_to_disagree": 286,
                 "totally_disagree": 231
             },
-            "Estonia": {
+            "EE": {
                 "total": 1002,
                 "total_agree": 687,
                 "total_disagree": 246,
@@ -3609,7 +3609,7 @@
                 "tend_to_disagree": 132,
                 "totally_disagree": 114
             },
-            "Ireland": {
+            "IE": {
                 "total": 1002,
                 "total_agree": 685,
                 "total_disagree": 246,
@@ -3619,7 +3619,7 @@
                 "tend_to_disagree": 159,
                 "totally_disagree": 87
             },
-            "Greece": {
+            "EL": {
                 "total": 1015,
                 "total_agree": 358,
                 "total_disagree": 592,
@@ -3629,7 +3629,7 @@
                 "tend_to_disagree": 258,
                 "totally_disagree": 334
             },
-            "Spain": {
+            "ES": {
                 "total": 1007,
                 "total_agree": 511,
                 "total_disagree": 403,
@@ -3639,7 +3639,7 @@
                 "tend_to_disagree": 248,
                 "totally_disagree": 155
             },
-            "France": {
+            "FR": {
                 "total": 1001,
                 "total_agree": 542,
                 "total_disagree": 371,
@@ -3649,7 +3649,7 @@
                 "tend_to_disagree": 215,
                 "totally_disagree": 156
             },
-            "Croatia": {
+            "HR": {
                 "total": 1020,
                 "total_agree": 702,
                 "total_disagree": 266,
@@ -3659,7 +3659,7 @@
                 "tend_to_disagree": 190,
                 "totally_disagree": 76
             },
-            "Italy": {
+            "IT": {
                 "total": 1033,
                 "total_agree": 502,
                 "total_disagree": 510,
@@ -3669,7 +3669,7 @@
                 "tend_to_disagree": 310,
                 "totally_disagree": 200
             },
-            "Cyprus": {
+            "CY": {
                 "total": 504,
                 "total_agree": 138,
                 "total_disagree": 340,
@@ -3679,7 +3679,7 @@
                 "tend_to_disagree": 139,
                 "totally_disagree": 201
             },
-            "Latvia": {
+            "LV": {
                 "total": 1013,
                 "total_agree": 702,
                 "total_disagree": 235,
@@ -3689,7 +3689,7 @@
                 "tend_to_disagree": 133,
                 "totally_disagree": 102
             },
-            "Lithuania": {
+            "LT": {
                 "total": 1007,
                 "total_agree": 801,
                 "total_disagree": 155,
@@ -3699,7 +3699,7 @@
                 "tend_to_disagree": 99,
                 "totally_disagree": 56
             },
-            "Luxembourg": {
+            "LU": {
                 "total": 508,
                 "total_agree": 300,
                 "total_disagree": 189,
@@ -3709,7 +3709,7 @@
                 "tend_to_disagree": 92,
                 "totally_disagree": 97
             },
-            "Hungary": {
+            "HU": {
                 "total": 1024,
                 "total_agree": 411,
                 "total_disagree": 567,
@@ -3719,7 +3719,7 @@
                 "tend_to_disagree": 297,
                 "totally_disagree": 270
             },
-            "Malta": {
+            "MT": {
                 "total": 500,
                 "total_agree": 257,
                 "total_disagree": 215,
@@ -3729,7 +3729,7 @@
                 "tend_to_disagree": 109,
                 "totally_disagree": 106
             },
-            "Netherlands": {
+            "NL": {
                 "total": 1020,
                 "total_agree": 819,
                 "total_disagree": 194,
@@ -3739,7 +3739,7 @@
                 "tend_to_disagree": 147,
                 "totally_disagree": 47
             },
-            "Austria": {
+            "AT": {
                 "total": 1009,
                 "total_agree": 562,
                 "total_disagree": 427,
@@ -3749,7 +3749,7 @@
                 "tend_to_disagree": 175,
                 "totally_disagree": 252
             },
-            "Poland": {
+            "PL": {
                 "total": 1019,
                 "total_agree": 715,
                 "total_disagree": 265,
@@ -3759,7 +3759,7 @@
                 "tend_to_disagree": 192,
                 "totally_disagree": 73
             },
-            "Portugal": {
+            "PT": {
                 "total": 1037,
                 "total_agree": 800,
                 "total_disagree": 187,
@@ -3769,7 +3769,7 @@
                 "tend_to_disagree": 115,
                 "totally_disagree": 72
             },
-            "Romania": {
+            "RO": {
                 "total": 1039,
                 "total_agree": 530,
                 "total_disagree": 456,
@@ -3779,7 +3779,7 @@
                 "tend_to_disagree": 269,
                 "totally_disagree": 187
             },
-            "Slovenia": {
+            "SI": {
                 "total": 1011,
                 "total_agree": 421,
                 "total_disagree": 556,
@@ -3789,7 +3789,7 @@
                 "tend_to_disagree": 274,
                 "totally_disagree": 282
             },
-            "Slovakia": {
+            "SK": {
                 "total": 1005,
                 "total_agree": 456,
                 "total_disagree": 516,
@@ -3799,7 +3799,7 @@
                 "tend_to_disagree": 234,
                 "totally_disagree": 282
             },
-            "Finland": {
+            "FI": {
                 "total": 1007,
                 "total_agree": 909,
                 "total_disagree": 85,
@@ -3809,7 +3809,7 @@
                 "tend_to_disagree": 67,
                 "totally_disagree": 18
             },
-            "Sweden": {
+            "SE": {
                 "total": 1019,
                 "total_agree": 959,
                 "total_disagree": 49,
@@ -3823,7 +3823,7 @@
     },
     "eb104": {
         "QD2_1": {
-            "Belgium": {
+            "BE": {
                 "total": 1013,
                 "total_agree": 762,
                 "total_disagree": 231,
@@ -3833,7 +3833,7 @@
                 "tend_to_disagree": 163,
                 "totally_disagree": 68
             },
-            "Bulgaria": {
+            "BG": {
                 "total": 1030,
                 "total_agree": 406,
                 "total_disagree": 471,
@@ -3843,7 +3843,7 @@
                 "tend_to_disagree": 238,
                 "totally_disagree": 233
             },
-            "Czechia": {
+            "CZ": {
                 "total": 1102,
                 "total_agree": 722,
                 "total_disagree": 338,
@@ -3853,7 +3853,7 @@
                 "tend_to_disagree": 254,
                 "totally_disagree": 84
             },
-            "Denmark": {
+            "DK": {
                 "total": 1006,
                 "total_agree": 898,
                 "total_disagree": 70,
@@ -3863,7 +3863,7 @@
                 "tend_to_disagree": 54,
                 "totally_disagree": 16
             },
-            "Germany": {
+            "DE": {
                 "total": 1516,
                 "total_agree": 1140,
                 "total_disagree": 305,
@@ -3873,7 +3873,7 @@
                 "tend_to_disagree": 174,
                 "totally_disagree": 131
             },
-            "Estonia": {
+            "EE": {
                 "total": 1002,
                 "total_agree": 682,
                 "total_disagree": 241,
@@ -3883,7 +3883,7 @@
                 "tend_to_disagree": 149,
                 "totally_disagree": 92
             },
-            "Ireland": {
+            "IE": {
                 "total": 1002,
                 "total_agree": 883,
                 "total_disagree": 69,
@@ -3893,7 +3893,7 @@
                 "tend_to_disagree": 50,
                 "totally_disagree": 19
             },
-            "Greece": {
+            "EL": {
                 "total": 1010,
                 "total_agree": 484,
                 "total_disagree": 451,
@@ -3903,7 +3903,7 @@
                 "tend_to_disagree": 287,
                 "totally_disagree": 164
             },
-            "Spain": {
+            "ES": {
                 "total": 1003,
                 "total_agree": 733,
                 "total_disagree": 180,
@@ -3913,7 +3913,7 @@
                 "tend_to_disagree": 126,
                 "totally_disagree": 54
             },
-            "France": {
+            "FR": {
                 "total": 1001,
                 "total_agree": 715,
                 "total_disagree": 212,
@@ -3923,7 +3923,7 @@
                 "tend_to_disagree": 128,
                 "totally_disagree": 84
             },
-            "Croatia": {
+            "HR": {
                 "total": 1004,
                 "total_agree": 757,
                 "total_disagree": 214,
@@ -3933,7 +3933,7 @@
                 "tend_to_disagree": 166,
                 "totally_disagree": 48
             },
-            "Italy": {
+            "IT": {
                 "total": 1027,
                 "total_agree": 694,
                 "total_disagree": 280,
@@ -3943,7 +3943,7 @@
                 "tend_to_disagree": 203,
                 "totally_disagree": 77
             },
-            "Cyprus": {
+            "CY": {
                 "total": 504,
                 "total_agree": 150,
                 "total_disagree": 314,
@@ -3953,7 +3953,7 @@
                 "tend_to_disagree": 165,
                 "totally_disagree": 149
             },
-            "Latvia": {
+            "LV": {
                 "total": 1002,
                 "total_agree": 713,
                 "total_disagree": 193,
@@ -3963,7 +3963,7 @@
                 "tend_to_disagree": 122,
                 "totally_disagree": 71
             },
-            "Lithuania": {
+            "LT": {
                 "total": 1006,
                 "total_agree": 821,
                 "total_disagree": 132,
@@ -3973,7 +3973,7 @@
                 "tend_to_disagree": 99,
                 "totally_disagree": 33
             },
-            "Luxembourg": {
+            "LU": {
                 "total": 504,
                 "total_agree": 377,
                 "total_disagree": 91,
@@ -3983,7 +3983,7 @@
                 "tend_to_disagree": 63,
                 "totally_disagree": 28
             },
-            "Hungary": {
+            "HU": {
                 "total": 1015,
                 "total_agree": 502,
                 "total_disagree": 475,
@@ -3993,7 +3993,7 @@
                 "tend_to_disagree": 285,
                 "totally_disagree": 190
             },
-            "Malta": {
+            "MT": {
                 "total": 508,
                 "total_agree": 378,
                 "total_disagree": 111,
@@ -4003,7 +4003,7 @@
                 "tend_to_disagree": 72,
                 "totally_disagree": 39
             },
-            "Netherlands": {
+            "NL": {
                 "total": 1009,
                 "total_agree": 847,
                 "total_disagree": 137,
@@ -4013,7 +4013,7 @@
                 "tend_to_disagree": 94,
                 "totally_disagree": 43
             },
-            "Austria": {
+            "AT": {
                 "total": 1003,
                 "total_agree": 692,
                 "total_disagree": 273,
@@ -4023,7 +4023,7 @@
                 "tend_to_disagree": 131,
                 "totally_disagree": 142
             },
-            "Poland": {
+            "PL": {
                 "total": 1031,
                 "total_agree": 883,
                 "total_disagree": 126,
@@ -4033,7 +4033,7 @@
                 "tend_to_disagree": 98,
                 "totally_disagree": 28
             },
-            "Portugal": {
+            "PT": {
                 "total": 1033,
                 "total_agree": 913,
                 "total_disagree": 45,
@@ -4043,7 +4043,7 @@
                 "tend_to_disagree": 40,
                 "totally_disagree": 5
             },
-            "Romania": {
+            "RO": {
                 "total": 1051,
                 "total_agree": 630,
                 "total_disagree": 344,
@@ -4053,7 +4053,7 @@
                 "tend_to_disagree": 245,
                 "totally_disagree": 99
             },
-            "Slovenia": {
+            "SI": {
                 "total": 1003,
                 "total_agree": 582,
                 "total_disagree": 395,
@@ -4063,7 +4063,7 @@
                 "tend_to_disagree": 236,
                 "totally_disagree": 159
             },
-            "Slovakia": {
+            "SK": {
                 "total": 1005,
                 "total_agree": 684,
                 "total_disagree": 282,
@@ -4073,7 +4073,7 @@
                 "tend_to_disagree": 157,
                 "totally_disagree": 125
             },
-            "Finland": {
+            "FI": {
                 "total": 1012,
                 "total_agree": 896,
                 "total_disagree": 77,
@@ -4083,7 +4083,7 @@
                 "tend_to_disagree": 53,
                 "totally_disagree": 24
             },
-            "Sweden": {
+            "SE": {
                 "total": 1043,
                 "total_agree": 948,
                 "total_disagree": 78,
@@ -4095,7 +4095,7 @@
             }
         },
         "QD2_2": {
-            "Belgium": {
+            "BE": {
                 "total": 1013,
                 "total_agree": 604,
                 "total_disagree": 380,
@@ -4105,7 +4105,7 @@
                 "tend_to_disagree": 260,
                 "totally_disagree": 120
             },
-            "Bulgaria": {
+            "BG": {
                 "total": 1030,
                 "total_agree": 274,
                 "total_disagree": 683,
@@ -4115,7 +4115,7 @@
                 "tend_to_disagree": 281,
                 "totally_disagree": 402
             },
-            "Czechia": {
+            "CZ": {
                 "total": 1102,
                 "total_agree": 368,
                 "total_disagree": 695,
@@ -4125,7 +4125,7 @@
                 "tend_to_disagree": 353,
                 "totally_disagree": 342
             },
-            "Denmark": {
+            "DK": {
                 "total": 1006,
                 "total_agree": 894,
                 "total_disagree": 85,
@@ -4135,7 +4135,7 @@
                 "tend_to_disagree": 61,
                 "totally_disagree": 24
             },
-            "Germany": {
+            "DE": {
                 "total": 1516,
                 "total_agree": 960,
                 "total_disagree": 505,
@@ -4145,7 +4145,7 @@
                 "tend_to_disagree": 304,
                 "totally_disagree": 201
             },
-            "Estonia": {
+            "EE": {
                 "total": 1002,
                 "total_agree": 638,
                 "total_disagree": 310,
@@ -4155,7 +4155,7 @@
                 "tend_to_disagree": 194,
                 "totally_disagree": 116
             },
-            "Ireland": {
+            "IE": {
                 "total": 1002,
                 "total_agree": 692,
                 "total_disagree": 238,
@@ -4165,7 +4165,7 @@
                 "tend_to_disagree": 159,
                 "totally_disagree": 79
             },
-            "Greece": {
+            "EL": {
                 "total": 1010,
                 "total_agree": 279,
                 "total_disagree": 699,
@@ -4175,7 +4175,7 @@
                 "tend_to_disagree": 270,
                 "totally_disagree": 429
             },
-            "Spain": {
+            "ES": {
                 "total": 1003,
                 "total_agree": 498,
                 "total_disagree": 432,
@@ -4185,7 +4185,7 @@
                 "tend_to_disagree": 258,
                 "totally_disagree": 174
             },
-            "France": {
+            "FR": {
                 "total": 1001,
                 "total_agree": 525,
                 "total_disagree": 396,
@@ -4195,7 +4195,7 @@
                 "tend_to_disagree": 232,
                 "totally_disagree": 164
             },
-            "Croatia": {
+            "HR": {
                 "total": 1004,
                 "total_agree": 692,
                 "total_disagree": 293,
@@ -4205,7 +4205,7 @@
                 "tend_to_disagree": 209,
                 "totally_disagree": 84
             },
-            "Italy": {
+            "IT": {
                 "total": 1027,
                 "total_agree": 497,
                 "total_disagree": 504,
@@ -4215,7 +4215,7 @@
                 "tend_to_disagree": 280,
                 "totally_disagree": 224
             },
-            "Cyprus": {
+            "CY": {
                 "total": 504,
                 "total_agree": 105,
                 "total_disagree": 373,
@@ -4225,7 +4225,7 @@
                 "tend_to_disagree": 147,
                 "totally_disagree": 226
             },
-            "Latvia": {
+            "LV": {
                 "total": 1002,
                 "total_agree": 677,
                 "total_disagree": 257,
@@ -4235,7 +4235,7 @@
                 "tend_to_disagree": 168,
                 "totally_disagree": 89
             },
-            "Lithuania": {
+            "LT": {
                 "total": 1006,
                 "total_agree": 777,
                 "total_disagree": 194,
@@ -4245,7 +4245,7 @@
                 "tend_to_disagree": 132,
                 "totally_disagree": 62
             },
-            "Luxembourg": {
+            "LU": {
                 "total": 504,
                 "total_agree": 300,
                 "total_disagree": 187,
@@ -4255,7 +4255,7 @@
                 "tend_to_disagree": 101,
                 "totally_disagree": 86
             },
-            "Hungary": {
+            "HU": {
                 "total": 1015,
                 "total_agree": 410,
                 "total_disagree": 583,
@@ -4265,7 +4265,7 @@
                 "tend_to_disagree": 325,
                 "totally_disagree": 258
             },
-            "Malta": {
+            "MT": {
                 "total": 508,
                 "total_agree": 267,
                 "total_disagree": 231,
@@ -4275,7 +4275,7 @@
                 "tend_to_disagree": 144,
                 "totally_disagree": 87
             },
-            "Netherlands": {
+            "NL": {
                 "total": 1009,
                 "total_agree": 797,
                 "total_disagree": 201,
@@ -4285,7 +4285,7 @@
                 "tend_to_disagree": 128,
                 "totally_disagree": 73
             },
-            "Austria": {
+            "AT": {
                 "total": 1003,
                 "total_agree": 547,
                 "total_disagree": 419,
@@ -4295,7 +4295,7 @@
                 "tend_to_disagree": 146,
                 "totally_disagree": 273
             },
-            "Poland": {
+            "PL": {
                 "total": 1031,
                 "total_agree": 768,
                 "total_disagree": 232,
@@ -4305,7 +4305,7 @@
                 "tend_to_disagree": 160,
                 "totally_disagree": 72
             },
-            "Portugal": {
+            "PT": {
                 "total": 1033,
                 "total_agree": 809,
                 "total_disagree": 154,
@@ -4315,7 +4315,7 @@
                 "tend_to_disagree": 108,
                 "totally_disagree": 46
             },
-            "Romania": {
+            "RO": {
                 "total": 1051,
                 "total_agree": 461,
                 "total_disagree": 551,
@@ -4325,7 +4325,7 @@
                 "tend_to_disagree": 309,
                 "totally_disagree": 242
             },
-            "Slovenia": {
+            "SI": {
                 "total": 1003,
                 "total_agree": 425,
                 "total_disagree": 552,
@@ -4335,7 +4335,7 @@
                 "tend_to_disagree": 295,
                 "totally_disagree": 257
             },
-            "Slovakia": {
+            "SK": {
                 "total": 1005,
                 "total_agree": 441,
                 "total_disagree": 543,
@@ -4345,7 +4345,7 @@
                 "tend_to_disagree": 257,
                 "totally_disagree": 286
             },
-            "Finland": {
+            "FI": {
                 "total": 1012,
                 "total_agree": 895,
                 "total_disagree": 96,
@@ -4355,7 +4355,7 @@
                 "tend_to_disagree": 69,
                 "totally_disagree": 27
             },
-            "Sweden": {
+            "SE": {
                 "total": 1043,
                 "total_agree": 968,
                 "total_disagree": 67,
@@ -4369,7 +4369,7 @@
     },
     "eb105": {
         "QD2_1": {
-            "Belgium": {
+            "BE": {
                 "total": 1014,
                 "total_agree": 743,
                 "total_disagree": 235,
@@ -4379,7 +4379,7 @@
                 "tend_to_disagree": 155,
                 "totally_disagree": 80
             },
-            "Bulgaria": {
+            "BG": {
                 "total": 1015,
                 "total_agree": 426,
                 "total_disagree": 453,
@@ -4389,7 +4389,7 @@
                 "tend_to_disagree": 268,
                 "totally_disagree": 185
             },
-            "Czechia": {
+            "CZ": {
                 "total": 1036,
                 "total_agree": 668,
                 "total_disagree": 316,
@@ -4399,7 +4399,7 @@
                 "tend_to_disagree": 221,
                 "totally_disagree": 95
             },
-            "Denmark": {
+            "DK": {
                 "total": 1001,
                 "total_agree": 910,
                 "total_disagree": 53,
@@ -4409,7 +4409,7 @@
                 "tend_to_disagree": 37,
                 "totally_disagree": 16
             },
-            "Germany": {
+            "DE": {
                 "total": 1515,
                 "total_agree": 1024,
                 "total_disagree": 355,
@@ -4419,7 +4419,7 @@
                 "tend_to_disagree": 254,
                 "totally_disagree": 101
             },
-            "Estonia": {
+            "EE": {
                 "total": 1000,
                 "total_agree": 731,
                 "total_disagree": 199,
@@ -4429,7 +4429,7 @@
                 "tend_to_disagree": 114,
                 "totally_disagree": 85
             },
-            "Ireland": {
+            "IE": {
                 "total": 1005,
                 "total_agree": 858,
                 "total_disagree": 87,
@@ -4439,7 +4439,7 @@
                 "tend_to_disagree": 69,
                 "totally_disagree": 18
             },
-            "Greece": {
+            "EL": {
                 "total": 1001,
                 "total_agree": 398,
                 "total_disagree": 526,
@@ -4449,7 +4449,7 @@
                 "tend_to_disagree": 327,
                 "totally_disagree": 199
             },
-            "Spain": {
+            "ES": {
                 "total": 1005,
                 "total_agree": 704,
                 "total_disagree": 204,
@@ -4459,7 +4459,7 @@
                 "tend_to_disagree": 153,
                 "totally_disagree": 51
             },
-            "France": {
+            "FR": {
                 "total": 1024,
                 "total_agree": 685,
                 "total_disagree": 230,
@@ -4469,7 +4469,7 @@
                 "tend_to_disagree": 137,
                 "totally_disagree": 93
             },
-            "Croatia": {
+            "HR": {
                 "total": 1002,
                 "total_agree": 749,
                 "total_disagree": 188,
@@ -4479,7 +4479,7 @@
                 "tend_to_disagree": 150,
                 "totally_disagree": 38
             },
-            "Italy": {
+            "IT": {
                 "total": 1027,
                 "total_agree": 684,
                 "total_disagree": 281,
@@ -4489,7 +4489,7 @@
                 "tend_to_disagree": 210,
                 "totally_disagree": 71
             },
-            "Cyprus": {
+            "CY": {
                 "total": 506,
                 "total_agree": 153,
                 "total_disagree": 314,
@@ -4499,7 +4499,7 @@
                 "tend_to_disagree": 149,
                 "totally_disagree": 165
             },
-            "Latvia": {
+            "LV": {
                 "total": 1006,
                 "total_agree": 685,
                 "total_disagree": 224,
@@ -4509,7 +4509,7 @@
                 "tend_to_disagree": 142,
                 "totally_disagree": 82
             },
-            "Lithuania": {
+            "LT": {
                 "total": 1031,
                 "total_agree": 834,
                 "total_disagree": 143,
@@ -4519,7 +4519,7 @@
                 "tend_to_disagree": 96,
                 "totally_disagree": 47
             },
-            "Luxembourg": {
+            "LU": {
                 "total": 506,
                 "total_agree": 351,
                 "total_disagree": 125,
@@ -4529,7 +4529,7 @@
                 "tend_to_disagree": 70,
                 "totally_disagree": 55
             },
-            "Hungary": {
+            "HU": {
                 "total": 1025,
                 "total_agree": 504,
                 "total_disagree": 476,
@@ -4539,7 +4539,7 @@
                 "tend_to_disagree": 300,
                 "totally_disagree": 176
             },
-            "Malta": {
+            "MT": {
                 "total": 502,
                 "total_agree": 348,
                 "total_disagree": 134,
@@ -4549,7 +4549,7 @@
                 "tend_to_disagree": 109,
                 "totally_disagree": 25
             },
-            "Netherlands": {
+            "NL": {
                 "total": 1012,
                 "total_agree": 838,
                 "total_disagree": 156,
@@ -4559,7 +4559,7 @@
                 "tend_to_disagree": 99,
                 "totally_disagree": 57
             },
-            "Austria": {
+            "AT": {
                 "total": 1004,
                 "total_agree": 662,
                 "total_disagree": 309,
@@ -4569,7 +4569,7 @@
                 "tend_to_disagree": 178,
                 "totally_disagree": 131
             },
-            "Poland": {
+            "PL": {
                 "total": 1025,
                 "total_agree": 852,
                 "total_disagree": 150,
@@ -4579,7 +4579,7 @@
                 "tend_to_disagree": 110,
                 "totally_disagree": 40
             },
-            "Portugal": {
+            "PT": {
                 "total": 1052,
                 "total_agree": 935,
                 "total_disagree": 37,
@@ -4589,7 +4589,7 @@
                 "tend_to_disagree": 30,
                 "totally_disagree": 7
             },
-            "Romania": {
+            "RO": {
                 "total": 1054,
                 "total_agree": 678,
                 "total_disagree": 314,
@@ -4599,7 +4599,7 @@
                 "tend_to_disagree": 216,
                 "totally_disagree": 98
             },
-            "Slovenia": {
+            "SI": {
                 "total": 1009,
                 "total_agree": 551,
                 "total_disagree": 410,
@@ -4609,7 +4609,7 @@
                 "tend_to_disagree": 276,
                 "totally_disagree": 134
             },
-            "Slovakia": {
+            "SK": {
                 "total": 1003,
                 "total_agree": 583,
                 "total_disagree": 376,
@@ -4619,7 +4619,7 @@
                 "tend_to_disagree": 249,
                 "totally_disagree": 127
             },
-            "Finland": {
+            "FI": {
                 "total": 1009,
                 "total_agree": 890,
                 "total_disagree": 81,
@@ -4629,7 +4629,7 @@
                 "tend_to_disagree": 61,
                 "totally_disagree": 20
             },
-            "Sweden": {
+            "SE": {
                 "total": 1026,
                 "total_agree": 929,
                 "total_disagree": 84,
@@ -4641,7 +4641,7 @@
             }
         },
         "QD2_2": {
-            "Belgium": {
+            "BE": {
                 "total": 1014,
                 "total_agree": 572,
                 "total_disagree": 416,
@@ -4651,7 +4651,7 @@
                 "tend_to_disagree": 267,
                 "totally_disagree": 149
             },
-            "Bulgaria": {
+            "BG": {
                 "total": 1015,
                 "total_agree": 270,
                 "total_disagree": 671,
@@ -4661,7 +4661,7 @@
                 "tend_to_disagree": 306,
                 "totally_disagree": 365
             },
-            "Czechia": {
+            "CZ": {
                 "total": 1036,
                 "total_agree": 336,
                 "total_disagree": 659,
@@ -4671,7 +4671,7 @@
                 "tend_to_disagree": 329,
                 "totally_disagree": 330
             },
-            "Denmark": {
+            "DK": {
                 "total": 1001,
                 "total_agree": 880,
                 "total_disagree": 97,
@@ -4681,7 +4681,7 @@
                 "tend_to_disagree": 66,
                 "totally_disagree": 31
             },
-            "Germany": {
+            "DE": {
                 "total": 1515,
                 "total_agree": 892,
                 "total_disagree": 537,
@@ -4691,7 +4691,7 @@
                 "tend_to_disagree": 334,
                 "totally_disagree": 203
             },
-            "Estonia": {
+            "EE": {
                 "total": 1000,
                 "total_agree": 642,
                 "total_disagree": 292,
@@ -4701,7 +4701,7 @@
                 "tend_to_disagree": 181,
                 "totally_disagree": 111
             },
-            "Ireland": {
+            "IE": {
                 "total": 1005,
                 "total_agree": 687,
                 "total_disagree": 255,
@@ -4711,7 +4711,7 @@
                 "tend_to_disagree": 197,
                 "totally_disagree": 58
             },
-            "Greece": {
+            "EL": {
                 "total": 1001,
                 "total_agree": 262,
                 "total_disagree": 694,
@@ -4721,7 +4721,7 @@
                 "tend_to_disagree": 313,
                 "totally_disagree": 381
             },
-            "Spain": {
+            "ES": {
                 "total": 1005,
                 "total_agree": 551,
                 "total_disagree": 390,
@@ -4731,7 +4731,7 @@
                 "tend_to_disagree": 208,
                 "totally_disagree": 182
             },
-            "France": {
+            "FR": {
                 "total": 1024,
                 "total_agree": 537,
                 "total_disagree": 420,
@@ -4741,7 +4741,7 @@
                 "tend_to_disagree": 253,
                 "totally_disagree": 167
             },
-            "Croatia": {
+            "HR": {
                 "total": 1002,
                 "total_agree": 661,
                 "total_disagree": 289,
@@ -4751,7 +4751,7 @@
                 "tend_to_disagree": 208,
                 "totally_disagree": 81
             },
-            "Italy": {
+            "IT": {
                 "total": 1027,
                 "total_agree": 506,
                 "total_disagree": 496,
@@ -4761,7 +4761,7 @@
                 "tend_to_disagree": 291,
                 "totally_disagree": 205
             },
-            "Cyprus": {
+            "CY": {
                 "total": 506,
                 "total_agree": 89,
                 "total_disagree": 395,
@@ -4771,7 +4771,7 @@
                 "tend_to_disagree": 131,
                 "totally_disagree": 264
             },
-            "Latvia": {
+            "LV": {
                 "total": 1006,
                 "total_agree": 659,
                 "total_disagree": 276,
@@ -4781,7 +4781,7 @@
                 "tend_to_disagree": 174,
                 "totally_disagree": 102
             },
-            "Lithuania": {
+            "LT": {
                 "total": 1031,
                 "total_agree": 770,
                 "total_disagree": 225,
@@ -4791,7 +4791,7 @@
                 "tend_to_disagree": 152,
                 "totally_disagree": 73
             },
-            "Luxembourg": {
+            "LU": {
                 "total": 506,
                 "total_agree": 291,
                 "total_disagree": 192,
@@ -4801,7 +4801,7 @@
                 "tend_to_disagree": 105,
                 "totally_disagree": 87
             },
-            "Hungary": {
+            "HU": {
                 "total": 1025,
                 "total_agree": 350,
                 "total_disagree": 624,
@@ -4811,7 +4811,7 @@
                 "tend_to_disagree": 322,
                 "totally_disagree": 302
             },
-            "Malta": {
+            "MT": {
                 "total": 502,
                 "total_agree": 212,
                 "total_disagree": 276,
@@ -4821,7 +4821,7 @@
                 "tend_to_disagree": 125,
                 "totally_disagree": 151
             },
-            "Netherlands": {
+            "NL": {
                 "total": 1012,
                 "total_agree": 789,
                 "total_disagree": 217,
@@ -4831,7 +4831,7 @@
                 "tend_to_disagree": 126,
                 "totally_disagree": 91
             },
-            "Austria": {
+            "AT": {
                 "total": 1004,
                 "total_agree": 475,
                 "total_disagree": 496,
@@ -4841,7 +4841,7 @@
                 "tend_to_disagree": 182,
                 "totally_disagree": 314
             },
-            "Poland": {
+            "PL": {
                 "total": 1025,
                 "total_agree": 717,
                 "total_disagree": 273,
@@ -4851,7 +4851,7 @@
                 "tend_to_disagree": 196,
                 "totally_disagree": 77
             },
-            "Portugal": {
+            "PT": {
                 "total": 1052,
                 "total_agree": 720,
                 "total_disagree": 251,
@@ -4861,7 +4861,7 @@
                 "tend_to_disagree": 221,
                 "totally_disagree": 30
             },
-            "Romania": {
+            "RO": {
                 "total": 1054,
                 "total_agree": 480,
                 "total_disagree": 538,
@@ -4871,7 +4871,7 @@
                 "tend_to_disagree": 309,
                 "totally_disagree": 229
             },
-            "Slovenia": {
+            "SI": {
                 "total": 1009,
                 "total_agree": 368,
                 "total_disagree": 603,
@@ -4881,7 +4881,7 @@
                 "tend_to_disagree": 360,
                 "totally_disagree": 243
             },
-            "Slovakia": {
+            "SK": {
                 "total": 1003,
                 "total_agree": 359,
                 "total_disagree": 616,
@@ -4891,7 +4891,7 @@
                 "tend_to_disagree": 310,
                 "totally_disagree": 306
             },
-            "Finland": {
+            "FI": {
                 "total": 1009,
                 "total_agree": 882,
                 "total_disagree": 103,
@@ -4901,7 +4901,7 @@
                 "tend_to_disagree": 76,
                 "totally_disagree": 27
             },
-            "Sweden": {
+            "SE": {
                 "total": 1026,
                 "total_agree": 953,
                 "total_disagree": 62,

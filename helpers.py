@@ -145,7 +145,7 @@ def collect_scores(wave: str, q_ids: list[str]) -> dict[str, dict[str, int]]:
                 # regional divisions absorbed by fixed effects.
                 continue
             cdf = sdf.set_index("Score")[country]
-            q_col[COUNTRY_CODES[country]] = CountryScores(
+            q_col[country] = CountryScores(
                 total=cdf.at["Total"],
                 total_agree=cdf.at["Total 'D'accord'"],
                 total_disagree=cdf.at["Total 'Pas d'accord'"],
