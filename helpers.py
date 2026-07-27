@@ -1,6 +1,7 @@
 import os
 import re
 import pandas as pd
+import eurostat
 
 from datetime import date, datetime, timedelta
 from typing import TypedDict
@@ -72,6 +73,7 @@ COUNTRY_CODES = {
 
 CRITERIA = ("A", "B", "C", "D")
 
+
 def check_q(q: str) -> bool:
     """
     Return true iff *q* is a relevant question to the research project.
@@ -85,6 +87,7 @@ def check_q(q: str) -> bool:
         or
         ("russia" in q and "sanction" in q)
     )
+
 
 def _parse_dates(ds: str) -> tuple[date, date, str]:
     """
@@ -107,6 +110,7 @@ def _parse_dates(ds: str) -> tuple[date, date, str]:
         season = f"Spring {fw_start.year}"
 
     return (fw_start, fw_end, season)
+
 
 def parse_doc(fn: str) -> DocOutput:
     """
@@ -134,6 +138,7 @@ def parse_doc(fn: str) -> DocOutput:
         questions=col_qs,
         q_ids=col_ids
     )
+
 
 def collect_scores(wave: str, q_ids: list[str]) -> dict[str, dict[str, int]]:
     """
@@ -176,6 +181,7 @@ def collect_scores(wave: str, q_ids: list[str]) -> dict[str, dict[str, int]]:
         collected[q] = q_col
 
     return collected
+
 
 def parse_country_codes(raw: str) -> dict[str, set[str]]:
     """
@@ -300,3 +306,37 @@ def code_country_window(iso2: str, w_start: date, w_end: date,
                     n_indep_A=len(a_authors),
                     evidence_sources=";".join(sorted(a_sids)),
                     notes=note)
+
+
+def eurostat_long(code, geos=None, dims=None, since=None):
+    """
+    Fetch a Eurostat dataset and return it tidy-long (dimension cols + geo, period,
+    value).
+    """
+    df = eurostat.get_data_df(code)
+
+    if df is None or df.empty:
+        raise ValueError(f"No data for {code}")
+
+    geo_col = next(c for c in df.columns if "geo" in c.lower())
+
+    if geos is not None:
+        df = df[df[geo_col].isin(geos)]
+
+    if dims:
+        for k, val in dims.items():
+            if k in df.columns:
+                df = df[df[k] == val]
+
+    time_cols = [c for c in df.columns if str(c)[:4].isdigit()]
+    id_cols   = [c for c in df.columns if c not in time_cols]
+    long = (df.melt(id_vars=id_cols, value_vars=time_cols,
+                    var_name="period", value_name="value")
+              .rename(columns={geo_col: "geo"})
+              .dropna(subset=["value"]))
+    long["period"] = long["period"].astype(str)
+
+    if since is not None:
+        long = long[long["period"] >= since]
+
+    return long
