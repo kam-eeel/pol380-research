@@ -30,4 +30,26 @@ percentage-point support associated with a one-tier change in exposure, matching
 figures are publicly reported. The renormalized version estimates support conditional on
 holding an opinion, which is both more awkward to state and less standard.
 
-The honest limitation is that the as-reported measure conflates persuasion (agree to disagree) with demobilization (agree to don't-know). Because the research question does not require separating these channels, this is acceptable, and two checks guard against the concern: the renormalized DV is run as a robustness column to confirm the result is not an artefact of the denominator choice, and the don't-know share may be modelled as a secondary outcome. A finding that exposure simultaneously raises the don't-know share and lowers support would evidence the demobilization channel directly rather than leaving it asserted.
+The limitation is that the as-reported measure conflates persuasion (agree to disagree) with demobilization (agree to don't-know). Because the research question does not require separating these channels, this is acceptable, and two checks guard against the concern: the renormalized DV is run as a robustness column to confirm the result is not an artefact of the denominator choice, and the don't-know share may be modelled as a secondary outcome. A finding that exposure simultaneously raises the don't-know share and lowers support would evidence the demobilization channel directly rather than leaving it asserted.
+
+# Control — GDP per Capita (real)
+
+Real GDP per capita controls for prosperity, which plausibly shapes both a country's attractiveness as a disinformation target and its public's willingness to bear the cost of aid and sanctions. Source: Eurostat nama_10_pc, item B1GQ, unit CLV20_EUR_HAB (chain-linked volumes, constant prices), matched by wave year — constant prices are used to avoid double-counting inflation.
+
+# Control — Inflation (HICP)
+
+Inflation is a live confounder in this window: cost-of-living pressure may turn publics against sanctions as self-harming, independently of disinformation exposure. Source: Eurostat prc_hicp_manr (annual rate of change).
+
+# Control — Ukrainian Displaced-Population Share
+
+The most direct confounder: hosting a large Ukrainian population raises war salience and solidarity while plausibly shifting exposure and receptivity to Russian narratives, so without it exposure could proxy involvement in the war. Constructed as temporary-protection beneficiaries (Eurostat migr_asytpsm, citizen UA) over population (demo_pjan) at the fieldwork-midpoint month.
+Two caveats: it counts registered grants, not all Ukrainians present, and is structurally zero before March 2022 (so wave 1 reads ~0 by construction).
+
+# Control — Population Denominator (shared)
+
+Eurostat demo_pjan (1 January, sex T, age TOTAL) is the denominator for both the displaced share and the PSM per-capita moderator (2021). Using one population source keeps the two figures internally consistent.
+
+# Controls — Set Composition and Two Deliberate Omissions
+
+The set (real GDP per capita, inflation, displaced share) is the conventional prosperity/inflation/war-exposure trio, each with a confounding path to both exposure and the outcome.
+Two omissions are deliberate: the coalition Russia-friendliness control was dropped as effectively time-invariant (absorbed by country fixed effects) and disproportionately costly, though a Moscow-sympathetic government is a substantive omission to defend; and no direct media-trust control is included, that dimension being addressed through the PSM moderator instead. All controls are justified only by within-country variation, since fixed effects absorb time-invariant traits.
