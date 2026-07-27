@@ -56,3 +56,15 @@ Two sources are independent only if they rest on separate evidentiary bases. T
 
 ---
 # Decision Rules
+- **R1 — Date-range spanning.** A source documenting activity across a range crossing multiple windows generates a code in *every* window the range overlaps. Overlap of any length counts.
+- **R2 — No carry-forward by default.** Infrastructure documented as active in window *t* does **not** carry into *t*+1 unless a source affirmatively states it remained active, or a source in *t*+1 re-documents it. Absent that, code *t*+1 on its own evidence and set `ambiguous = 1`.
+- **R3 — Documented takedown.** If a platform, registrar, or sanctions action removing infrastructure is documented, do not code that infrastructure as active in subsequent windows.
+- **R4 — Undated documentation.** A country documented as targeted with no usable time information receives **0** in every specific window and `ambiguous = 1`.
+- **R5 — Aggregate-only evidence.** Counts or claims stated at EU or multi-country level without country attribution do not satisfy criterion A and do not raise any country's tier. Record in notes.
+- **R6 — Source conflict.** If two sources imply different tiers for the same country-window, take the **higher** and set `ambiguous = 1`.
+- **R7 — Criteria met by different sources.** Criteria A, B, and C may each be satisfied by different sources within the same window; they need not co-occur in one document.
+- **R8 — Out-of-sample targets.** Documented targeting of non-EU-27 states does not generate rows and does not raise any EU-27 country's tier, even where the campaign infrastructure is shared.
+- **R9 — Closed source register.** Only sources listed in the frozen source register may be used. If a genuinely new and important source surfaces mid-coding, amend the register, log it, and **re-check every previously coded cell that source could speak to**.
+- **R10 — Absence of evidence.** A 0 means *no documented activity in the frozen source register for this window*. It does not mean no activity occurred.
+- **R11 — Ceiling / no-variation flag.** If a country would receive an identical tier in all eight windows, flag it. Under country fixed effects it contributes nothing to identification. 
+- **R12 — Coder notes are mandatory for every non-zero cell.** Minimum one line. A cell you cannot justify in one sentence is a cell you have not coded.
