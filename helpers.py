@@ -1,5 +1,6 @@
 import os
 import re
+import numpy as np
 import pandas as pd
 import eurostat
 
@@ -340,3 +341,38 @@ def eurostat_long(code, geos=None, dims=None, since=None):
         long = long[long["period"] >= since]
 
     return long
+
+
+def wcr_wildboot(panel, dv, test="exposure", controls=(), fe=("iso2", "wave_num"),
+                 cluster="iso2", B=9999, seed=0):
+    """
+    Wild cluster restricted bootstrap (Rademacher weights, Cameron-Gelbach-Miller 2008;
+    Roodman et al. 2019) p-value for H0: coef(test) = 0.
+    Imposes the null in the DGP and returns (beta, p_value).
+    """
+    d = panel
+    Zparts = [pd.get_dummies(d[f], prefix=f).astype(float).values for f in fe]
+    if controls:
+        Zparts.append(d[list(controls)].astype(float).values)
+    Z = np.column_stack(Zparts)
+    y = d[dv].to_numpy(float); x = d[test].to_numpy(float)
+    g = pd.factorize(d[cluster])[0]; G = g.max() + 1
+    pinvZ = np.linalg.pinv(Z)
+    resid = lambda V: V - Z @ (pinvZ @ V)
+    xt = resid(x); xtxt = xt @ xt
+    beta = (xt @ y) / xtxt
+    e = resid(y) - xt * beta
+
+    def meat(E):
+        E = E[:, None] if E.ndim == 1 else E
+        s = np.zeros((G, E.shape[1])); np.add.at(s, g, xt[:, None] * E)
+        return (s ** 2).sum(0)
+
+    t_obs = abs(beta) * xtxt / np.sqrt(meat(e)[0])
+    u_r = y - Z @ (pinvZ @ y)
+    W = np.random.default_rng(seed).choice([-1., 1.], size=(G, B))
+    Ustar = u_r[:, None] * W[g]
+    beta_b = (xt @ Ustar) / xtxt
+    e_b = resid(Ustar) - xt[:, None] * beta_b
+    t_b = np.abs(beta_b) * xtxt / np.sqrt(meat(e_b))
+    return beta, (1 + np.sum(t_b >= t_obs)) / (B + 1)
