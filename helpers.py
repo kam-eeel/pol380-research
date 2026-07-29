@@ -108,7 +108,7 @@ def _parse_dates(ds: str) -> tuple[date, date, str]:
     elif any(m == fw_start.month for m in [9, 10, 11]):
         season = f"Fall {fw_start.year}"
     elif any(m == fw_start.month for m in [12, 1, 2]):
-        season = f"Spring {fw_start.year}"
+        season = f"Winter {fw_start.year}"
 
     return (fw_start, fw_end, season)
 
