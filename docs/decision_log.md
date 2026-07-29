@@ -65,3 +65,7 @@ The measure is a single-year (2021) snapshot. This is not an assumption that fun
 Upon further assessment of the source content, restricted the primary exposure register to sources documenting Operation Doppelgänger or its documented aliases (RRN, Ruza Flood, Storm-1099). Four sources documenting allied but forensically distinct pro-Kremlin operations – VIG24 (Portal Kombat), VIG24-2 (Matryoshka), CHK24 (Operation Overload), EDM24 (Pravda) – move to an extended register used only in robustness check R5.
 
 This was done to ensure that the analysis adheres closely to the research question and criterion A.
+
+# Robustness battery expansion
+
+Add R5 (extended register), R6 (drop W1), R7 (binary exposure), R8 (leave-one-country-out) to the pre-committed R1–R4. Soften codebook R12: evidence sources are recorded per cell mechanically; page-level locators live at the register level, not per cell as per-cell locators were never populated so the codebook would have overstated the audit trail as written.
