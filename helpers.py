@@ -668,3 +668,109 @@ def mde(ci95, G, power=0.80):
     """
     t975 = stats.t.ppf(.975, G - 1)
     return (t975 + stats.t.ppf(power, G - 1)) * (ci95[1] - ci95[0]) / (2 * t975)
+
+
+def twfe_weights(panel, test="exposure", controls=(), fe=("iso2", "wave_num")):
+    """
+    de Chaisemartin and D'Haultfoeuille (2020) weights of the two-way fixed
+    effects coefficient on an ordered treatment: eps * D over the treated cells,
+    normalised to sum to 1, where eps is the residual of D on the fixed effects
+    (and controls). beta_fe = sum(w * per-unit cell effects). Returns a Series
+    indexed like *panel*'s treated rows.
+    """
+    D = panel[test].to_numpy(float)
+    eps = _annihilator(_fe_design(panel, fe, controls)) @ D
+    tr = D != 0
+    return pd.Series(eps[tr] * D[tr] / np.sum(eps[tr] * D[tr]), index=panel.index[tr])
+
+
+def dcdh_sigma(beta, w):
+    """
+    The two robustness measures of de Chaisemartin and D'Haultfoeuille (2020,
+    Corollary 1), with treated cells weighted equally: the smallest SD of the
+    cell effects compatible with an average effect of zero, |beta| / sigma(w),
+    and, if some weights are negative, the smallest SD compatible with every cell
+    effect having the opposite sign to beta (nan when all weights are positive).
+    """
+    n = len(w)
+    om = np.sort(n * np.asarray(w, float))[::-1]      # mean-1 scale, descending
+    sd = np.sqrt(np.mean((om - 1) ** 2))
+    share = np.full(n, 1 / n)
+    P = share[::-1].cumsum()[::-1]                    # P_k = sum_{i>=k} share_i
+    S = (share * om)[::-1].cumsum()[::-1]
+    T = (share * om ** 2)[::-1].cumsum()[::-1]
+    k = np.arange(1, n)                               # P_1 = 1: the condition starts at k = 2
+    hit = k[om[k] < -S[k] / (1 - P[k])]
+    if not len(hit):
+        return abs(beta) / sd, np.nan
+    s = hit[0]
+    return abs(beta) / sd, abs(beta) / np.sqrt(T[s] + S[s] ** 2 / (1 - P[s]))
+
+
+def did_m(panel, dv, test="exposure", group="iso2", time="wave_num"):
+    """
+    DID_M of de Chaisemartin and D'Haultfoeuille (2020) per unit of an ordered
+    treatment. Each group whose treatment changes between consecutive periods is
+    compared with the groups that stayed at its starting level: its outcome change
+    minus the stayers' mean change, signed by the direction of the switch, summed
+    and divided by the total absolute change. Switches with no stayer at the
+    starting level are skipped. Returns the estimate and the joiners' (increase)
+    and leavers' (decrease) components, with switch counts.
+    """
+    Y = panel.pivot(index=group, columns=time, values=dv).to_numpy(float)
+    D = panel.pivot(index=group, columns=time, values=test).to_numpy(float)
+    num = {1: 0., -1: 0.}; den = {1: 0., -1: 0.}; cnt = {1: 0, -1: 0}; skipped = 0
+    for t in range(1, D.shape[1]):
+        dD, dY = D[:, t] - D[:, t - 1], Y[:, t] - Y[:, t - 1]
+        for g in np.nonzero(dD)[0]:
+            stay = (D[:, t - 1] == D[g, t - 1]) & (dD == 0)
+            if not stay.any():
+                skipped += 1
+                continue
+            sg = int(np.sign(dD[g]))
+            num[sg] += sg * (dY[g] - dY[stay].mean()); den[sg] += abs(dD[g]); cnt[sg] += 1
+    tot = den[1] + den[-1]
+    return {"beta": (num[1] + num[-1]) / tot if tot else np.nan,
+            "joiners": num[1] / den[1] if den[1] else np.nan,
+            "leavers": num[-1] / den[-1] if den[-1] else np.nan,
+            "n_join": cnt[1], "n_leave": cnt[-1], "n_skipped": skipped}
+
+
+def did_m_inference(panel, dv, test="exposure", group="iso2", time="wave_num",
+                    B=999, perms=4002, conf=0.90, seed=0):
+    """
+    Indicative inference for did_m: percentile intervals (for the estimate and the
+    joiners' and leavers' components) from resampling whole groups with
+    replacement, with draws lacking a usable switch dropped and counted, and a
+    two-sided permutation p-value for the estimate that reassigns the groups' real
+    treatment paths at random, holding the outcomes fixed.
+    """
+    rng = np.random.default_rng(seed)
+    est = did_m(panel, dv, test, group, time)
+    gs = np.sort(panel[group].unique())               # row order must not matter
+    by = {g: d for g, d in panel.groupby(group)}
+    parts = ("beta", "joiners", "leavers")
+    boots = {k: [] for k in parts}
+    for _ in range(B):
+        pick = rng.choice(gs, len(gs))
+        d = pd.concat([by[g].assign(**{group: i}) for i, g in enumerate(pick)], ignore_index=True)
+        r = did_m(d, dv, test, group, time)
+        for k in parts:
+            boots[k].append(r[k])
+    a = (1 - conf) / 2
+    out = {**est}
+    for k in parts:
+        b = np.array(boots[k]); ok = ~np.isnan(b)
+        out.update({f"{k}_lo": np.quantile(b[ok], a), f"{k}_hi": np.quantile(b[ok], 1 - a),
+                    f"{k}_dropped": int((~ok).sum())})
+    paths = panel.pivot(index=group, columns=time, values=test)
+    perm = []
+    for _ in range(perms):
+        sh = pd.DataFrame(paths.to_numpy()[rng.permutation(len(paths))],
+                          index=paths.index, columns=paths.columns)
+        d = panel.drop(columns=test).merge(
+            sh.stack().rename(test).reset_index(), on=[group, time])
+        perm.append(did_m(d, dv, test, group, time)["beta"])
+    perm = np.array(perm); perm = perm[~np.isnan(perm)]
+    out["p_perm"] = (1 + np.sum(np.abs(perm) >= abs(est["beta"]))) / (len(perm) + 1)
+    return out

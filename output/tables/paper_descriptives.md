@@ -21,7 +21,7 @@
 | register: primary investigations               |  27     |
 | register: primary organizations                |  18     |
 | register: extended sources                     |   4     |
-| robustness: lowest p across all rows           |   0.177 |
+| robustness: lowest p across all rows           |   0.202 |
 | robustness: aid beta range low                 |  -0.752 |
 | robustness: aid beta range high                |   1.209 |
 | detection floor: widest aid CI half-width (m2) |   1.64  |
