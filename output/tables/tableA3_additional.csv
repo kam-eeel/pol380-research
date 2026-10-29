@@ -1,0 +1,7 @@
+Analysis,Military aid: estimate (p),Military aid: 90% CI,Sanctions: estimate (p),Sanctions: 90% CI
+One-wave lag (per tier),-0.57 (.577),"[-1.74, 2.03]",-0.10 (.940),"[-2.17, 3.73]"
+"Cumulative, current + lag (per tier)",+0.31 (.779),"[-1.19, 4.10]",+0.46 (.670),"[-1.82, 4.04]"
+"Lead placebo, given current (per tier)",-0.86 (.209),"[-2.52, 0.22]",-0.43 (.411),"[-1.81, 0.38]"
+"Tier-3 dummy, 0 -> 3",+0.95 (.717),"[-2.44, 9.07]",+0.50 (.751),"[-3.44, 4.84]"
+"Without FR, IT, PL (0 -> 3)",-1.15 (.467),"[-3.95, 5.62]",+0.32 (.725),"[-2.99, 4.29]"
+"DID_M, no controls (per tier; permutation p)",+1.05 (.365),"[-0.94, 2.71]",+0.92 (.305),"[-1.45, 1.93]"

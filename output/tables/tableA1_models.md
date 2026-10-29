@@ -1,0 +1,14 @@
+| Outcome      | Model         | Term               |   Estimate |   p (WCR) | 95% CI (WCR)   | 90% CI (WCR)   |   SE (analytic, not for inference) |
+|:-------------|:--------------|:-------------------|-----------:|----------:|:---------------|:---------------|-----------------------------------:|
+| Military aid | m1 base       | Exposure           |      0.068 |     0.93  | [-0.99, 3.39]  | [-0.90, 2.86]  |                              0.74  |
+| Military aid | m2 + controls | Exposure           |      0.336 |     0.704 | [-0.90, 3.87]  | [-0.77, 3.05]  |                              0.8   |
+| Military aid | m3 + psm      | Exposure           |     -0.24  |     0.633 | [-2.25, 1.96]  | [-1.44, 1.32]  |                              0.407 |
+| Military aid | m3 + psm      | Exposure x PSM (z) |     -1.748 |     0.578 | [-7.17, 2.70]  | [-6.47, 2.16]  |                              1.722 |
+| Military aid | m4 full       | Exposure           |      0.011 |     0.982 | [-2.47, 2.86]  | [-1.43, 1.95]  |                              0.476 |
+| Military aid | m4 full       | Exposure x PSM (z) |     -2.122 |     0.44  | [-7.22, 2.55]  | [-6.60, 1.69]  |                              1.596 |
+| Sanctions    | m1 base       | Exposure           |      0.042 |     0.925 | [-1.78, 1.75]  | [-0.97, 1.25]  |                              0.462 |
+| Sanctions    | m2 + controls | Exposure           |      0.192 |     0.711 | [-1.69, 2.23]  | [-1.10, 1.71]  |                              0.527 |
+| Sanctions    | m3 + psm      | Exposure           |     -0.185 |     0.762 | [-2.32, 2.33]  | [-2.13, 0.94]  |                              0.51  |
+| Sanctions    | m3 + psm      | Exposure x PSM (z) |     -1.289 |     0.387 | [-4.85, 1.94]  | [-4.04, 1.23]  |                              1.144 |
+| Sanctions    | m4 full       | Exposure           |     -0.043 |     0.944 | [-2.24, 2.66]  | [-2.04, 1.24]  |                              0.548 |
+| Sanctions    | m4 full       | Exposure x PSM (z) |     -1.535 |     0.304 | [-4.70, 1.41]  | [-4.04, 0.85]  |                              1.107 |
