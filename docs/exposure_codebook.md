@@ -1,19 +1,19 @@
 # Definitions
 
-- **Exposure**: measures the documented intensity of Operation Doppelgänger activity directed at a given country's public during a given observation window, as established by forensic and legal sources.
-- **It is not**: audience reach, impressions, engagement, or individual-level exposure. It is a measure of campaign activity aimed at a country, not consumption of that activity by that country's residents.
+- **Exposure**: Measures the documented intensity of Operation Doppelgänger activity directed at a given country's public during a given observation window, as established by forensic and legal sources.
+- **It is not**: Audience reach, impressions, engagement, or individual-level exposure. It is a measure of campaign activity aimed at a country, not consumption of that activity by that country's residents.
 - **Unit of Observation**: country × wave
 - **Sample**: EU-27 only.
 - **Scale**: Ordinal 0-3.
 
 ---
 
-# Observation Window
+# Observation window
 
 For wave _w_, the observation window runs from the fieldwork end date of wave _w-1_ to the fieldwork end date of wave _w_.
-Outcome is an attitude measured during wave _w_ fieldwork and would represent the result of all exposure accumulated since the end of wave _w-1_ fieldwork.
-Fieldwork windows are 3-4 weeks long and forensic reporting is rarely dated to that resolution. Coding on these windows alone would produce near-uniform zeros and eliminate the within-country variation the design is identified from.
-_Special case for Wave 1_: As no prior wave exists, the window will run from February 24, 2022 (start of invasion and campaign's onset) to the end of wave 1's fieldwork. This is a slightly shorter window than the others.
+The outcome is an attitude measured during wave _w_ fieldwork. It would represent the result of all exposure accumulated since the end of wave _w-1_ fieldwork.
+Fieldwork windows are 3-4 weeks long, and forensic reporting is rarely dated to that resolution. Coding on these windows alone would produce near-uniform zeros and eliminate the within-country variation from which the design is identified.
+_Special case for Wave 1_: Because no prior wave exists, the window runs from February 24, 2022 (the start of the invasion and the campaign's onset) to the end of wave 1's fieldwork. This window is slightly shorter than the others.
 
 | wave_num | wave_id | Window Start | Window End |
 | -------- | ------- | ------------ | ---------- |
@@ -33,12 +33,12 @@ _Special case for Wave 1_: As no prior wave exists, the window will run from Feb
 
 ## A – Named country-level targeting
 
-The country is identified by name as a target of Doppelgänger (or its documented aliases: *RRN / Recent Reliable News*, *Ruza Flood*, *Storm-1099*) for a period overlapping the observation window.
-Not met by: appearance in an aggregate EU-wide count with no country attribution; appearance solely as the registrar/host/infrastructure location rather than the target audience.
+The country is identified by name as a target of Doppelgänger (or its documented aliases: *RRN / Recent Reliable News*, *Ruza Flood*, *Storm-1099*) for a period overlapping the observation window.
+Not met by: appearance in an aggregate EU-wide count with no country attribution; appearance solely as the registrar, host, or infrastructure location rather than the target audience.
 
 ## B – Dedicated cloned infrastructure
 
-At least one spoofed domain, cloned site, or impersonated brand belonging to that country's media outlets, government bodies, or institutions is documented as registered or active during the window.
+At least one spoofed domain, cloned site, or impersonated brand belonging to that country's media outlets, government bodies, or institutions is documented as registered or active during the window.
 Not met by: generic pseudo-outlets with no national referent; domains impersonating a different country's brands even if hosted or promoted in this one.
 
 ## C – Language localization
@@ -48,13 +48,13 @@ Not met by: English-language content unless English is a national language of th
 
 ## D – Independent corroboration
 
-Criterion A is met by ≥2 independent sources.
+Criterion A is met by ≥2 independent sources.
 
 ---
 
-# Source Independence
+# Source independence
 
-Two sources are independent only if they rest on separate evidentiary bases. They are not independent if one:
+Two sources are independent only if they rest on separate evidentiary bases. They are not independent if one:
 
 - cites the other as the origin of the country attribution;
 - reprints, translates, or summarizes the other's findings;
@@ -62,7 +62,7 @@ Two sources are independent only if they rest on separate evidentiary bases. T
 
 ---
 
-# Tier Assignment
+# Tier assignment
 
 | Tier | Label                    | Rule                                                           |
 | ---- | ------------------------ | -------------------------------------------------------------- |
@@ -73,23 +73,23 @@ Two sources are independent only if they rest on separate evidentiary bases. T
 
 ---
 
-# Register Scope
+# Register scope
 
-The primary register contains only sources whose own primary research attributes activity to Operation Doppelgänger or a documented alias (RRN/Recent Reliable News, Ruza Flood, Storm-1099). Sources documenting allied but forensically distinct pro-Kremlin operations (Portal Kombat/Pravda; Matryoshka/Operation Overload) form an extended register, used only in robustness check R5.
+The primary register contains only sources whose own primary research attributes activity to Operation Doppelgänger or a documented alias (RRN/Recent Reliable News, Ruza Flood, Storm-1099). Sources documenting allied but forensically distinct pro-Kremlin operations (Portal Kombat/Pravda; Matryoshka/Operation Overload) form an extended register that is used only in robustness check R5.
 
 ---
 
-# Decision Rules
+# Decision rules
 
-- **R1 — Date-range spanning.** A source documenting activity across a range crossing multiple windows generates a code in _every_ window the range overlaps. Overlap of any length counts.
-- **R2 — No carry-forward by default.** Infrastructure documented as active in window _t_ does **not** carry into _t_+1 unless a source affirmatively states it remained active, or a source in _t_+1 re-documents it. Absent that, code _t_+1 on its own evidence and set `ambiguous = 1`.
+- **R1 — Date-range spanning.** A source that documents activity across a range crossing multiple windows generates a code in _every_ window that the range overlaps. Overlap of any length counts.
+- **R2 — No carry-forward by default.** Infrastructure documented as active in window _t_ does **not** carry into _t_+1 unless a source affirmatively states that it remained active, or a source in _t_+1 re-documents it. Otherwise, code _t_+1 on its own evidence and set `ambiguous = 1`.
 - **R3 — Documented takedown.** If a platform, registrar, or sanctions action removing infrastructure is documented, do not code that infrastructure as active in subsequent windows.
 - **R4 — Undated documentation.** A country documented as targeted with no usable time information receives **0** in every specific window and `ambiguous = 1`.
-- **R5 — Aggregate-only evidence.** Counts or claims stated at EU or multi-country level without country attribution do not satisfy criterion A and do not raise any country's tier. Record in notes.
+- **R5 — Aggregate-only evidence.** Counts or claims stated at EU or multi-country level without country attribution do not satisfy criterion A and do not raise any country's tier. Record them in notes.
 - **R6 — Source conflict.** If two sources imply different tiers for the same country-window, take the **higher** and set `ambiguous = 1`.
 - **R7 — Criteria met by different sources.** Criteria A, B, and C may each be satisfied by different sources within the same window; they need not co-occur in one document.
 - **R8 — Out-of-sample targets.** Documented targeting of non-EU-27 states does not generate rows and does not raise any EU-27 country's tier, even where the campaign infrastructure is shared.
-- **R9 — Closed source register.** Only sources listed in the frozen source register may be used. If a genuinely new and important source surfaces mid-coding, amend the register, log it, and **re-check every previously coded cell that source could speak to**.
-- **R10 — Absence of evidence.** A 0 means _no documented activity in the frozen source register for this window_. It does not mean no activity occurred.
-- **R11 — Ceiling / no-variation flag.** If a country would receive an identical tier in all eight windows, flag it. Under country fixed effects it contributes nothing to identification.
+- **R9 — Closed source register.** Use only sources listed in the frozen source register. If a genuinely new and important source surfaces during coding, amend the register, log it, and **re-check every previously coded cell that source could speak to**.
+- **R10 — Absence of evidence.** A 0 means _no documented activity in the frozen source register for this window_. It does not mean that no activity occurred.
+- **R11 — Ceiling / no-variation flag.** If a country would receive an identical tier in all eight windows, flag it. Under country fixed effects, it contributes nothing to identification.
 - **R12 — Evidence recording.** Every non-zero cell records its establishing sources mechanically from the register (evidence\_\*\_source, criteria_met, notes). Page-level locators are maintained at the register level (one row per source), not per cell.
