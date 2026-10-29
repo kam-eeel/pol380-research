@@ -5,6 +5,8 @@ import pandas as pd
 import eurostat
 
 from datetime import date, datetime, timedelta
+from multiprocessing import get_context
+from scipy import stats
 from typing import TypedDict
 
 class DocOutput(TypedDict):
@@ -376,3 +378,247 @@ def wcr_wildboot(panel, dv, test="exposure", controls=(), fe=("iso2", "wave_num"
     e_b = resid(Ustar) - xt[:, None] * beta_b
     t_b = np.abs(beta_b) * xtxt / np.sqrt(meat(e_b))
     return beta, (1 + np.sum(t_b >= t_obs)) / (B + 1)
+
+
+def _fe_design(d, fe, controls=()):
+    """
+    Nuisance design matrix: one-hot fixed effects plus any controls.
+    """
+    Z = [pd.get_dummies(d[f], prefix=f).astype(float).values for f in fe]
+    if controls:
+        Z.append(d[list(controls)].astype(float).values)
+    return np.column_stack(Z)
+
+
+def _annihilator(Z):
+    """
+    Residual-maker M = I - Z Z^+.
+    """
+    return np.eye(Z.shape[0]) - Z @ np.linalg.pinv(Z)
+
+
+def _cluster_meat(xt, E, g, G):
+    """
+    Sum of squared cluster scores of the partialled-out regressor *xt*, one per
+    column of *E*.
+    """
+    E = E[:, None] if E.ndim == 1 else E
+    D = np.zeros((G, len(g))); D[g, np.arange(len(g))] = 1.
+    return ((D @ (xt[:, None] * E)) ** 2).sum(0)
+
+
+def _boot_t(xt, M, e_dgp, g, G, W, wg):
+    """
+    Bootstrap t-statistics for wild DGP disturbances e_dgp * W[wg], with the
+    variance always clustered at *g*. Centred on whatever the DGP imposes, so
+    the same expression serves restricted and unrestricted bootstraps.
+    """
+    xtxt = xt @ xt
+    U = e_dgp[:, None] * W[wg]
+    db = (xt @ U) / xtxt
+    return db * xtxt / np.sqrt(_cluster_meat(xt, M @ U - xt[:, None] * db, g, G))
+
+
+def _boot_pvals(t_obs, t_b):
+    """
+    Bootstrap p-values, (1 + #) / (B + 1): symmetric and equal-tailed two-sided,
+    and one-sided against H1: beta > beta0 ("up") and H1: beta < beta0 ("lo").
+    """
+    B = len(t_b)
+    up = (1 + np.sum(t_b >= t_obs)) / (B + 1)
+    lo = (1 + np.sum(t_b <= t_obs)) / (B + 1)
+    return {"p_sym": (1 + np.sum(np.abs(t_b) >= abs(t_obs))) / (B + 1),
+            "p_eqt": min(1., 2 * min(up, lo)), "p_up": up, "p_lo": lo}
+
+
+def wild_boot(panel, dv, test="exposure", controls=(), fe=("iso2", "wave_num"),
+              cluster="iso2", beta0=0., restricted=True, level="cluster",
+              B=9999, seed=0):
+    """
+    Wild bootstrap test of H0: coef(test) = beta0 with a CRV1 t-statistic
+    clustered by *cluster*. restricted=True imposes the null in the DGP (WCR/WR);
+    False uses unrestricted residuals (WCU/WU). level="cluster" draws one
+    Rademacher weight per cluster (wild cluster bootstrap); level="obs" draws one
+    per observation, the subcluster wild bootstrap at its finest level (MacKinnon
+    and Webb 2018). Defaults reproduce wcr_wildboot exactly.
+    Returns {beta, t, p_sym, p_eqt, p_up, p_lo}.
+    """
+    d = panel
+    Z = _fe_design(d, fe, controls); M = _annihilator(Z)
+    y = d[dv].to_numpy(float); x = d[test].to_numpy(float)
+    g = pd.factorize(d[cluster])[0]; G = g.max() + 1
+    xt = M @ x; xtxt = xt @ xt
+    beta = (xt @ y) / xtxt
+    e = M @ y - xt * beta
+    t_obs = (beta - beta0) * xtxt / np.sqrt(_cluster_meat(xt, e, g, G)[0])
+    e_dgp = M @ (y - beta0 * x) if restricted else e
+    wg = g if level == "cluster" else np.arange(len(y))
+    W = np.random.default_rng(seed).choice([-1., 1.], size=(wg.max() + 1, B))
+    t_b = _boot_t(xt, M, e_dgp, g, G, W, wg)
+    return {"beta": beta, "t": t_obs, **_boot_pvals(t_obs, t_b)}
+
+
+def cluster_diagnostics(panel, dv, test="exposure", controls=(), fe=("iso2", "wave_num"),
+                        cluster="iso2"):
+    """
+    Analytic inference and cluster heterogeneity for coef(test).
+    CRV1 (pyfixest's convention: fixed effects nested in the clusters are not
+    counted in k) and jackknife CV3 (MacKinnon, Nielsen and Webb 2023, eq. 18),
+    both against t(G-1); each cluster's partial leverage (MNW eq. 39); the
+    leave-one-cluster-out estimates; and the effective number of clusters G*(0)
+    of Carter, Schnepel and Steigerwald (2017), the only version defined when the
+    model has cluster fixed effects.
+    """
+    d = panel
+    Z = _fe_design(d, fe, controls); M = _annihilator(Z)
+    y = d[dv].to_numpy(float); x = d[test].to_numpy(float)
+    g, names = pd.factorize(d[cluster]); G = len(names); N = len(y)
+    xt = M @ x; xtxt = xt @ xt
+    beta = (xt @ y) / xtxt
+    e = M @ y - xt * beta
+    k = np.linalg.matrix_rank(Z) + 1 - (G - 1 if cluster in fe else 0)
+    se1 = np.sqrt(G / (G - 1) * (N - 1) / (N - k) * _cluster_meat(xt, e, g, G)[0]) / xtxt
+
+    loo = np.empty(G)
+    for h in range(G):
+        xh = _annihilator(Z[g != h]) @ x[g != h]
+        loo[h] = (xh @ y[g != h]) / (xh @ xh)
+    se3 = np.sqrt((G - 1) / G * np.sum((loo - beta) ** 2))
+
+    lev = np.bincount(g, weights=xt ** 2, minlength=G) / xtxt
+    p = lambda t: 2 * stats.t.sf(abs(t), G - 1)
+    return {"beta": beta, "se_crv1": se1, "p_crv1": p(beta / se1),
+            "se_cv3": se3, "p_cv3": p(beta / se3),
+            "g_star": G / (1 + np.mean((lev - lev.mean()) ** 2) / lev.mean() ** 2),
+            "leverage": pd.Series(lev, index=names), "loo": pd.Series(loo, index=names)}
+
+
+def exposure_trajectories(panel, test="exposure", exclude=()):
+    """
+    Exposure paths (one row per wave) of the countries whose exposure varies,
+    minus any in *exclude*.
+    """
+    pv = panel.pivot(index="iso2", columns="wave_num", values=test)
+    return pv[pv.nunique(axis=1) > 1].drop(index=list(exclude)).to_numpy(float)
+
+
+def _placebo_prep(d, controls):
+    """
+    Everything a placebo draw needs that does not depend on the placebo regressor.
+    """
+    g = pd.factorize(d["cl"])[0]; G = g.max() + 1
+    Z = _fe_design(d, ("cl", "wave_num"), controls)
+    return {"g": g, "G": G, "M": _annihilator(Z),
+            "Mh": [_annihilator(Z[g != h]) for h in range(G)],
+            "k": np.linalg.matrix_rank(Z) + 1 - (G - 1)}
+
+
+def _placebo_tests(y, x, P, Wc, Wo):
+    """
+    p-values for one placebo regressor under every method.
+    """
+    g, G, M = P["g"], P["G"], P["M"]; N = len(y)
+    xt = M @ x; xtxt = xt @ xt
+    beta = (xt @ y) / xtxt
+    e = M @ y - xt * beta
+    t = beta * xtxt / np.sqrt(_cluster_meat(xt, e, g, G)[0])
+    loo = np.empty(G)
+    for h in range(G):
+        xh = P["Mh"][h] @ x[g != h]
+        loo[h] = (xh @ y[g != h]) / (xh @ xh)
+
+    out = {}
+    for m, tm in (("CRV1", t / np.sqrt(G / (G - 1) * (N - 1) / (N - P["k"]))),
+                  ("CV3", beta / np.sqrt((G - 1) / G * np.sum((loo - beta) ** 2)))):
+        out.update({f"{m}_p_sym": 2 * stats.t.sf(abs(tm), G - 1),
+                    f"{m}_p_up": stats.t.sf(tm, G - 1), f"{m}_p_lo": stats.t.cdf(tm, G - 1)})
+    e_r, obs = M @ y, np.arange(N)
+    for m, e_dgp, W, wg in (("WCR", e_r, Wc, g), ("WCU", e, Wc, g),
+                            ("WR", e_r, Wo, obs), ("WU", e, Wo, obs)):
+        out.update({f"{m}_{k}": v for k, v in
+                    _boot_pvals(t, _boot_t(xt, M, e_dgp, g, G, W, wg)).items()})
+    return out
+
+
+def _placebo_chunk(args):
+    """
+    One worker's share of placebo_sim.
+    """
+    panel, traj, outcomes, specs, resample, draws, B, seed = args
+    rng = np.random.default_rng(seed)
+    base = panel.assign(cl=pd.factorize(panel["iso2"])[0])
+    fixed = None if resample else {s: _placebo_prep(base, c) for s, c in specs.items()}
+    countries = panel["iso2"].unique()
+    rows = []
+    for r in range(draws):
+        if resample:
+            pick = rng.integers(0, len(countries), len(countries))
+            d = pd.concat([panel[panel["iso2"] == countries[j]].assign(cl=i)
+                           for i, j in enumerate(pick)], ignore_index=True)
+            P = {s: _placebo_prep(d, c) for s, c in specs.items()}
+        else:
+            d, P = base, fixed
+        G = d["cl"].nunique()
+        tab = np.zeros((G, traj.shape[1]))
+        tab[rng.choice(G, size=len(traj), replace=False)] = traj[rng.permutation(len(traj))]
+        x = tab[pd.factorize(d["cl"])[0], d["wave_num"].to_numpy() - 1]
+        Wc = rng.choice([-1., 1.], size=(G, B))
+        Wo = rng.choice([-1., 1.], size=(len(d), B))
+        for dv in outcomes:
+            y = d[dv].to_numpy(float)
+            for s in specs:
+                rows.append({"draw": r, "outcome": dv, "spec": s,
+                             **_placebo_tests(y, x, P[s], Wc, Wo)})  # type: ignore[arg-type]
+    return rows
+
+
+_BLAS_VARS = ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS",
+              "VECLIB_MAXIMUM_THREADS")
+
+
+def placebo_sim(panel, traj, outcomes, specs, resample=False, draws=4002, B=999,
+                chunks=6, seed=0, workers=None):
+    """
+    Placebo-treatment rejection-rate simulation (Bertrand, Duflo and Mullainathan
+    2004). Each draw hands the rows of *traj* (real exposure paths) to randomly
+    chosen countries, gives every other country 0, and tests the placebo
+    coefficient with CRV1 and CV3 t(G-1) tests and the WCR, WCU, WR and WU
+    bootstraps (B draws each). resample=True first resamples whole country
+    histories with replacement, removing the conditioning on one realised
+    dataset. Work is split into *chunks* seeded seed + i, so results do not
+    depend on the number of worker processes.
+    """
+    per = -(-draws // chunks)
+    jobs = [(panel, traj, outcomes, specs, resample, per, B, seed + i) for i in range(chunks)]
+    saved = {v: os.environ.get(v) for v in _BLAS_VARS}
+    os.environ.update({v: "1" for v in _BLAS_VARS})  # one BLAS thread per worker
+    try:
+        with get_context("spawn").Pool(workers or min(chunks, os.cpu_count() or 1)) as pool:
+            out = pool.map(_placebo_chunk, jobs)
+    finally:
+        for v, val in saved.items():
+            if val is None:
+                os.environ.pop(v, None)
+            else:
+                os.environ[v] = val
+    return pd.DataFrame([{"chunk": i, **r} for i, rows in enumerate(out) for r in rows])
+
+
+def rejection_rates(sims, methods=("CRV1", "CV3", "WCR", "WCU", "WR", "WU")):
+    """
+    Rejection rates (%) of placebo_sim output per outcome, spec and method:
+    two-sided at 5% and 10%, equal-tailed at 10% (what a 90% test-inversion CI
+    uses; the symmetric test for the analytic methods), and one-sided at 5% in
+    each direction (the two halves of TOST).
+    """
+    rows = []
+    for (dv, s), d in sims.groupby(["outcome", "spec"], sort=False):
+        for m in methods:
+            eqt = d[f"{m}_p_eqt"] if f"{m}_p_eqt" in d else d[f"{m}_p_sym"]
+            rows.append({"outcome": dv, "spec": s, "method": m, "draws": len(d),
+                         "two-sided 5%": 100 * np.mean(d[f"{m}_p_sym"] <= .05),
+                         "two-sided 10%": 100 * np.mean(d[f"{m}_p_sym"] <= .10),
+                         "equal-tailed 10%": 100 * np.mean(eqt <= .10),
+                         "one-sided up 5%": 100 * np.mean(d[f"{m}_p_up"] <= .05),
+                         "one-sided lo 5%": 100 * np.mean(d[f"{m}_p_lo"] <= .05)})
+    return pd.DataFrame(rows)
