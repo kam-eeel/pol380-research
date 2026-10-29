@@ -622,3 +622,49 @@ def rejection_rates(sims, methods=("CRV1", "CV3", "WCR", "WCU", "WR", "WU")):
                          "one-sided up 5%": 100 * np.mean(d[f"{m}_p_up"] <= .05),
                          "one-sided lo 5%": 100 * np.mean(d[f"{m}_p_lo"] <= .05)})
     return pd.DataFrame(rows)
+
+def boot_ci(panel, dv, conf=0.90, test="exposure", controls=(), tol=1e-4, **kw):
+    """
+    Equal-tailed confidence interval for coef(test) by inverting wild_boot: the
+    beta0 at which neither one-sided p-value is at or below (1 - conf) / 2. Every
+    beta0 reuses the same draws (same seed). Each endpoint is bracketed by
+    stepping outward from the estimate, then bisected to *tol*. Extra keywords
+    (B, seed, level, restricted, ...) pass through to wild_boot.
+    """
+    a = round((1 - conf) / 2, 12)  # exactly 0.05, so p == a rejects
+    p = lambda b0, side: wild_boot(panel, dv, test, controls, beta0=b0, **kw)[side]
+    beta = wild_boot(panel, dv, test, controls, **{**kw, "B": 1})["beta"]
+    step = max(abs(beta), 1.) / 2
+
+    def edge(side, sign):
+        inside, out = beta, beta + sign * step
+        while p(out, side) > a:
+            inside, out = out, out + sign * step
+            if abs(out - beta) > 500 * step:
+                return sign * np.inf
+        while abs(out - inside) > tol:
+            mid = (inside + out) / 2
+            inside, out = (mid, out) if p(mid, side) > a else (inside, mid)
+        return (inside + out) / 2
+
+    return edge("p_up", -1), edge("p_lo", +1)
+
+
+def tost(panel, dv, delta, test="exposure", controls=(), **kw):
+    """
+    Two one-sided wild bootstrap tests of H0: beta <= -delta and H0: beta >= +delta,
+    each imposing its boundary in the DGP. p_tost <= alpha is equivalent to the
+    (1 - 2 alpha) equal-tailed boot_ci lying inside +-delta.
+    """
+    lo = wild_boot(panel, dv, test, controls, beta0=-delta, **kw)["p_up"]
+    hi = wild_boot(panel, dv, test, controls, beta0=+delta, **kw)["p_lo"]
+    return {"p_lower": lo, "p_upper": hi, "p_tost": max(lo, hi)}
+
+
+def mde(ci95, G, power=0.80):
+    """
+    Minimum detectable effect at *power* from a 95% interval: its half-width
+    converted to an implied SE with t(.975, G-1), times t(.975) + t(power).
+    """
+    t975 = stats.t.ppf(.975, G - 1)
+    return (t975 + stats.t.ppf(power, G - 1)) * (ci95[1] - ci95[0]) / (2 * t975)
