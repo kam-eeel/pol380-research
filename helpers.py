@@ -557,6 +557,7 @@ def _placebo_chunk(args):
                            for i, j in enumerate(pick)], ignore_index=True)
             P = {s: _placebo_prep(d, c) for s, c in specs.items()}
         else:
+            assert fixed is not None  # built above whenever resample is False
             d, P = base, fixed
         G = d["cl"].nunique()
         tab = np.zeros((G, traj.shape[1]))
@@ -568,7 +569,7 @@ def _placebo_chunk(args):
             y = d[dv].to_numpy(float)
             for s in specs:
                 rows.append({"draw": r, "outcome": dv, "spec": s,
-                             **_placebo_tests(y, x, P[s], Wc, Wo)})  # type: ignore[arg-type]
+                             **_placebo_tests(y, x, P[s], Wc, Wo)})
     return rows
 
 
@@ -769,7 +770,7 @@ def did_m_inference(panel, dv, test="exposure", group="iso2", time="wave_num",
         sh = pd.DataFrame(paths.to_numpy()[rng.permutation(len(paths))],
                           index=paths.index, columns=paths.columns)
         d = panel.drop(columns=test).merge(
-            sh.stack().rename(test).reset_index(), on=[group, time])
+            sh.reset_index().melt(id_vars=group, var_name=time, value_name=test), on=[group, time])
         perm.append(did_m(d, dv, test, group, time)["beta"])
     perm = np.array(perm); perm = perm[~np.isnan(perm)]
     out["p_perm"] = (1 + np.sum(np.abs(perm) >= abs(est["beta"]))) / (len(perm) + 1)
