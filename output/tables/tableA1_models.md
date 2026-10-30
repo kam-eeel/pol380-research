@@ -3,10 +3,10 @@
 | Military aid | m1 base       | Exposure           |      0.068 |     0.93  | [-0.99, 3.39]  | [-0.90, 2.86]  |                              0.74  |
 | Military aid | m2 + controls | Exposure           |      0.337 |     0.703 | [-0.89, 3.86]  | [-0.76, 3.04]  |                              0.798 |
 | Military aid | m3 + psm      | Exposure           |     -0.24  |     0.633 | [-2.25, 1.96]  | [-1.44, 1.32]  |                              0.407 |
-| Military aid | m3 + psm      | Exposure x PSM (z) |     -1.748 |     0.578 | [-7.17, 2.70]  | [-6.47, 2.16]  |                              1.722 |
+| Military aid | m3 + psm      | Exposure x PSM (z) |     -1.748 |     0.578 | [-7.16, 2.70]  | [-6.47, 2.16]  |                              1.722 |
 | Military aid | m4 full       | Exposure           |      0.013 |     0.981 | [-2.49, 2.90]  | [-1.44, 1.94]  |                              0.474 |
 | Military aid | m4 full       | Exposure x PSM (z) |     -2.12  |     0.44  | [-7.23, 2.53]  | [-6.61, 1.67]  |                              1.594 |
-| Sanctions    | m1 base       | Exposure           |      0.042 |     0.925 | [-1.78, 1.75]  | [-0.97, 1.25]  |                              0.462 |
+| Sanctions    | m1 base       | Exposure           |      0.042 |     0.925 | [-1.78, 1.75]  | [-0.97, 1.24]  |                              0.462 |
 | Sanctions    | m2 + controls | Exposure           |      0.194 |     0.711 | [-1.73, 2.23]  | [-1.10, 1.71]  |                              0.528 |
 | Sanctions    | m3 + psm      | Exposure           |     -0.185 |     0.762 | [-2.32, 2.33]  | [-2.13, 0.94]  |                              0.51  |
 | Sanctions    | m3 + psm      | Exposure x PSM (z) |     -1.289 |     0.387 | [-4.85, 1.94]  | [-4.04, 1.23]  |                              1.144 |

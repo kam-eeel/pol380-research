@@ -2,10 +2,10 @@
 
 | outcome           | spec          |   beta TWFE |   treated cells |   negative cells |   negative weight |   sigma: zero average |   sigma: all opposite sign |
 |:------------------|:--------------|------------:|----------------:|-----------------:|------------------:|----------------------:|---------------------------:|
-| support_aid       | m1 base       |       0.068 |              49 |               14 |            -0.234 |                 0.035 |                      0.107 |
-| support_sanctions | m1 base       |       0.042 |              49 |               14 |            -0.234 |                 0.022 |                      0.066 |
-| support_aid       | m2 + controls |       0.337 |              49 |               12 |            -0.231 |                 0.18  |                      0.526 |
-| support_sanctions | m2 + controls |       0.194 |              49 |               12 |            -0.231 |                 0.103 |                      0.303 |
+| support_aid       | m1 base       |       0.068 |              49 |               14 |            -0.234 |                 0.038 |                      0.076 |
+| support_sanctions | m1 base       |       0.042 |              49 |               14 |            -0.234 |                 0.023 |                      0.047 |
+| support_aid       | m2 + controls |       0.337 |              49 |               12 |            -0.231 |                 0.191 |                      0.375 |
+| support_sanctions | m2 + controls |       0.194 |              49 |               12 |            -0.231 |                 0.11  |                      0.216 |
 
 ## DID_M per unit of exposure (no controls)
 

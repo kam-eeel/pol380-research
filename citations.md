@@ -42,7 +42,7 @@ Roth, J. (2022). Pretest with caution: Event-study estimates after testing for p
 | Bloom (1995) | Minimum detectable effect |
 | Cameron et al. (2008) | Wild cluster bootstrap |
 | Carter et al. (2017) | Effective number of clusters, G\*(0) |
-| de Chaisemartin and D'Haultfœuille (2020) | TWFE weights, robustness measures, and DID_M |
+| de Chaisemartin and D'Haultfœuille (2020) | TWFE weights, robustness measures (ordered-treatment version, online appendix Section 3.2), and DID_M |
 | Donald and Lang (2007) | Inference with few groups |
 | Hartman and Hidalgo (2018) | Equivalence framing of the placebo test and the 0.36σ bound |
 | Lakens (2017); Lakens et al. (2018) | TOST procedure and the justification of equivalence bounds |

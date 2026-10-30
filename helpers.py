@@ -103,6 +103,8 @@ def _parse_dates(ds: str) -> tuple[date, date, str]:
     end = ds.split("-")[-1].strip()
     fw_start = date(*[int(v) for v in start.split("/")[::-1]])
     fw_end = date(*[int(v) for v in end.split("/")[::-1]])
+    if fw_start > fw_end:  # fieldwork crossing New Year: the start is in the previous year
+        fw_start = fw_start.replace(year=fw_start.year - 1)
 
     if any(m == fw_start.month for m in [3, 4, 5]):
         season = f"Spring {fw_start.year}"
@@ -118,7 +120,7 @@ def _parse_dates(ds: str) -> tuple[date, date, str]:
 
 def parse_doc(fn: str) -> DocOutput:
     """
-    Parse excel dataset *fp* and extract *eb_number, wave_id, fieldwork_start,
+    Parse excel dataset *fn* and extract *eb_number, wave_id, fieldwork_start,
     fieldwork_end, season*, and all questions relevant to the research project.
     """
     df = pd.read_excel(f"{EB_BASE_PATH}{fn}")
@@ -233,11 +235,12 @@ def _parse_activity_date(s: str, *, end: bool) -> date | None:
 def source_window(row) -> tuple[date | None, date | None]:
     """
     Return (start, end) dates for a register row, or (None, None) if undated.
+    A row with only one date covers that date's whole period (month or year).
     """
     a = _parse_activity_date(row.activity_start, end=False) \
-        or _parse_activity_date(row.activity_end, end=True)
+        or _parse_activity_date(row.activity_end, end=False)
     b = _parse_activity_date(row.activity_end, end=True) \
-        or _parse_activity_date(row.activity_start, end=False)
+        or _parse_activity_date(row.activity_start, end=True)
 
     return (a, b) if (a and b) else (None, None)
 
@@ -455,8 +458,9 @@ def wild_boot(panel, dv, test="exposure", controls=(), fe=("iso2", "wave_num"),
               cluster="iso2", beta0=0., restricted=True, level="cluster",
               B=9999, seed=0):
     """
-    Wild bootstrap test of H0: coef(test) = beta0 with a CRV1 t-statistic
-    clustered by *cluster*. restricted=True imposes the null in the DGP (WCR/WR);
+    Wild bootstrap test of H0: coef(test) = beta0 with a cluster-robust t-statistic
+    clustered by *cluster* (the CRV1 sandwich without its small-sample factor, which
+    cancels in the bootstrap p-values; the returned t omits it too). restricted=True imposes the null in the DGP (WCR/WR);
     False uses unrestricted residuals (WCU/WU). level="cluster" draws one
     Rademacher weight per cluster (wild cluster bootstrap); level="obs" draws one
     per observation, the subcluster wild bootstrap at its finest level (MacKinnon
@@ -515,7 +519,7 @@ def cluster_diagnostics(panel, dv, test="exposure", controls=(), fe=("iso2", "wa
 
 def exposure_trajectories(panel, test="exposure", exclude=()):
     """
-    Exposure paths (one row per wave) of the countries whose exposure varies,
+    Exposure paths (one row per country, one column per wave) of the countries whose exposure varies,
     minus any in *exclude*.
     """
     pv = panel.pivot(index="iso2", columns="wave_num", values=test)
@@ -607,7 +611,8 @@ def placebo_sim(panel, traj, outcomes, specs, resample=False, draws=4002, B=999,
     bootstraps (B draws each). resample=True first resamples whole country
     histories with replacement, removing the conditioning on one realised
     dataset. Work is split into *chunks* seeded seed + i, so results do not
-    depend on the number of worker processes.
+    depend on the number of worker processes. Each chunk runs ceil(draws / chunks)
+    draws, so the total is rounded up to a multiple of *chunks*.
     """
     per = -(-draws // chunks)
     jobs = [(panel, traj, outcomes, specs, resample, per, B, seed + i) for i in range(chunks)]
@@ -705,21 +710,25 @@ def twfe_weights(panel, test="exposure", controls=(), fe=("iso2", "wave_num")):
     return pd.Series(eps[tr] * D[tr] / np.sum(eps[tr] * D[tr]), index=panel.index[tr])
 
 
-def dcdh_sigma(beta, w):
+def dcdh_sigma(beta, w, d):
     """
     The two robustness measures of de Chaisemartin and D'Haultfoeuille (2020,
-    Corollary 1), with treated cells weighted equally: the smallest SD of the
-    cell effects compatible with an average effect of zero, |beta| / sigma(w),
-    and, if some weights are negative, the smallest SD compatible with every cell
-    effect having the opposite sign to beta (nan when all weights are positive).
+    Corollary 1) for an ordered treatment (online appendix, Section 3.2): treated
+    cells are weighted by their treatment level *d* (N_gt D_gt with one observation
+    per cell), and the weights are w / share. Returns the smallest SD of the per-unit
+    cell effects compatible with an average effect of zero, |beta| / sigma(w), and,
+    if some weights are negative, the smallest SD compatible with every cell effect
+    having the opposite sign to beta (nan when all weights are positive).
     """
-    n = len(w)
-    om = np.sort(n * np.asarray(w, float))[::-1]      # mean-1 scale, descending
-    sd = np.sqrt(np.mean((om - 1) ** 2))
-    share = np.full(n, 1 / n)
+    w = np.asarray(w, float); d = np.asarray(d, float)
+    share = d / d.sum()
+    order = np.argsort(-(w / share), kind="stable")  # descending in the weights
+    om, share = (w / share)[order], share[order]       # share-weighted mean 1
+    sd = np.sqrt(np.sum(share * (om - 1) ** 2))
     P = share[::-1].cumsum()[::-1]                    # P_k = sum_{i>=k} share_i
     S = (share * om)[::-1].cumsum()[::-1]
     T = (share * om ** 2)[::-1].cumsum()[::-1]
+    n = len(om)
     k = np.arange(1, n)                               # P_1 = 1: the condition starts at k = 2
     hit = k[om[k] < -S[k] / (1 - P[k])]
     if not len(hit):

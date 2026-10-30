@@ -12,7 +12,7 @@
 
 For wave _w_, the observation window runs from the fieldwork end date of wave _w-1_ to the fieldwork end date of wave _w_.
 The outcome is an attitude measured during wave _w_ fieldwork. It would represent the result of all exposure accumulated since the end of wave _w-1_ fieldwork.
-Fieldwork periods last 25-37 days, and forensic reporting is rarely dated to that resolution. Coding on these windows alone would produce near-uniform zeros and eliminate the within-country variation from which the design is identified.
+Fieldwork periods last 24-37 days, and forensic reporting is rarely dated to that resolution. Coding on these windows alone would produce near-uniform zeros and eliminate the within-country variation from which the design is identified.
 _Special case for Wave 1_: Because no prior wave exists, the window runs from February 24, 2022 (the start of the invasion and the campaign's onset) to the end of wave 1's fieldwork. Its length (143 days) is within the range of the other windows (139-204 days).
 
 | wave_num | wave_id | Window Start | Window End |

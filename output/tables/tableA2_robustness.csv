@@ -11,8 +11,8 @@ R5 extended register,support aid,0.48,0.565,0.544,189,added later
 R5 extended register,support sanctions,0.084,0.842,0.861,189,added later
 R6 drop W1,support aid,1.019,0.202,0.291,162,added later
 R6 drop W1,support sanctions,0.708,0.302,0.33,162,added later
-R7 binary exposure,support aid,1.092,0.731,0.705,189,added later
-R7 binary exposure,support sanctions,0.874,0.6,0.632,189,added later
+R7 binary exposure (0/1),support aid,1.092,0.731,0.705,189,added later
+R7 binary exposure (0/1),support sanctions,0.874,0.6,0.632,189,added later
 R8 LOCO min (drop PL),support aid,-0.187,0.725,0.735,182,added later
 R8 LOCO max (drop ES),support aid,1.206,0.37,0.368,182,added later
 R8 LOCO min (drop PL),support sanctions,-0.038,0.942,0.946,182,added later
