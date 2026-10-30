@@ -12,8 +12,8 @@
 
 For wave _w_, the observation window runs from the fieldwork end date of wave _w-1_ to the fieldwork end date of wave _w_.
 The outcome is an attitude measured during wave _w_ fieldwork. It would represent the result of all exposure accumulated since the end of wave _w-1_ fieldwork.
-Fieldwork windows are 3-4 weeks long, and forensic reporting is rarely dated to that resolution. Coding on these windows alone would produce near-uniform zeros and eliminate the within-country variation from which the design is identified.
-_Special case for Wave 1_: Because no prior wave exists, the window runs from February 24, 2022 (the start of the invasion and the campaign's onset) to the end of wave 1's fieldwork. This window is slightly shorter than the others.
+Fieldwork periods last 25-37 days, and forensic reporting is rarely dated to that resolution. Coding on these windows alone would produce near-uniform zeros and eliminate the within-country variation from which the design is identified.
+_Special case for Wave 1_: Because no prior wave exists, the window runs from February 24, 2022 (the start of the invasion and the campaign's onset) to the end of wave 1's fieldwork. Its length (143 days) is within the range of the other windows (139-204 days).
 
 | wave_num | wave_id | Window Start | Window End |
 | -------- | ------- | ------------ | ---------- |
@@ -68,7 +68,7 @@ Two sources are independent only if they rest on separate evidentiary bases. The
 | ---- | ------------------------ | -------------------------------------------------------------- |
 | 3    | Primary Sustained Target | A, B, C all met and D met                                      |
 | 2    | Secondary target         | A met, plus ≥ 1 of B or C, and D; <br>or A, B, and C but not D |
-| 1    | Marginal / incidental    | A met, none of B, C, or D                                      |
+| 1    | Marginal / incidental    | A met, but no tier-2 or tier-3 combination                     |
 | 0    | No documented activity   | A not met                                                      |
 
 ---
@@ -82,14 +82,16 @@ The primary register contains only sources whose own primary research attributes
 # Decision rules
 
 - **R1 — Date-range spanning.** A source that documents activity across a range crossing multiple windows generates a code in _every_ window that the range overlaps. Overlap of any length counts.
-- **R2 — No carry-forward by default.** Infrastructure documented as active in window _t_ does **not** carry into _t_+1 unless a source affirmatively states that it remained active, or a source in _t_+1 re-documents it. Otherwise, code _t_+1 on its own evidence and set `ambiguous = 1`.
+- **R2 — No carry-forward by default.** Infrastructure documented as active in window _t_ does **not** carry into _t_+1 unless a source affirmatively states that it remained active, or a source in _t_+1 re-documents it. Otherwise, code _t_+1 on its own evidence.
 - **R3 — Documented takedown.** If a platform, registrar, or sanctions action removing infrastructure is documented, do not code that infrastructure as active in subsequent windows.
-- **R4 — Undated documentation.** A country documented as targeted with no usable time information receives **0** in every specific window and `ambiguous = 1`.
-- **R5 — Aggregate-only evidence.** Counts or claims stated at EU or multi-country level without country attribution do not satisfy criterion A and do not raise any country's tier. Record them in notes.
-- **R6 — Source conflict.** If two sources imply different tiers for the same country-window, take the **higher** and set `ambiguous = 1`.
+- **R4 — Undated documentation.** A country documented as targeted with no usable time information receives **0** in every specific window. In the coding, a source without usable dates has no observation window, so it contributes to no cell.
+- **R5 — Aggregate-only evidence.** Counts or claims stated at EU or multi-country level without country attribution do not satisfy criterion A and do not raise any country's tier. They are not recorded in the coding sheet, whose notes column lists only the establishing sources (R12).
+- **R6 — Source conflict.** If two sources imply different tiers for the same country-window, take the **higher**. In the coding, criteria are pooled across every source for the cell (R7), so the tier always reflects the strongest evidence.
 - **R7 — Criteria met by different sources.** Criteria A, B, and C may each be satisfied by different sources within the same window; they need not co-occur in one document.
 - **R8 — Out-of-sample targets.** Documented targeting of non-EU-27 states does not generate rows and does not raise any EU-27 country's tier, even where the campaign infrastructure is shared.
 - **R9 — Closed source register.** Use only sources listed in the frozen source register. If a genuinely new and important source surfaces during coding, amend the register, log it, and **re-check every previously coded cell that source could speak to**.
 - **R10 — Absence of evidence.** A 0 means _no documented activity in the frozen source register for this window_. It does not mean that no activity occurred.
-- **R11 — Ceiling / no-variation flag.** If a country would receive an identical tier in all eight windows, flag it. Under country fixed effects, it contributes nothing to identification.
+- **R11 — Ceiling / no-variation flag.** If a country would receive an identical tier in every window that enters the panel, flag it. The panel uses windows 1-7: windows 8 and 9 have no documented exposure in any country and are dropped before the check. Under country fixed effects, it contributes nothing to identification.
 - **R12 — Evidence recording.** Every non-zero cell records its establishing sources mechanically from the register (evidence\_\*\_source, criteria_met, notes). Page-level locators are maintained at the register level (one row per source), not per cell.
+
+The coding sheet's `ambiguous` column is not populated. Every tier is derived mechanically from the register by the Exposure coding cell of `analysis.ipynb`, so no cell is flagged by hand.

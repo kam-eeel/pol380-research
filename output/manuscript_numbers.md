@@ -58,17 +58,17 @@ Per index point. p and intervals from WCR test inversion; the `exposure:psm_z` r
 | outcome           | spec          | term           |   beta |   p_WCR |   ci95_lo |   ci95_hi |   ci90_lo |   ci90_hi |
 |:------------------|:--------------|:---------------|-------:|--------:|----------:|----------:|----------:|----------:|
 | support_aid       | m1 base       | exposure       |  0.068 |   0.93  |    -0.989 |     3.392 |    -0.899 |     2.856 |
-| support_aid       | m2 + controls | exposure       |  0.336 |   0.704 |    -0.898 |     3.866 |    -0.767 |     3.053 |
+| support_aid       | m2 + controls | exposure       |  0.337 |   0.703 |    -0.892 |     3.862 |    -0.763 |     3.043 |
 | support_aid       | m3 + psm      | exposure       | -0.24  |   0.633 |    -2.246 |     1.957 |    -1.436 |     1.317 |
 | support_aid       | m3 + psm      | exposure:psm_z | -1.748 |   0.578 |    -7.165 |     2.703 |    -6.472 |     2.161 |
-| support_aid       | m4 full       | exposure       |  0.011 |   0.982 |    -2.471 |     2.864 |    -1.429 |     1.95  |
-| support_aid       | m4 full       | exposure:psm_z | -2.122 |   0.44  |    -7.22  |     2.546 |    -6.601 |     1.69  |
+| support_aid       | m4 full       | exposure       |  0.013 |   0.981 |    -2.488 |     2.898 |    -1.439 |     1.941 |
+| support_aid       | m4 full       | exposure:psm_z | -2.12  |   0.44  |    -7.232 |     2.533 |    -6.612 |     1.672 |
 | support_sanctions | m1 base       | exposure       |  0.042 |   0.925 |    -1.777 |     1.754 |    -0.967 |     1.245 |
-| support_sanctions | m2 + controls | exposure       |  0.192 |   0.711 |    -1.692 |     2.234 |    -1.104 |     1.708 |
+| support_sanctions | m2 + controls | exposure       |  0.194 |   0.711 |    -1.733 |     2.231 |    -1.101 |     1.71  |
 | support_sanctions | m3 + psm      | exposure       | -0.185 |   0.762 |    -2.316 |     2.333 |    -2.127 |     0.939 |
 | support_sanctions | m3 + psm      | exposure:psm_z | -1.289 |   0.387 |    -4.849 |     1.939 |    -4.043 |     1.229 |
-| support_sanctions | m4 full       | exposure       | -0.043 |   0.944 |    -2.244 |     2.663 |    -2.043 |     1.237 |
-| support_sanctions | m4 full       | exposure:psm_z | -1.535 |   0.304 |    -4.699 |     1.413 |    -4.043 |     0.851 |
+| support_sanctions | m4 full       | exposure       | -0.041 |   0.947 |    -2.255 |     2.68  |    -2.05  |     1.247 |
+| support_sanctions | m4 full       | exposure:psm_z | -1.533 |   0.304 |    -4.687 |     1.469 |    -4.05  |     0.881 |
 
 *Source: `output/tables/bootstrap_ci.md`.*
 
@@ -79,21 +79,21 @@ Rejection rates (%) of a true-zero placebo coefficient, range across outcomes, s
 
 | design                       | method   | two-sided 5%   | equal-tailed 10%   | one-sided up 5%   | one-sided lo 5%   |
 |:-----------------------------|:---------|:---------------|:-------------------|:------------------|:------------------|
-| all 9 varying states         | CRV1     | 7.8-11.5       | 14.0-17.6          | 6.9-8.7           | 6.8-9.4           |
+| all 9 varying states         | CRV1     | 8.1-11.5       | 14.0-17.7          | 6.9-8.8           | 7.0-9.4           |
 | all 9 varying states         | WCR      | 4.3-5.0        | 9.4-10.1           | 4.1-5.5           | 4.2-5.3           |
-| all 9 varying states         | WR       | 3.4-5.7        | 8.7-11.0           | 4.6-5.4           | 3.8-5.9           |
-| 6 states (no W7-only)        | CRV1     | 14.2-18.6      | 20.9-25.4          | 10.3-11.7         | 10.5-14.8         |
-| 6 states (no W7-only)        | WCR      | 2.6-4.1        | 7.8-10.0           | 2.9-4.1           | 4.3-6.1           |
-| 6 states (no W7-only)        | WR       | 3.2-5.1        | 7.5-10.6           | 3.0-4.2           | 3.4-6.8           |
-| R1 sample (W1-W6)            | CRV1     | 15.6-19.8      | 22.8-27.2          | 9.9-13.1          | 12.0-14.6         |
-| R1 sample (W1-W6)            | WCR      | 3.2-4.0        | 7.7-9.5            | 3.1-4.4           | 4.6-5.3           |
-| R1 sample (W1-W6)            | WR       | 3.9-6.4        | 8.7-12.3           | 3.8-5.3           | 4.6-7.9           |
+| all 9 varying states         | WR       | 3.5-5.8        | 8.8-11.1           | 4.6-5.5           | 3.8-5.9           |
+| 6 states (no W7-only)        | CRV1     | 14.6-18.6      | 21.2-25.4          | 10.3-11.7         | 10.6-14.8         |
+| 6 states (no W7-only)        | WCR      | 2.5-4.1        | 7.8-10.0           | 2.9-4.1           | 4.3-6.1           |
+| 6 states (no W7-only)        | WR       | 3.2-4.9        | 7.7-10.6           | 3.0-4.3           | 3.5-6.8           |
+| R1 sample (W1-W6)            | CRV1     | 15.6-19.8      | 22.8-27.0          | 9.9-13.3          | 12.2-14.4         |
+| R1 sample (W1-W6)            | WCR      | 3.1-4.0        | 7.7-9.5            | 3.1-4.4           | 4.6-5.3           |
+| R1 sample (W1-W6)            | WR       | 3.9-6.3        | 8.7-12.2           | 3.8-5.2           | 4.6-7.9           |
 | lag (W2-W7, 6 states)        | CRV1     | 18.4-20.4      | 25.9-27.8          | 12.3-13.2         | 13.4-14.5         |
 | lag (W2-W7, 6 states)        | WCR      | 3.0-3.9        | 8.5-9.5            | 3.7-4.7           | 4.6-5.1           |
 | lag (W2-W7, 6 states)        | WR       | 4.7-5.6        | 10.9-12.5          | 5.2-6.2           | 5.5-6.3           |
-| lead alone (W1-W6, 9 states) | CRV1     | 7.1-8.6        | 13.0-14.4          | 6.2-7.5           | 6.2-7.3           |
-| lead alone (W1-W6, 9 states) | WCR      | 4.4-5.0        | 9.3-10.9           | 4.5-5.7           | 4.8-5.7           |
-| lead alone (W1-W6, 9 states) | WR       | 3.6-4.5        | 7.9-9.0            | 3.6-4.7           | 3.8-5.0           |
+| lead alone (W1-W6, 9 states) | CRV1     | 7.1-8.6        | 13.1-14.8          | 6.3-7.8           | 6.2-7.3           |
+| lead alone (W1-W6, 9 states) | WCR      | 4.5-5.0        | 9.3-10.8           | 4.6-5.7           | 4.7-5.7           |
+| lead alone (W1-W6, 9 states) | WR       | 3.7-4.4        | 7.9-9.1            | 3.6-4.6           | 3.8-5.0           |
 
 *Source: `bootstrap_diagnostic.md, timing_diagnostic.md`.*
 
@@ -105,9 +105,9 @@ From the bootstrap 95% interval. The analytic column is shown only to correct th
 | outcome           | spec          |   MDE per point |   MDE 0 -> 3 |   analytic MDE per point (superseded) |
 |:------------------|:--------------|----------------:|-------------:|--------------------------------------:|
 | support_aid       | m1 base       |            3.1  |         9.31 |                                  2.15 |
-| support_aid       | m2 + controls |            3.37 |        10.12 |                                  2.33 |
+| support_aid       | m2 + controls |            3.37 |        10.1  |                                  2.32 |
 | support_sanctions | m1 base       |            2.5  |         7.5  |                                  1.34 |
-| support_sanctions | m2 + controls |            2.78 |         8.34 |                                  1.53 |
+| support_sanctions | m2 + controls |            2.81 |         8.42 |                                  1.54 |
 
 *Source: `bootstrap_ci.md, paper_inference.md`.*
 
@@ -133,30 +133,30 @@ Headline: two-sided TOST at A1. `p_erosion` is the one-sided test that rules out
 | support_aid       | m1 base       | B poll margin of error |  2.953  |   0.1999 | False        |      0.0262 | True                |
 | support_aid       | m1 base       | C H&H 0.36 sd          |  1.6202 |   0.2981 | False        |      0.2352 | False               |
 | support_aid       | m1 base       | D Piccardi-sized       |  2      |   0.2709 | False        |      0.1715 | False               |
-| support_aid       | m2 + controls | A1 full EU decline     |  8.4219 |   0.0635 | False        |      0.0029 | True                |
-| support_aid       | m2 + controls | A2 half EU decline     |  4.2109 |   0.2168 | False        |      0.0084 | True                |
-| support_aid       | m2 + controls | B poll margin of error |  2.953  |   0.2823 | False        |      0.018  | True                |
-| support_aid       | m2 + controls | C H&H 0.36 sd          |  1.6202 |   0.4028 | False        |      0.1329 | False               |
-| support_aid       | m2 + controls | D Piccardi-sized       |  2      |   0.3551 | False        |      0.0826 | False               |
+| support_aid       | m2 + controls | A1 full EU decline     |  8.4219 |   0.0632 | False        |      0.0028 | True                |
+| support_aid       | m2 + controls | A2 half EU decline     |  4.2109 |   0.2159 | False        |      0.0084 | True                |
+| support_aid       | m2 + controls | B poll margin of error |  2.953  |   0.2822 | False        |      0.0177 | True                |
+| support_aid       | m2 + controls | C H&H 0.36 sd          |  1.6202 |   0.4032 | False        |      0.1305 | False               |
+| support_aid       | m2 + controls | D Piccardi-sized       |  2      |   0.3552 | False        |      0.0814 | False               |
 | support_sanctions | m1 base       | A1 full EU decline     |  4.5379 |   0.036  | True         |      0.0296 | True                |
 | support_sanctions | m1 base       | A2 half EU decline     |  2.2689 |   0.1112 | False        |      0.0748 | False               |
 | support_sanctions | m1 base       | B poll margin of error |  2.8089 |   0.0834 | False        |      0.0529 | False               |
 | support_sanctions | m1 base       | C H&H 0.36 sd          |  1.3804 |   0.1882 | False        |      0.1343 | False               |
 | support_sanctions | m1 base       | D Piccardi-sized       |  2      |   0.1258 | False        |      0.0864 | False               |
-| support_sanctions | m2 + controls | A1 full EU decline     |  4.5379 |   0.063  | False        |      0.0294 | True                |
-| support_sanctions | m2 + controls | A2 half EU decline     |  2.2689 |   0.16   | False        |      0.0728 | False               |
-| support_sanctions | m2 + controls | B poll margin of error |  2.8089 |   0.1243 | False        |      0.0591 | False               |
-| support_sanctions | m2 + controls | C H&H 0.36 sd          |  1.3804 |   0.3091 | False        |      0.1136 | False               |
-| support_sanctions | m2 + controls | D Piccardi-sized       |  2      |   0.1927 | False        |      0.0827 | False               |
+| support_sanctions | m2 + controls | A1 full EU decline     |  4.5379 |   0.0631 | False        |      0.0305 | True                |
+| support_sanctions | m2 + controls | A2 half EU decline     |  2.2689 |   0.1605 | False        |      0.0728 | False               |
+| support_sanctions | m2 + controls | B poll margin of error |  2.8089 |   0.1241 | False        |      0.0604 | False               |
+| support_sanctions | m2 + controls | C H&H 0.36 sd          |  1.3804 |   0.311  | False        |      0.1146 | False               |
+| support_sanctions | m2 + controls | D Piccardi-sized       |  2      |   0.1934 | False        |      0.0829 | False               |
 
 *Source: `output/tables/equivalence.md`.*
 
 | outcome           | spec          |   beta 0-3 | WCR 90% 0-3   |   ECI 0-3 | ECI seeds 0-4   |   erosion ruled out beyond | WR 90% 0-3 (comparison)   | CRV1 90% 0-3 (comparison)   |
 |:------------------|:--------------|-----------:|:--------------|----------:|:----------------|---------------------------:|:--------------------------|:----------------------------|
 | support_aid       | m1 base       |       0.2  | [-2.70, 8.57] |      8.57 | 8.26-8.57       |                      -2.7  | [-3.75, 5.65]             | [-3.58, 3.99]               |
-| support_aid       | m2 + controls |       1.01 | [-2.30, 9.16] |      9.16 | 8.96-9.16       |                      -2.3  | [-3.21, 6.63]             | [-3.09, 5.10]               |
+| support_aid       | m2 + controls |       1.01 | [-2.29, 9.13] |      9.13 | 8.93-9.13       |                      -2.29 | [-3.18, 6.60]             | [-3.07, 5.10]               |
 | support_sanctions | m1 base       |       0.13 | [-2.90, 3.73] |      3.73 | 3.54-3.73       |                      -2.9  | [-3.01, 3.27]             | [-2.24, 2.49]               |
-| support_sanctions | m2 + controls |       0.58 | [-3.31, 5.12] |      5.12 | 4.90-5.22       |                      -3.31 | [-3.05, 4.15]             | [-2.12, 3.27]               |
+| support_sanctions | m2 + controls |       0.58 | [-3.30, 5.13] |      5.13 | 4.94-5.20       |                      -3.3  | [-3.06, 4.17]             | [-2.12, 3.29]               |
 
 *Source: `output/tables/equivalence.md`.*
 
@@ -168,9 +168,9 @@ If only a share s of a top-tier state's population encountered the content, a po
 | outcome           | spec          |   erosion ruled out beyond |   s = 10% |   s = 30% |   s = 50% |
 |:------------------|:--------------|---------------------------:|----------:|----------:|----------:|
 | support_aid       | m1 base       |                      -2.7  |     -27   |      -9   |      -5.4 |
-| support_aid       | m2 + controls |                      -2.3  |     -23   |      -7.7 |      -4.6 |
+| support_aid       | m2 + controls |                      -2.29 |     -22.9 |      -7.6 |      -4.6 |
 | support_sanctions | m1 base       |                      -2.9  |     -29   |      -9.7 |      -5.8 |
-| support_sanctions | m2 + controls |                      -3.31 |     -33.1 |     -11   |      -6.6 |
+| support_sanctions | m2 + controls |                      -3.3  |     -33   |     -11   |      -6.6 |
 
 *Source: `equivalence.md (erosion ruled out beyond)`.*
 
@@ -184,9 +184,9 @@ If only a share s of a top-tier state's population encountered the content, a po
 | lag                                    | support_sanctions | m1 base       |                6 | -0.143 |   0.897 | [-2.369, 2.976]  |         8.927 | [-3.729, 5.195] |  0.89  | [-2.157, 2.172] |        6.516 |
 | lag                                    | support_sanctions | m2 + controls |                6 | -0.098 |   0.94  | [-2.174, 3.727]  |        11.181 | [-2.959, 5.271] |  0.933 | [-2.202, 2.513] |        7.539 |
 | lag, pre-invasion zero (sens.)         | support_aid       | m1 base       |               10 | -0.487 |   0.471 | [-1.412, 0.568]  |         4.236 | [-1.577, 0.767] |  0.374 | [-1.363, 0.500] |        4.089 |
-| lag, pre-invasion zero (sens.)         | support_aid       | m2 + controls |               10 | -0.318 |   0.614 | [-1.341, 0.891]  |         4.023 | [-1.533, 1.082] |  0.598 | [-1.305, 0.788] |        3.914 |
+| lag, pre-invasion zero (sens.)         | support_aid       | m2 + controls |               10 | -0.371 |   0.562 | [-1.411, 0.827]  |         4.234 | [-1.599, 1.065] |  0.542 | [-1.363, 0.724] |        4.088 |
 | lag, pre-invasion zero (sens.)         | support_sanctions | m1 base       |               10 | -0.535 |   0.363 | [-1.370, 0.584]  |         4.109 | [-1.500, 0.883] |  0.336 | [-1.492, 0.441] |        4.475 |
-| lag, pre-invasion zero (sens.)         | support_sanctions | m2 + controls |               10 | -0.454 |   0.444 | [-1.357, 0.707]  |         4.071 | [-1.509, 1.034] |  0.435 | [-1.456, 0.592] |        4.367 |
+| lag, pre-invasion zero (sens.)         | support_sanctions | m2 + controls |               10 | -0.468 |   0.438 | [-1.407, 0.725]  |         4.22  | [-1.573, 1.060] |  0.432 | [-1.497, 0.598] |        4.491 |
 | joint: contemporaneous                 | support_aid       | m1 base       |                9 |  1.124 |   0.075 | [0.035, 3.461]   |        10.382 | [-0.074, 3.954] |  0.185 | [-0.304, 2.951] |        8.852 |
 | joint: contemporaneous                 | support_aid       | m2 + controls |                9 |  1.226 |   0.053 | [0.088, 3.545]   |        10.634 | [-0.021, 4.070] |  0.15  | [-0.216, 3.102] |        9.306 |
 | joint: contemporaneous                 | support_sanctions | m1 base       |                9 |  0.755 |   0.354 | [-1.234, 1.836]  |         5.507 | [-2.180, 2.117] |  0.362 | [-0.963, 1.987] |        5.962 |
@@ -200,17 +200,17 @@ If only a share s of a top-tier state's population encountered the content, a po
 | joint: cumulative                      | support_sanctions | m1 base       |                9 |  0.381 |   0.676 | [-1.906, 2.786]  |         8.357 | [-2.769, 4.133] |  0.68  | [-1.314, 2.685] |        8.055 |
 | joint: cumulative                      | support_sanctions | m2 + controls |                9 |  0.464 |   0.67  | [-1.823, 4.037]  |        12.111 | [-2.536, 5.328] |  0.667 | [-1.446, 3.196] |        9.588 |
 | lead | contemporaneous                 | support_aid       | m1 base       |                9 | -0.815 |   0.245 | [-2.572, 0.267]  |         7.715 | [-2.846, 0.420] |  0.252 | [-2.374, 0.325] |        7.121 |
-| lead | contemporaneous                 | support_aid       | m2 + controls |                9 | -0.857 |   0.209 | [-2.525, 0.222]  |         7.574 | [-2.783, 0.423] |  0.217 | [-2.356, 0.257] |        7.069 |
+| lead | contemporaneous                 | support_aid       | m2 + controls |                9 | -0.861 |   0.209 | [-2.540, 0.224]  |         7.621 | [-2.800, 0.426] |  0.217 | [-2.365, 0.259] |        7.095 |
 | lead | contemporaneous                 | support_sanctions | m1 base       |                9 | -0.412 |   0.435 | [-1.820, 0.368]  |         5.46  | [-2.125, 0.483] |  0.506 | [-1.729, 0.614] |        5.187 |
-| lead | contemporaneous                 | support_sanctions | m2 + controls |                9 | -0.431 |   0.411 | [-1.807, 0.380]  |         5.422 | [-2.151, 0.520] |  0.479 | [-1.712, 0.591] |        5.135 |
+| lead | contemporaneous                 | support_sanctions | m2 + controls |                9 | -0.425 |   0.416 | [-1.799, 0.384]  |         5.396 | [-2.130, 0.525] |  0.485 | [-1.709, 0.598] |        5.126 |
 | lead alone                             | support_aid       | m1 base       |                9 | -1.018 |   0.075 | [-2.578, -0.068] |         7.733 | [-2.800, 0.093] |  0.159 | [-2.332, 0.199] |        6.996 |
-| lead alone                             | support_aid       | m2 + controls |                9 | -0.973 |   0.089 | [-2.390, -0.043] |         7.17  | [-2.595, 0.239] |  0.145 | [-2.176, 0.139] |        6.527 |
+| lead alone                             | support_aid       | m2 + controls |                9 | -0.975 |   0.09  | [-2.400, -0.041] |         7.2   | [-2.621, 0.234] |  0.145 | [-2.187, 0.141] |        6.561 |
 | lead alone                             | support_sanctions | m1 base       |                9 | -0.488 |   0.241 | [-1.587, 0.176]  |         4.762 | [-1.783, 0.301] |  0.365 | [-1.498, 0.463] |        4.493 |
-| lead alone                             | support_sanctions | m2 + controls |                9 | -0.46  |   0.266 | [-1.511, 0.224]  |         4.532 | [-1.728, 0.420] |  0.382 | [-1.442, 0.470] |        4.325 |
+| lead alone                             | support_sanctions | m2 + controls |                9 | -0.452 |   0.269 | [-1.492, 0.228]  |         4.475 | [-1.705, 0.411] |  0.387 | [-1.424, 0.467] |        4.271 |
 | lead | contemporaneous, excl. FR IT PL | support_aid       | m1 base       |                6 | -0.556 |   0.498 | [-3.720, 0.644]  |        11.159 | [-4.330, 2.512] |  0.52  | [-3.369, 0.754] |       10.106 |
-| lead | contemporaneous, excl. FR IT PL | support_aid       | m2 + controls |                6 | -0.644 |   0.391 | [-3.798, 1.319]  |        11.395 | [-4.308, 3.119] |  0.426 | [-3.245, 0.653] |        9.735 |
+| lead | contemporaneous, excl. FR IT PL | support_aid       | m2 + controls |                6 | -0.648 |   0.393 | [-3.853, 1.343]  |        11.559 | [-4.365, 3.170] |  0.428 | [-3.278, 0.650] |        9.834 |
 | lead | contemporaneous, excl. FR IT PL | support_sanctions | m1 base       |                6 | -0.444 |   0.558 | [-3.735, 0.483]  |        11.205 | [-4.426, 1.015] |  0.667 | [-3.538, 1.357] |       10.614 |
-| lead | contemporaneous, excl. FR IT PL | support_sanctions | m2 + controls |                6 | -0.479 |   0.499 | [-3.660, 0.505]  |        10.979 | [-4.248, 1.739] |  0.629 | [-3.407, 1.245] |       10.221 |
+| lead | contemporaneous, excl. FR IT PL | support_sanctions | m2 + controls |                6 | -0.458 |   0.517 | [-3.581, 0.521]  |        10.743 | [-4.127, 1.703] |  0.641 | [-3.372, 1.248] |       10.117 |
 
 *Source: `output/tables/timing.md`.*
 
@@ -241,21 +241,21 @@ If only a share s of a top-tier state's population encountered the content, a po
 | lag, pre-invasion zero (sens.)         | effect         | support_aid       | m1 base       | B poll margin of error |  2.953  |       0.1808 |          0.1808 |      0.1671 |         0.1671 | False              | True        |
 | lag, pre-invasion zero (sens.)         | effect         | support_aid       | m1 base       | C H&H 0.36 sd          |  1.6202 |       0.4576 |          0.4576 |      0.4533 |         0.4533 | False              | True        |
 | lag, pre-invasion zero (sens.)         | effect         | support_aid       | m1 base       | D Piccardi-sized       |  2      |       0.3654 |          0.3654 |      0.3578 |         0.3578 | False              | True        |
-| lag, pre-invasion zero (sens.)         | effect         | support_aid       | m2 + controls | A1 full EU decline     |  8.4219 |       0.0015 |          0.0015 |      0.0004 |         0.0002 | True               | True        |
-| lag, pre-invasion zero (sens.)         | effect         | support_aid       | m2 + controls | A2 half EU decline     |  4.2109 |       0.0403 |          0.0403 |      0.037  |         0.037  | True               | True        |
-| lag, pre-invasion zero (sens.)         | effect         | support_aid       | m2 + controls | B poll margin of error |  2.953  |       0.1338 |          0.1338 |      0.1264 |         0.1264 | False              | True        |
-| lag, pre-invasion zero (sens.)         | effect         | support_aid       | m2 + controls | C H&H 0.36 sd          |  1.6202 |       0.3537 |          0.3537 |      0.3459 |         0.3459 | False              | True        |
-| lag, pre-invasion zero (sens.)         | effect         | support_aid       | m2 + controls | D Piccardi-sized       |  2      |       0.2813 |          0.2813 |      0.2704 |         0.2704 | False              | True        |
+| lag, pre-invasion zero (sens.)         | effect         | support_aid       | m2 + controls | A1 full EU decline     |  8.4219 |       0.0018 |          0.0018 |      0.0004 |         0.0004 | True               | True        |
+| lag, pre-invasion zero (sens.)         | effect         | support_aid       | m2 + controls | A2 half EU decline     |  4.2109 |       0.0512 |          0.0512 |      0.0442 |         0.0442 | False              | False       |
+| lag, pre-invasion zero (sens.)         | effect         | support_aid       | m2 + controls | B poll margin of error |  2.953  |       0.1561 |          0.1561 |      0.1462 |         0.1462 | False              | True        |
+| lag, pre-invasion zero (sens.)         | effect         | support_aid       | m2 + controls | C H&H 0.36 sd          |  1.6202 |       0.3892 |          0.3892 |      0.3801 |         0.3801 | False              | True        |
+| lag, pre-invasion zero (sens.)         | effect         | support_aid       | m2 + controls | D Piccardi-sized       |  2      |       0.3102 |          0.3102 |      0.3014 |         0.3014 | False              | True        |
 | lag, pre-invasion zero (sens.)         | effect         | support_sanctions | m1 base       | A1 full EU decline     |  4.5379 |       0.0235 |          0.0235 |      0.0461 |         0.0461 | True               | True        |
 | lag, pre-invasion zero (sens.)         | effect         | support_sanctions | m1 base       | A2 half EU decline     |  2.2689 |       0.3409 |          0.3409 |      0.3348 |         0.3348 | False              | True        |
 | lag, pre-invasion zero (sens.)         | effect         | support_sanctions | m1 base       | B poll margin of error |  2.8089 |       0.2306 |          0.2306 |      0.2262 |         0.2262 | False              | True        |
 | lag, pre-invasion zero (sens.)         | effect         | support_sanctions | m1 base       | C H&H 0.36 sd          |  1.3804 |       0.5541 |          0.5541 |      0.5541 |         0.5541 | False              | True        |
 | lag, pre-invasion zero (sens.)         | effect         | support_sanctions | m1 base       | D Piccardi-sized       |  2      |       0.4033 |          0.4033 |      0.4002 |         0.4002 | False              | True        |
-| lag, pre-invasion zero (sens.)         | effect         | support_sanctions | m2 + controls | A1 full EU decline     |  4.5379 |       0.0243 |          0.0243 |      0.0406 |         0.0406 | True               | True        |
-| lag, pre-invasion zero (sens.)         | effect         | support_sanctions | m2 + controls | A2 half EU decline     |  2.2689 |       0.2963 |          0.2963 |      0.2928 |         0.2928 | False              | True        |
-| lag, pre-invasion zero (sens.)         | effect         | support_sanctions | m2 + controls | B poll margin of error |  2.8089 |       0.2009 |          0.2009 |      0.2002 |         0.2002 | False              | True        |
-| lag, pre-invasion zero (sens.)         | effect         | support_sanctions | m2 + controls | C H&H 0.36 sd          |  1.3804 |       0.4986 |          0.4986 |      0.4925 |         0.4925 | False              | True        |
-| lag, pre-invasion zero (sens.)         | effect         | support_sanctions | m2 + controls | D Piccardi-sized       |  2      |       0.3536 |          0.3536 |      0.3504 |         0.3504 | False              | True        |
+| lag, pre-invasion zero (sens.)         | effect         | support_sanctions | m2 + controls | A1 full EU decline     |  4.5379 |       0.0324 |          0.0324 |      0.0486 |         0.0486 | True               | True        |
+| lag, pre-invasion zero (sens.)         | effect         | support_sanctions | m2 + controls | A2 half EU decline     |  2.2689 |       0.3066 |          0.3066 |      0.3083 |         0.3083 | False              | True        |
+| lag, pre-invasion zero (sens.)         | effect         | support_sanctions | m2 + controls | B poll margin of error |  2.8089 |       0.2148 |          0.2148 |      0.2134 |         0.2134 | False              | True        |
+| lag, pre-invasion zero (sens.)         | effect         | support_sanctions | m2 + controls | C H&H 0.36 sd          |  1.3804 |       0.5077 |          0.5077 |      0.5022 |         0.5022 | False              | True        |
+| lag, pre-invasion zero (sens.)         | effect         | support_sanctions | m2 + controls | D Piccardi-sized       |  2      |       0.3619 |          0.3619 |      0.3636 |         0.3636 | False              | True        |
 | joint: cumulative                      | effect         | support_aid       | m1 base       | A1 full EU decline     |  8.4219 |       0.0661 |          0.0113 |      0.0542 |         0.0043 | False              | True        |
 | joint: cumulative                      | effect         | support_aid       | m1 base       | A2 half EU decline     |  4.2109 |       0.2114 |          0.0366 |      0.1815 |         0.0674 | False              | True        |
 | joint: cumulative                      | effect         | support_aid       | m1 base       | B poll margin of error |  2.953  |       0.3036 |          0.1262 |      0.2659 |         0.1648 | False              | True        |
@@ -278,28 +278,28 @@ If only a share s of a top-tier state's population encountered the content, a po
 | joint: cumulative                      | effect         | support_sanctions | m2 + controls | D Piccardi-sized       |  2      |       0.43   |          0.129  |      0.4343 |         0.1513 | False              | True        |
 | lead | contemporaneous                 | placebo        | support_aid       | m1 base       | A1 full EU decline     |  8.4219 |       0.0275 |        nan      |      0.0214 |       nan      | True               | True        |
 | lead | contemporaneous                 | placebo        | support_aid       | m1 base       | C H&H 0.36 sd          |  1.6202 |       0.6448 |        nan      |      0.637  |       nan      | False              | True        |
-| lead | contemporaneous                 | placebo        | support_aid       | m2 + controls | A1 full EU decline     |  8.4219 |       0.0238 |        nan      |      0.0182 |       nan      | True               | True        |
-| lead | contemporaneous                 | placebo        | support_aid       | m2 + controls | C H&H 0.36 sd          |  1.6202 |       0.6696 |        nan      |      0.6689 |       nan      | False              | True        |
+| lead | contemporaneous                 | placebo        | support_aid       | m2 + controls | A1 full EU decline     |  8.4219 |       0.0244 |        nan      |      0.0188 |       nan      | True               | True        |
+| lead | contemporaneous                 | placebo        | support_aid       | m2 + controls | C H&H 0.36 sd          |  1.6202 |       0.6695 |        nan      |      0.6694 |       nan      | False              | True        |
 | lead | contemporaneous                 | placebo        | support_sanctions | m1 base       | A1 full EU decline     |  4.5379 |       0.0984 |        nan      |      0.0847 |       nan      | False              | True        |
 | lead | contemporaneous                 | placebo        | support_sanctions | m1 base       | C H&H 0.36 sd          |  1.3804 |       0.4686 |        nan      |      0.4716 |       nan      | False              | True        |
-| lead | contemporaneous                 | placebo        | support_sanctions | m2 + controls | A1 full EU decline     |  4.5379 |       0.0947 |        nan      |      0.0817 |       nan      | False              | True        |
-| lead | contemporaneous                 | placebo        | support_sanctions | m2 + controls | C H&H 0.36 sd          |  1.3804 |       0.4801 |        nan      |      0.4817 |       nan      | False              | True        |
+| lead | contemporaneous                 | placebo        | support_sanctions | m2 + controls | A1 full EU decline     |  4.5379 |       0.0934 |        nan      |      0.0811 |       nan      | False              | True        |
+| lead | contemporaneous                 | placebo        | support_sanctions | m2 + controls | C H&H 0.36 sd          |  1.3804 |       0.4768 |        nan      |      0.4788 |       nan      | False              | True        |
 | lead alone                             | placebo (alt.) | support_aid       | m1 base       | A1 full EU decline     |  8.4219 |       0.0241 |        nan      |      0.0162 |       nan      | True               | True        |
 | lead alone                             | placebo (alt.) | support_aid       | m1 base       | C H&H 0.36 sd          |  1.6202 |       0.7777 |        nan      |      0.7661 |       nan      | False              | True        |
-| lead alone                             | placebo (alt.) | support_aid       | m2 + controls | A1 full EU decline     |  8.4219 |       0.0125 |        nan      |      0.009  |       nan      | True               | True        |
-| lead alone                             | placebo (alt.) | support_aid       | m2 + controls | C H&H 0.36 sd          |  1.6202 |       0.7766 |        nan      |      0.7583 |       nan      | False              | True        |
+| lead alone                             | placebo (alt.) | support_aid       | m2 + controls | A1 full EU decline     |  8.4219 |       0.0136 |        nan      |      0.0096 |       nan      | True               | True        |
+| lead alone                             | placebo (alt.) | support_aid       | m2 + controls | C H&H 0.36 sd          |  1.6202 |       0.776  |        nan      |      0.7569 |       nan      | False              | True        |
 | lead alone                             | placebo (alt.) | support_sanctions | m1 base       | A1 full EU decline     |  4.5379 |       0.0624 |        nan      |      0.0481 |       nan      | False              | False       |
 | lead alone                             | placebo (alt.) | support_sanctions | m1 base       | C H&H 0.36 sd          |  1.3804 |       0.5305 |        nan      |      0.5239 |       nan      | False              | True        |
-| lead alone                             | placebo (alt.) | support_sanctions | m2 + controls | A1 full EU decline     |  4.5379 |       0.0498 |        nan      |      0.0392 |       nan      | True               | True        |
-| lead alone                             | placebo (alt.) | support_sanctions | m2 + controls | C H&H 0.36 sd          |  1.3804 |       0.5056 |        nan      |      0.5041 |       nan      | False              | True        |
+| lead alone                             | placebo (alt.) | support_sanctions | m2 + controls | A1 full EU decline     |  4.5379 |       0.0472 |        nan      |      0.0374 |       nan      | True               | True        |
+| lead alone                             | placebo (alt.) | support_sanctions | m2 + controls | C H&H 0.36 sd          |  1.3804 |       0.4963 |        nan      |      0.499  |       nan      | False              | True        |
 | lead | contemporaneous, excl. FR IT PL | placebo (alt.) | support_aid       | m1 base       | A1 full EU decline     |  8.4219 |       0.1512 |        nan      |      0.0923 |       nan      | False              | True        |
 | lead | contemporaneous, excl. FR IT PL | placebo (alt.) | support_aid       | m1 base       | C H&H 0.36 sd          |  1.6202 |       0.4984 |        nan      |      0.5084 |       nan      | False              | True        |
-| lead | contemporaneous, excl. FR IT PL | placebo (alt.) | support_aid       | m2 + controls | A1 full EU decline     |  8.4219 |       0.1438 |        nan      |      0.082  |       nan      | False              | True        |
-| lead | contemporaneous, excl. FR IT PL | placebo (alt.) | support_aid       | m2 + controls | C H&H 0.36 sd          |  1.6202 |       0.5427 |        nan      |      0.5512 |       nan      | False              | True        |
+| lead | contemporaneous, excl. FR IT PL | placebo (alt.) | support_aid       | m2 + controls | A1 full EU decline     |  8.4219 |       0.1479 |        nan      |      0.0838 |       nan      | False              | True        |
+| lead | contemporaneous, excl. FR IT PL | placebo (alt.) | support_aid       | m2 + controls | C H&H 0.36 sd          |  1.6202 |       0.5438 |        nan      |      0.5527 |       nan      | False              | True        |
 | lead | contemporaneous, excl. FR IT PL | placebo (alt.) | support_sanctions | m1 base       | A1 full EU decline     |  4.5379 |       0.3116 |        nan      |      0.2825 |       nan      | False              | True        |
 | lead | contemporaneous, excl. FR IT PL | placebo (alt.) | support_sanctions | m1 base       | C H&H 0.36 sd          |  1.3804 |       0.4887 |        nan      |      0.494  |       nan      | False              | True        |
-| lead | contemporaneous, excl. FR IT PL | placebo (alt.) | support_sanctions | m2 + controls | A1 full EU decline     |  4.5379 |       0.3211 |        nan      |      0.276  |       nan      | False              | True        |
-| lead | contemporaneous, excl. FR IT PL | placebo (alt.) | support_sanctions | m2 + controls | C H&H 0.36 sd          |  1.3804 |       0.5057 |        nan      |      0.5071 |       nan      | False              | True        |
+| lead | contemporaneous, excl. FR IT PL | placebo (alt.) | support_sanctions | m2 + controls | A1 full EU decline     |  4.5379 |       0.3165 |        nan      |      0.2691 |       nan      | False              | True        |
+| lead | contemporaneous, excl. FR IT PL | placebo (alt.) | support_sanctions | m2 + controls | C H&H 0.36 sd          |  1.3804 |       0.4944 |        nan      |      0.5009 |       nan      | False              | True        |
 
 *Source: `output/tables/timing_equivalence.md`.*
 
@@ -311,15 +311,15 @@ If only a share s of a top-tier state's population encountered the content, a po
 | support_aid       | m1 base       | beta1 (tier 1)          | -0.741 |   0.542 | [-3.44, 1.74]  |  0.545 | [-3.00, 1.42]  |
 | support_aid       | m1 base       | beta3 (tier 3)          |  0.091 |   0.965 | [-2.92, 8.41]  |  0.973 | [-3.94, 5.58]  |
 | support_aid       | m1 base       | gamma = beta3 - 3 beta1 |  2.313 |   0.576 | [-4.10, 10.13] |  0.575 | [-4.38, 9.88]  |
-| support_aid       | m2 + controls | beta1 (tier 1)          | -0.189 |   0.916 | [-3.98, 3.90]  |  0.916 | [-3.52, 3.05]  |
-| support_aid       | m2 + controls | beta3 (tier 3)          |  0.946 |   0.717 | [-2.44, 9.07]  |  0.72  | [-3.31, 6.63]  |
-| support_aid       | m2 + controls | gamma = beta3 - 3 beta1 |  1.512 |   0.77  | [-7.43, 11.88] |  0.767 | [-6.96, 11.00] |
+| support_aid       | m2 + controls | beta1 (tier 1)          | -0.197 |   0.914 | [-3.98, 3.88]  |  0.913 | [-3.55, 3.04]  |
+| support_aid       | m2 + controls | beta3 (tier 3)          |  0.949 |   0.716 | [-2.42, 9.06]  |  0.719 | [-3.30, 6.62]  |
+| support_aid       | m2 + controls | gamma = beta3 - 3 beta1 |  1.539 |   0.77  | [-7.41, 11.87] |  0.764 | [-6.97, 11.12] |
 | support_sanctions | m1 base       | beta1 (tier 1)          | -0.687 |   0.511 | [-2.40, 0.97]  |  0.498 | [-2.43, 1.16]  |
 | support_sanctions | m1 base       | beta3 (tier 3)          |  0.024 |   0.985 | [-3.01, 3.69]  |  0.987 | [-3.03, 3.10]  |
 | support_sanctions | m1 base       | gamma = beta3 - 3 beta1 |  2.085 |   0.506 | [-3.36, 7.75]  |  0.509 | [-3.51, 7.54]  |
-| support_sanctions | m2 + controls | beta1 (tier 1)          | -0.467 |   0.65  | [-2.30, 1.81]  |  0.696 | [-2.54, 1.69]  |
-| support_sanctions | m2 + controls | beta3 (tier 3)          |  0.499 |   0.751 | [-3.44, 4.84]  |  0.78  | [-3.06, 4.04]  |
-| support_sanctions | m2 + controls | gamma = beta3 - 3 beta1 |  1.9   |   0.589 | [-4.63, 8.57]  |  0.603 | [-4.75, 8.31]  |
+| support_sanctions | m2 + controls | beta1 (tier 1)          | -0.519 |   0.622 | [-2.40, 1.79]  |  0.667 | [-2.64, 1.67]  |
+| support_sanctions | m2 + controls | beta3 (tier 3)          |  0.497 |   0.754 | [-3.50, 4.83]  |  0.782 | [-3.09, 4.05]  |
+| support_sanctions | m2 + controls | gamma = beta3 - 3 beta1 |  2.053 |   0.563 | [-4.58, 8.78]  |  0.578 | [-4.65, 8.52]  |
 
 *Source: `output/tables/tier_dummies.md`.*
 
@@ -330,28 +330,28 @@ If only a share s of a top-tier state's population encountered the content, a po
 | support_aid       | m1 base       | B poll margin of error |  2.953  |       0.1945 |          0.0467 |      0.1469 |         0.1045 | False              | True        |
 | support_aid       | m1 base       | C H&H 0.36 sd          |  1.6202 |       0.2866 |          0.2342 |      0.2649 |         0.2432 | False              | True        |
 | support_aid       | m1 base       | D Piccardi-sized       |  2      |       0.2579 |          0.1803 |      0.2251 |         0.198  | False              | True        |
-| support_aid       | m2 + controls | A1 full EU decline     |  8.4219 |       0.0622 |          0.0032 |      0.024  |         0.0009 | False              | False       |
-| support_aid       | m2 + controls | A2 half EU decline     |  4.2109 |       0.2162 |          0.0112 |      0.1387 |         0.0226 | False              | True        |
-| support_aid       | m2 + controls | B poll margin of error |  2.953  |       0.2844 |          0.0257 |      0.2343 |         0.0688 | False              | True        |
-| support_aid       | m2 + controls | C H&H 0.36 sd          |  1.6202 |       0.3982 |          0.1422 |      0.3937 |         0.1683 | False              | True        |
-| support_aid       | m2 + controls | D Piccardi-sized       |  2      |       0.3557 |          0.0913 |      0.3397 |         0.1299 | False              | True        |
+| support_aid       | m2 + controls | A1 full EU decline     |  8.4219 |       0.0618 |          0.0032 |      0.0237 |         0.0009 | False              | False       |
+| support_aid       | m2 + controls | A2 half EU decline     |  4.2109 |       0.2156 |          0.0112 |      0.1379 |         0.0219 | False              | True        |
+| support_aid       | m2 + controls | B poll margin of error |  2.953  |       0.2832 |          0.0257 |      0.2343 |         0.0681 | False              | True        |
+| support_aid       | m2 + controls | C H&H 0.36 sd          |  1.6202 |       0.3977 |          0.1405 |      0.3939 |         0.1677 | False              | True        |
+| support_aid       | m2 + controls | D Piccardi-sized       |  2      |       0.3556 |          0.0902 |      0.3396 |         0.1287 | False              | True        |
 | support_sanctions | m1 base       | A1 full EU decline     |  4.5379 |       0.0329 |          0.0256 |      0.0157 |         0.0157 | True               | True        |
 | support_sanctions | m1 base       | A2 half EU decline     |  2.2689 |       0.0995 |          0.0833 |      0.0986 |         0.0986 | False              | True        |
 | support_sanctions | m1 base       | B poll margin of error |  2.8089 |       0.0762 |          0.0561 |      0.0627 |         0.0627 | False              | True        |
 | support_sanctions | m1 base       | C H&H 0.36 sd          |  1.3804 |       0.1643 |          0.1463 |      0.2001 |         0.1931 | False              | True        |
 | support_sanctions | m1 base       | D Piccardi-sized       |  2      |       0.1149 |          0.097  |      0.1218 |         0.1218 | False              | True        |
-| support_sanctions | m2 + controls | A1 full EU decline     |  4.5379 |       0.0572 |          0.0284 |      0.0331 |         0.0206 | False              | False       |
-| support_sanctions | m2 + controls | A2 half EU decline     |  2.2689 |       0.1526 |          0.0783 |      0.1771 |         0.0914 | False              | True        |
-| support_sanctions | m2 + controls | B poll margin of error |  2.8089 |       0.1213 |          0.0615 |      0.1209 |         0.0609 | False              | True        |
-| support_sanctions | m2 + controls | C H&H 0.36 sd          |  1.3804 |       0.2874 |          0.122  |      0.313  |         0.1649 | False              | True        |
-| support_sanctions | m2 + controls | D Piccardi-sized       |  2      |       0.1794 |          0.0907 |      0.212  |         0.1121 | False              | True        |
+| support_sanctions | m2 + controls | A1 full EU decline     |  4.5379 |       0.0567 |          0.0289 |      0.0334 |         0.021  | False              | False       |
+| support_sanctions | m2 + controls | A2 half EU decline     |  2.2689 |       0.152  |          0.0782 |      0.1769 |         0.0919 | False              | True        |
+| support_sanctions | m2 + controls | B poll margin of error |  2.8089 |       0.1206 |          0.0623 |      0.1212 |         0.0615 | False              | True        |
+| support_sanctions | m2 + controls | C H&H 0.36 sd          |  1.3804 |       0.2877 |          0.1232 |      0.3125 |         0.1648 | False              | True        |
+| support_sanctions | m2 + controls | D Piccardi-sized       |  2      |       0.1792 |          0.0912 |      0.2125 |         0.1124 | False              | True        |
 
 *Source: `output/tables/tier_dummies.md`.*
 
 
 ## Jackknife
 
-Lowest WCR p across all 44 samples: 0.187. support_aid: erosion at A1 ruled out in 11 of 11 samples; support_sanctions: erosion at A1 ruled out in 6 of 11 samples.
+Lowest WCR p across all 44 estimates: 0.187. support_aid: erosion at A1 ruled out in 11 of 11 samples; support_sanctions: erosion at A1 ruled out in 6 of 11 samples.
 
 | outcome           | dropped            | erosion at A1 ruled out (m1 and m2)   | TOST at A1 passes (m1 and m2)   |
 |:------------------|:-------------------|:--------------------------------------|:--------------------------------|
@@ -376,56 +376,56 @@ Lowest WCR p across all 44 samples: 0.187. support_aid: erosion at A1 ruled out 
 | support_sanctions | PL                 | False                                 | False                           |
 | support_sanctions | SK                 | True                                  | True                            |
 | support_sanctions | Baltics (EE LT LV) | False                                 | False                           |
-| support_sanctions | W7-only (FR IT PL) | True                                  | True                            |
+| support_sanctions | W7-only (FR IT PL) | True                                  | False                           |
 
 *Source: `output/tables/jackknife.md (summary)`.*
 
-| dropped            | outcome           | spec          |   beta |   p_WCR |   p_WR | WCR 90% 0-3    |   ECI 0-3 |   p_TOST A1 |   p_erosion A1 |
-|:-------------------|:------------------|:--------------|-------:|--------:|-------:|:---------------|----------:|------------:|---------------:|
-| EE                 | support_aid       | m1 base       | -0.105 |   0.885 |  0.888 | [-2.92, 7.80]  |     7.803 |       0.041 |          0.002 |
-| EE                 | support_aid       | m2 + controls |  0.141 |   0.85  |  0.862 | [-2.62, 8.07]  |     8.066 |       0.045 |          0.005 |
-| EE                 | support_sanctions | m1 base       | -0.073 |   0.878 |  0.888 | [-3.63, 3.09]  |     3.629 |       0.039 |          0.039 |
-| EE                 | support_sanctions | m2 + controls |  0.064 |   0.906 |  0.914 | [-3.90, 4.43]  |     4.433 |       0.048 |          0.04  |
-| ES                 | support_aid       | m1 base       |  0.805 |   0.581 |  0.546 | [-3.08, 10.11] |    10.111 |       0.091 |          0.001 |
-| ES                 | support_aid       | m2 + controls |  1.209 |   0.37  |  0.368 | [-2.06, 11.10] |    11.103 |       0.125 |          0.001 |
-| ES                 | support_sanctions | m1 base       |  0.088 |   0.917 |  0.921 | [-5.93, 5.03]  |     5.926 |       0.067 |          0.067 |
-| ES                 | support_sanctions | m2 + controls |  0.294 |   0.755 |  0.757 | [-5.34, 6.36]  |     6.356 |       0.128 |          0.062 |
-| FR                 | support_aid       | m1 base       |  0.094 |   0.914 |  0.916 | [-2.82, 9.99]  |     9.988 |       0.083 |          0.006 |
-| FR                 | support_aid       | m2 + controls |  0.383 |   0.685 |  0.69  | [-2.38, 10.74] |    10.742 |       0.09  |          0.006 |
-| FR                 | support_sanctions | m1 base       |  0.353 |   0.321 |  0.465 | [-0.73, 4.96]  |     4.961 |       0.064 |          0.017 |
-| FR                 | support_sanctions | m2 + controls |  0.54  |   0.209 |  0.361 | [-0.70, 6.34]  |     6.339 |       0.122 |          0.013 |
-| HU                 | support_aid       | m1 base       |  0.141 |   0.859 |  0.874 | [-2.67, 9.57]  |     9.565 |       0.073 |          0.003 |
-| HU                 | support_aid       | m2 + controls |  0.524 |   0.592 |  0.617 | [-2.23, 10.78] |    10.778 |       0.105 |          0.006 |
-| HU                 | support_sanctions | m1 base       |  0.125 |   0.796 |  0.813 | [-2.70, 4.78]  |     4.777 |       0.054 |          0.029 |
-| HU                 | support_sanctions | m2 + controls |  0.397 |   0.514 |  0.568 | [-3.17, 6.94]  |     6.937 |       0.13  |          0.036 |
-| IT                 | support_aid       | m1 base       | -0.023 |   0.979 |  0.98  | [-2.98, 9.34]  |     9.339 |       0.064 |          0.003 |
-| IT                 | support_aid       | m2 + controls |  0.271 |   0.77  |  0.771 | [-2.54, 9.90]  |     9.901 |       0.077 |          0.004 |
-| IT                 | support_sanctions | m1 base       | -0.125 |   0.793 |  0.822 | [-5.87, 2.85]  |     5.866 |       0.067 |          0.067 |
-| IT                 | support_sanctions | m2 + controls |  0.016 |   0.978 |  0.98  | [-5.40, 4.44]  |     5.4   |       0.062 |          0.062 |
-| LT                 | support_aid       | m1 base       |  0.075 |   0.93  |  0.93  | [-2.78, 9.25]  |     9.255 |       0.064 |          0.003 |
-| LT                 | support_aid       | m2 + controls |  0.267 |   0.766 |  0.777 | [-2.59, 9.49]  |     9.493 |       0.07  |          0.003 |
-| LT                 | support_sanctions | m1 base       |  0.174 |   0.708 |  0.731 | [-2.26, 5.04]  |     5.042 |       0.062 |          0.026 |
-| LT                 | support_sanctions | m2 + controls |  0.292 |   0.587 |  0.628 | [-2.84, 6.29]  |     6.287 |       0.083 |          0.026 |
-| LV                 | support_aid       | m1 base       |  0.364 |   0.66  |  0.721 | [-2.45, 10.13] |    10.135 |       0.094 |          0.007 |
-| LV                 | support_aid       | m2 + controls |  0.611 |   0.562 |  0.583 | [-2.19, 11.61] |    11.614 |       0.144 |          0.009 |
-| LV                 | support_sanctions | m1 base       | -0.003 |   0.995 |  0.997 | [-5.38, 5.06]  |     5.384 |       0.067 |          0.067 |
-| LV                 | support_sanctions | m2 + controls |  0.114 |   0.849 |  0.861 | [-5.46, 6.05]  |     6.045 |       0.089 |          0.065 |
-| PL                 | support_aid       | m1 base       | -0.461 |   0.402 |  0.353 | [-2.97, 2.82]  |     2.968 |       0.002 |          0.002 |
-| PL                 | support_aid       | m2 + controls | -0.188 |   0.726 |  0.734 | [-2.72, 4.50]  |     4.502 |       0.012 |          0.004 |
-| PL                 | support_sanctions | m1 base       | -0.19  |   0.688 |  0.716 | [-5.53, 1.97]  |     5.534 |       0.063 |          0.063 |
-| PL                 | support_sanctions | m2 + controls | -0.042 |   0.937 |  0.942 | [-5.01, 3.57]  |     5.012 |       0.058 |          0.058 |
-| SK                 | support_aid       | m1 base       |  0.075 |   0.929 |  0.928 | [-2.74, 9.37]  |     9.37  |       0.066 |          0.003 |
-| SK                 | support_aid       | m2 + controls |  0.265 |   0.772 |  0.781 | [-2.62, 9.99]  |     9.988 |       0.075 |          0.004 |
-| SK                 | support_sanctions | m1 base       | -0.014 |   0.979 |  0.978 | [-3.35, 3.67]  |     3.674 |       0.036 |          0.034 |
-| SK                 | support_sanctions | m2 + controls |  0.047 |   0.926 |  0.93  | [-4.35, 4.16]  |     4.354 |       0.047 |          0.047 |
-| Baltics (EE LT LV) | support_aid       | m1 base       |  0.198 |   0.761 |  0.851 | [-2.96, 11.28] |    11.283 |       0.109 |          0.02  |
-| Baltics (EE LT LV) | support_aid       | m2 + controls |  0.285 |   0.747 |  0.804 | [-3.05, 12.22] |    12.219 |       0.136 |          0.026 |
-| Baltics (EE LT LV) | support_sanctions | m1 base       |  0.024 |   0.969 |  0.973 | [-8.55, 5.74]  |     8.548 |       0.097 |          0.067 |
-| Baltics (EE LT LV) | support_sanctions | m2 + controls |  0.011 |   0.986 |  0.987 | [-9.60, 5.96]  |     9.601 |       0.097 |          0.078 |
-| W7-only (FR IT PL) | support_aid       | m1 base       | -0.704 |   0.187 |  0.143 | [-3.84, 1.74]  |     3.844 |       0.007 |          0.001 |
-| W7-only (FR IT PL) | support_aid       | m2 + controls | -0.383 |   0.467 |  0.503 | [-3.95, 5.62]  |     5.625 |       0.029 |          0.01  |
-| W7-only (FR IT PL) | support_sanctions | m1 base       | -0.073 |   0.765 |  0.848 | [-4.46, 0.99]  |     4.46  |       0.049 |          0.049 |
-| W7-only (FR IT PL) | support_sanctions | m2 + controls |  0.106 |   0.725 |  0.841 | [-2.99, 4.29]  |     4.286 |       0.047 |          0.027 |
+| dropped            | outcome           | spec          |   beta |   p_WCR |   p_WR | WCR 90% 0-3    |   ECI 0-3 |   p_TOST A1 |   p_erosion A1 | equivalent A1   | erosion ruled out A1   |
+|:-------------------|:------------------|:--------------|-------:|--------:|-------:|:---------------|----------:|------------:|---------------:|:----------------|:-----------------------|
+| EE                 | support_aid       | m1 base       | -0.105 |   0.885 |  0.888 | [-2.92, 7.80]  |     7.803 |       0.041 |          0.002 | True            | True                   |
+| EE                 | support_aid       | m2 + controls |  0.143 |   0.848 |  0.861 | [-2.60, 8.02]  |     8.023 |       0.044 |          0.005 | True            | True                   |
+| EE                 | support_sanctions | m1 base       | -0.073 |   0.878 |  0.888 | [-3.63, 3.09]  |     3.629 |       0.039 |          0.039 | True            | True                   |
+| EE                 | support_sanctions | m2 + controls |  0.067 |   0.901 |  0.91  | [-3.95, 4.48]  |     4.481 |       0.049 |          0.041 | True            | True                   |
+| ES                 | support_aid       | m1 base       |  0.805 |   0.581 |  0.546 | [-3.08, 10.11] |    10.111 |       0.091 |          0.001 | False           | True                   |
+| ES                 | support_aid       | m2 + controls |  1.206 |   0.37  |  0.368 | [-2.06, 11.06] |    11.057 |       0.123 |          0.001 | False           | True                   |
+| ES                 | support_sanctions | m1 base       |  0.088 |   0.917 |  0.921 | [-5.93, 5.03]  |     5.926 |       0.067 |          0.067 | False           | False                  |
+| ES                 | support_sanctions | m2 + controls |  0.29  |   0.757 |  0.761 | [-5.53, 6.36]  |     6.355 |       0.129 |          0.064 | False           | False                  |
+| FR                 | support_aid       | m1 base       |  0.094 |   0.914 |  0.916 | [-2.82, 9.99]  |     9.988 |       0.083 |          0.006 | False           | True                   |
+| FR                 | support_aid       | m2 + controls |  0.385 |   0.684 |  0.687 | [-2.36, 10.69] |    10.692 |       0.09  |          0.006 | False           | True                   |
+| FR                 | support_sanctions | m1 base       |  0.353 |   0.321 |  0.465 | [-0.73, 4.96]  |     4.961 |       0.064 |          0.017 | False           | True                   |
+| FR                 | support_sanctions | m2 + controls |  0.543 |   0.207 |  0.359 | [-0.71, 6.36]  |     6.358 |       0.124 |          0.014 | False           | True                   |
+| HU                 | support_aid       | m1 base       |  0.141 |   0.859 |  0.874 | [-2.67, 9.57]  |     9.565 |       0.073 |          0.003 | False           | True                   |
+| HU                 | support_aid       | m2 + controls |  0.528 |   0.587 |  0.611 | [-2.20, 10.76] |    10.756 |       0.104 |          0.006 | False           | True                   |
+| HU                 | support_sanctions | m1 base       |  0.125 |   0.796 |  0.813 | [-2.70, 4.78]  |     4.777 |       0.054 |          0.029 | False           | True                   |
+| HU                 | support_sanctions | m2 + controls |  0.402 |   0.508 |  0.562 | [-3.19, 6.93]  |     6.926 |       0.13  |          0.036 | False           | True                   |
+| IT                 | support_aid       | m1 base       | -0.023 |   0.979 |  0.98  | [-2.98, 9.34]  |     9.339 |       0.064 |          0.003 | False           | True                   |
+| IT                 | support_aid       | m2 + controls |  0.274 |   0.768 |  0.769 | [-2.52, 9.88]  |     9.883 |       0.076 |          0.004 | False           | True                   |
+| IT                 | support_sanctions | m1 base       | -0.125 |   0.793 |  0.822 | [-5.87, 2.85]  |     5.866 |       0.067 |          0.067 | False           | False                  |
+| IT                 | support_sanctions | m2 + controls |  0.018 |   0.976 |  0.976 | [-5.57, 4.51]  |     5.565 |       0.064 |          0.064 | False           | False                  |
+| LT                 | support_aid       | m1 base       |  0.075 |   0.93  |  0.93  | [-2.78, 9.25]  |     9.255 |       0.064 |          0.003 | False           | True                   |
+| LT                 | support_aid       | m2 + controls |  0.268 |   0.765 |  0.775 | [-2.58, 9.47]  |     9.473 |       0.069 |          0.003 | False           | True                   |
+| LT                 | support_sanctions | m1 base       |  0.174 |   0.708 |  0.731 | [-2.26, 5.04]  |     5.042 |       0.062 |          0.026 | False           | True                   |
+| LT                 | support_sanctions | m2 + controls |  0.3   |   0.578 |  0.62  | [-2.84, 6.33]  |     6.331 |       0.084 |          0.026 | False           | True                   |
+| LV                 | support_aid       | m1 base       |  0.364 |   0.66  |  0.721 | [-2.45, 10.13] |    10.135 |       0.094 |          0.007 | False           | True                   |
+| LV                 | support_aid       | m2 + controls |  0.612 |   0.56  |  0.582 | [-2.17, 11.60] |    11.604 |       0.143 |          0.009 | False           | True                   |
+| LV                 | support_sanctions | m1 base       | -0.003 |   0.995 |  0.997 | [-5.38, 5.06]  |     5.384 |       0.067 |          0.067 | False           | False                  |
+| LV                 | support_sanctions | m2 + controls |  0.1   |   0.869 |  0.879 | [-5.58, 5.98]  |     5.98  |       0.086 |          0.068 | False           | False                  |
+| PL                 | support_aid       | m1 base       | -0.461 |   0.402 |  0.353 | [-2.97, 2.82]  |     2.968 |       0.002 |          0.002 | True            | True                   |
+| PL                 | support_aid       | m2 + controls | -0.187 |   0.725 |  0.735 | [-2.72, 4.45]  |     4.454 |       0.012 |          0.004 | True            | True                   |
+| PL                 | support_sanctions | m1 base       | -0.19  |   0.688 |  0.716 | [-5.53, 1.97]  |     5.534 |       0.063 |          0.063 | False           | False                  |
+| PL                 | support_sanctions | m2 + controls | -0.038 |   0.942 |  0.946 | [-5.17, 3.58]  |     5.174 |       0.06  |          0.06  | False           | False                  |
+| SK                 | support_aid       | m1 base       |  0.075 |   0.929 |  0.928 | [-2.74, 9.37]  |     9.37  |       0.066 |          0.003 | False           | True                   |
+| SK                 | support_aid       | m2 + controls |  0.266 |   0.77  |  0.779 | [-2.62, 9.95]  |     9.954 |       0.075 |          0.004 | False           | True                   |
+| SK                 | support_sanctions | m1 base       | -0.014 |   0.979 |  0.978 | [-3.35, 3.67]  |     3.674 |       0.036 |          0.034 | True            | True                   |
+| SK                 | support_sanctions | m2 + controls |  0.051 |   0.92  |  0.927 | [-4.34, 4.14]  |     4.336 |       0.045 |          0.045 | True            | True                   |
+| Baltics (EE LT LV) | support_aid       | m1 base       |  0.198 |   0.761 |  0.851 | [-2.96, 11.28] |    11.283 |       0.109 |          0.02  | False           | True                   |
+| Baltics (EE LT LV) | support_aid       | m2 + controls |  0.289 |   0.746 |  0.8   | [-3.04, 12.20] |    12.199 |       0.136 |          0.026 | False           | True                   |
+| Baltics (EE LT LV) | support_sanctions | m1 base       |  0.024 |   0.969 |  0.973 | [-8.55, 5.74]  |     8.548 |       0.097 |          0.067 | False           | False                  |
+| Baltics (EE LT LV) | support_sanctions | m2 + controls | -0     |   1     |  1     | [-9.70, 5.89]  |     9.699 |       0.094 |          0.079 | False           | False                  |
+| W7-only (FR IT PL) | support_aid       | m1 base       | -0.704 |   0.187 |  0.143 | [-3.84, 1.74]  |     3.844 |       0.007 |          0.001 | True            | True                   |
+| W7-only (FR IT PL) | support_aid       | m2 + controls | -0.378 |   0.47  |  0.508 | [-3.98, 5.54]  |     5.545 |       0.029 |          0.01  | True            | True                   |
+| W7-only (FR IT PL) | support_sanctions | m1 base       | -0.073 |   0.765 |  0.848 | [-4.46, 0.99]  |     4.46  |       0.049 |          0.049 | True            | True                   |
+| W7-only (FR IT PL) | support_sanctions | m2 + controls |  0.113 |   0.718 |  0.834 | [-3.18, 4.58]  |     4.582 |       0.05  |          0.03  | False           | True                   |
 
 *Source: `output/tables/jackknife.md`.*
 
@@ -436,8 +436,8 @@ Lowest WCR p across all 44 samples: 0.187. support_aid: erosion at A1 ruled out 
 |:------------------|:--------------|------------:|----------------:|-----------------:|------------------:|----------------------:|---------------------------:|
 | support_aid       | m1 base       |       0.068 |              49 |               14 |            -0.234 |                 0.035 |                      0.107 |
 | support_sanctions | m1 base       |       0.042 |              49 |               14 |            -0.234 |                 0.022 |                      0.066 |
-| support_aid       | m2 + controls |       0.336 |              49 |               12 |            -0.23  |                 0.179 |                      0.525 |
-| support_sanctions | m2 + controls |       0.192 |              49 |               12 |            -0.23  |                 0.103 |                      0.3   |
+| support_aid       | m2 + controls |       0.337 |              49 |               12 |            -0.231 |                 0.18  |                      0.526 |
+| support_sanctions | m2 + controls |       0.194 |              49 |               12 |            -0.231 |                 0.103 |                      0.303 |
 
 *Source: `output/tables/twfe_heterogeneity.md`.*
 
@@ -459,24 +459,24 @@ m2; `p` is WCR. R1-R4 pre-committed, R5-R8 added after the first results.
 
 | check                 | outcome              | inference     |   beta |     p |   p_WR |   N | status        |
 |:----------------------|:---------------------|:--------------|-------:|------:|-------:|----:|:--------------|
-| R1 drop W7            | support_aid          | WCR bootstrap | -0.752 | 0.497 |  0.351 | 162 | pre-committed |
-| R1 drop W7            | support_sanctions    | WCR bootstrap | -0.257 | 0.701 |  0.693 | 162 | pre-committed |
-| R2 renormalized DV    | support_aid_rn       | WCR bootstrap |  0.35  | 0.699 |  0.708 | 189 | pre-committed |
-| R2 renormalized DV    | support_sanctions_rn | WCR bootstrap |  0.05  | 0.918 |  0.931 | 189 | pre-committed |
-| R3 don't-know outcome | dk_aid               | WCR bootstrap |  0.077 | 0.64  |  0.737 | 189 | pre-committed |
-| R3 don't-know outcome | dk_sanctions         | WCR bootstrap | -0.175 | 0.46  |  0.504 | 189 | pre-committed |
-| R4 country trends     | support_aid          | WCR bootstrap |  0.691 | 0.342 |  0.357 | 189 | pre-committed |
-| R4 country trends     | support_sanctions    | WCR bootstrap |  0.667 | 0.254 |  0.221 | 189 | pre-committed |
-| R5 extended register  | support_aid          | WCR bootstrap |  0.476 | 0.569 |  0.549 | 189 | added later   |
-| R5 extended register  | support_sanctions    | WCR bootstrap |  0.082 | 0.848 |  0.864 | 189 | added later   |
+| R1 drop W7            | support_aid          | WCR bootstrap | -0.746 | 0.498 |  0.353 | 162 | pre-committed |
+| R1 drop W7            | support_sanctions    | WCR bootstrap | -0.244 | 0.716 |  0.71  | 162 | pre-committed |
+| R2 renormalized DV    | support_aid_rn       | WCR bootstrap |  0.351 | 0.697 |  0.707 | 189 | pre-committed |
+| R2 renormalized DV    | support_sanctions_rn | WCR bootstrap |  0.051 | 0.917 |  0.93  | 189 | pre-committed |
+| R3 don't-know outcome | dk_aid               | WCR bootstrap |  0.076 | 0.636 |  0.738 | 189 | pre-committed |
+| R3 don't-know outcome | dk_sanctions         | WCR bootstrap | -0.175 | 0.461 |  0.502 | 189 | pre-committed |
+| R4 country trends     | support_aid          | WCR bootstrap |  0.71  | 0.326 |  0.342 | 189 | pre-committed |
+| R4 country trends     | support_sanctions    | WCR bootstrap |  0.685 | 0.248 |  0.215 | 189 | pre-committed |
+| R5 extended register  | support_aid          | WCR bootstrap |  0.48  | 0.565 |  0.544 | 189 | added later   |
+| R5 extended register  | support_sanctions    | WCR bootstrap |  0.084 | 0.842 |  0.861 | 189 | added later   |
 | R6 drop W1            | support_aid          | WCR bootstrap |  1.019 | 0.202 |  0.291 | 162 | added later   |
 | R6 drop W1            | support_sanctions    | WCR bootstrap |  0.708 | 0.302 |  0.33  | 162 | added later   |
-| R7 binary exposure    | support_aid          | WCR bootstrap |  1.083 | 0.734 |  0.706 | 189 | added later   |
-| R7 binary exposure    | support_sanctions    | WCR bootstrap |  0.839 | 0.614 |  0.646 | 189 | added later   |
-| R8 LOCO min (drop PL) | support_aid          | WCR bootstrap | -0.188 | 0.726 |  0.734 | 182 | added later   |
-| R8 LOCO max (drop ES) | support_aid          | WCR bootstrap |  1.209 | 0.37  |  0.368 | 182 | added later   |
-| R8 LOCO min (drop PL) | support_sanctions    | WCR bootstrap | -0.042 | 0.937 |  0.942 | 182 | added later   |
-| R8 LOCO max (drop FR) | support_sanctions    | WCR bootstrap |  0.54  | 0.209 |  0.361 | 182 | added later   |
+| R7 binary exposure    | support_aid          | WCR bootstrap |  1.092 | 0.731 |  0.705 | 189 | added later   |
+| R7 binary exposure    | support_sanctions    | WCR bootstrap |  0.874 | 0.6   |  0.632 | 189 | added later   |
+| R8 LOCO min (drop PL) | support_aid          | WCR bootstrap | -0.187 | 0.725 |  0.735 | 182 | added later   |
+| R8 LOCO max (drop ES) | support_aid          | WCR bootstrap |  1.206 | 0.37  |  0.368 | 182 | added later   |
+| R8 LOCO min (drop PL) | support_sanctions    | WCR bootstrap | -0.038 | 0.942 |  0.946 | 182 | added later   |
+| R8 LOCO max (drop FR) | support_sanctions    | WCR bootstrap |  0.543 | 0.207 |  0.359 | 182 | added later   |
 
 *Source: `output/tables/robustness.md`.*
 

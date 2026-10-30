@@ -1,3 +1,4 @@
+import io
 import os
 import re
 import numpy as np
@@ -309,6 +310,25 @@ def code_country_window(iso2: str, w_start: date, w_end: date,
                     n_indep_A=len(a_authors),
                     evidence_sources=";".join(sorted(a_sids)),
                     notes=note)
+
+
+def write_sheet(path: str, sheet: str, df: pd.DataFrame) -> bool:
+    """
+    Replace one sheet of an existing workbook, leaving the other sheets intact.
+    Skips the write when the sheet's contents are unchanged, so a re-run does not touch the file.
+    """
+    buf = io.BytesIO()
+    df.to_excel(buf, index=False)
+    try:
+        unchanged = pd.read_excel(buf).equals(pd.read_excel(path, sheet_name=sheet))
+    except ValueError:  # sheet not in the workbook yet
+        unchanged = False
+    if unchanged:
+        return False
+    with pd.ExcelWriter(path, engine="openpyxl", mode="a",
+                        if_sheet_exists="replace") as xl:
+        df.to_excel(xl, sheet_name=sheet, index=False)
+    return True
 
 
 def eurostat_long(code, geos=None, dims=None, since=None):

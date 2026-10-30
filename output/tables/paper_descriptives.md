@@ -22,6 +22,6 @@
 | register: primary organizations                   |  18     |
 | register: extended sources                        |   4     |
 | robustness: lowest p across all rows              |   0.202 |
-| robustness: aid beta range low                    |  -0.752 |
-| robustness: aid beta range high                   |   1.209 |
+| robustness: aid beta range low                    |  -0.746 |
+| robustness: aid beta range high                   |   1.206 |
 | detection floor: bootstrap MDE per tier, aid (m2) |   3.37  |
